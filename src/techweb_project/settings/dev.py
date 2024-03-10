@@ -22,19 +22,26 @@ MIDDLEWARE = MIDDLEWARE + [
     # "silk.middleware.SilkyMiddleware",
 ]
 # Database configurations
+# DATABASES = {
+#     "default": {
+#         "ENGINE": config("DB_ENGINE", cast=str),
+#         "NAME": config("DB_NAME", cast=str),
+#         "USER": config("DB_USER", cast=str),
+#         "PASSWORD": config("DB_PASSWORD", cast=str),
+#         "HOST": config("DB_HOST", cast=str),
+#         "PORT": config("DB_PORT", cast=str),
+#         "CONN_MAX_AGE": None,
+#         "OPTIONS": {
+#             "client_encoding": config("DB_CLIENT_ENCODING", cast=str),
+#             "server_side_binding": True,
+#         },
+#     }
+# }
+
 DATABASES = {
     "default": {
-        "ENGINE": config("DB_ENGINE", cast=str),
-        "NAME": config("DB_NAME", cast=str),
-        "USER": config("DB_USER", cast=str),
-        "PASSWORD": config("DB_PASSWORD", cast=str),
-        "HOST": config("DB_HOST", cast=str),
-        "PORT": config("DB_PORT", cast=str),
-        "CONN_MAX_AGE": None,
-        "OPTIONS": {
-            "client_encoding": config("DB_CLIENT_ENCODING", cast=str),
-            "server_side_binding": True,
-        },
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 

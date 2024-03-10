@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from decouple import Config, RepositoryEnv, Csv
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent  # Default
@@ -142,9 +143,13 @@ LANGUAGES = (("en", "English"),)
 STATIC_URL = "static/"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    # BASE_DIR / "frontend" / "build",
+    BASE_DIR / "frontend" / "build",
     # BASE_DIR / "components",
 ]
+
+WEBPACK_LOADER = {
+    "MANIFEST_FILE": BASE_DIR / "frontend/build/manifest.json",
+}
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Media URLs
@@ -160,10 +165,14 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Whitenoise configs
 STORAGES = {
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
-
+# STORAGES = {
+#     "staticfiles": {
+#         "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
+#     },
+# }
 
 # Django maintenance mode configs
 MAINTENANCE_MODE_STATE_FILE_PATH = BASE_DIR / "maintenance_mode_state.txt"
@@ -182,3 +191,12 @@ MAINTENANCE_MODE_IGNORE_ADMIN_SITE = True
 
 # if True the superuser will not see the maintenance-mode page
 MAINTENANCE_MODE_IGNORE_SUPERUSER = False
+
+
+MESSAGE_TAGS = {
+    messages.DEBUG: "tw-debug",
+    messages.INFO: "tw-info",
+    messages.SUCCESS: "tw-success",
+    messages.WARNING: "tw-warning",
+    messages.ERROR: "tw-error",
+}
