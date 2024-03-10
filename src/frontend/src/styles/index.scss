@@ -3,10 +3,7 @@
 
 // $primary: red;
 
-@import "~bootstrap/scss/bootstrap.scss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-.jumbotron {
-  // should be relative path of the entry scss file
-  background-image: url("../../vendors/images/sample.jpg");
-  background-size: cover;
-}
