@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+    <head>
+
+        {% include "inc/metatags.html" with get_web_app_settings=get_web_app_settings %}
+
+        <title>
+            {% block title %}
+                {{ title }}
+            {% endblock title %}
+        </title>
+
+        {% include "inc/css.html" %}
+
+        {% block externalcss %}
+        {% endblock externalcss %}
+    </head>
+    <body class="bg-slate-50 dark:bg-slate-900 h-full relative">
+        <!-- ========== HEADER ========== -->
+
+        {% include "inc/components/top_navbar.html" %}
+
+        <!-- ========== END HEADER ========== -->
+        <!-- ========== MAIN CONTENT ========== -->
+        <!-- Content -->
+        <div class="max-w-[85rem] mx-auto min-h-screen bg-white border-x-gray-200 xl:border-x dark:bg-gray-800 dark:border-x-gray-700">
+            {% comment  %}
+                <!-- Page Heading -->
+            <header class="max-w-3xl">
+                <p class="mb-2 text-sm font-semibold text-blue-600">
+                    Starter Pages & Examples
+                </p>
+                <h1 class="block text-2xl font-bold text-gray-800 sm:text-3xl dark:text-white">
+                    Boxed Layout using Tailwind CSS
+                </h1>
+                <p class="mt-2 text-lg text-gray-800 dark:text-gray-400">
+                    This is a boxed layout example using Tailwind CSS.
+                </p>
+            </header>
+            <!-- End Page Heading -->
+            {% endcomment %}
+            <main class="max-w-full">
+                {# Start Flash Message #}
+
+                {% include "inc/flash_messages.html" %}
+
+                {# End Flash Message #}
+                {% block home_content %}
+                {% endblock home_content %}
+            </main>
+        </div>
+ 
+        <!-- End Content -->
+        <!-- ========== END MAIN CONTENT ========== -->
+ 
+
+        {% include "inc/components/footer.html" %}
+
+        {% include "inc/js.html" %}
+
+        {% block externaljs %}
+        {% endblock externaljs %}
+    </body>
+</html>
