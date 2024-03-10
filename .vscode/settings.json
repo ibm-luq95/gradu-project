@@ -1,0 +1,19 @@
+{
+  "typescript.tsdk": "./src/frontend/node_modules/typescript/lib",
+  "djlint.formatCss": true,
+  "djlint.formatJs": true,
+  "workbench.colorCustomizations": false,
+  "djlint.closeVoidTags": true,
+  "djlint.formatAttributeTemplateTags": true,
+  "djlint.lineBreakAfterMultilineTag": true,
+  "djlint.preserveLeadingSpace": false,
+  "djlint.preserveBlankLines": true,
+  "djlint.configuration": "./pyproject.toml",
+  "djlint.profile": "django",
+  "djlint.enableLinting": true,
+  "editor.defaultFormatter": null,
+  "[html]": {
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+    "tailwind-fold.autoFold": false,
+}
