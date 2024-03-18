@@ -19,7 +19,6 @@ MIDDLEWARE = MIDDLEWARE + [
     "debugtools.middleware.XViewMiddleware",
     "django.contrib.admindocs.middleware.XViewMiddleware",
     "django_pdb.middleware.PdbMiddleware",
-    # "silk.middleware.SilkyMiddleware",
 ]
 # Database configurations
 # DATABASES = {
@@ -38,12 +37,6 @@ MIDDLEWARE = MIDDLEWARE + [
 #     }
 # }
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
 
 INTERNAL_IPS = config("INTERNAL_IPS", cast=Csv())
 

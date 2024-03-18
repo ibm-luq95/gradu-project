@@ -50,6 +50,11 @@ INSTALLED_APPS = [
     "log_viewer",
     "maintenance_mode",
     "import_export",
+    "core.apps.CoreConfig",
+    "techweb_user.apps.TechwebUserConfig",
+    "employee.apps.EmployeeConfig",
+    "survey.apps.SurveyConfig",
+    "employee_history.apps.EmployeeHistoryConfig",
 ]
 
 MIDDLEWARE = [
@@ -93,13 +98,23 @@ WSGI_APPLICATION = "techweb_project.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": config("DB_ENGINE", cast=str),
+        "NAME": config("DB_NAME", cast=str),
+        "USER": config("DB_USER", cast=str),
+        "PASSWORD": config("DB_PASSWORD", cast=str),
+        "HOST": config("DB_HOST", cast=str),
+        "PORT": config("DB_PORT", cast=str),
+        "CONN_MAX_AGE": None,
     }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
@@ -120,7 +135,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Set auth user model
-# AUTH_USER_MODEL = "beach_wood_user.BWUser"
+AUTH_USER_MODEL = "techweb_user.TechWebUser"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
