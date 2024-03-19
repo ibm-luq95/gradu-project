@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     "employee.apps.EmployeeConfig",
     "survey.apps.SurveyConfig",
     "employee_history.apps.EmployeeHistoryConfig",
+    "classification.apps.ClassificationConfig"
 ]
 
 MIDDLEWARE = [
