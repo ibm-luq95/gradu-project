@@ -55,8 +55,8 @@ class TechWebUserManager(BaseUserManager):
             if extra_fields.get("is_superuser") is not True:
                 raise ValueError(_("Superuser must have is_superuser=True."))
             created_user = self.create_user(email, password, **extra_fields)
-            developer_permission = Permission.objects.get(codename="developer_user")
-            created_user.user_permissions.add(developer_permission)
+            # developer_permission = Permission.objects.get(codename="developer_user")
+            # created_user.user_permissions.add(developer_permission)
             return created_user
 
     def random(self):
