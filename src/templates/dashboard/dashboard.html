@@ -1,5 +1,7 @@
 {% extends "layout/master.html" %}
 
+{% load humanize %}
+
 {% load i18n %}
 
 {% block home_content %}
@@ -54,7 +56,7 @@
                                 </div>
                                 <div class="mt-1 flex items-center gap-x-2">
                                     <h3 class="text-xl sm:text-2xl font-medium text-gray-800 dark:text-gray-200">
-                                        72,540
+                                        {{ total_employees|intcomma }}
                                     </h3>
                                 </div>
                             </div>
@@ -66,32 +68,18 @@
                     <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800">
                         <div class="p-4 md:p-5 flex gap-x-4">
                             <div class="flex-shrink-0 flex justify-center items-center size-[46px] bg-gray-100 rounded-lg dark:bg-gray-800">
-                                <svg class="flex-shrink-0 size-5 text-gray-600 dark:text-gray-400"
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     width="24"
-                                     height="24"
-                                     viewBox="0 0 24 24"
-                                     fill="none"
-                                     stroke="currentColor"
-                                     stroke-width="2"
-                                     stroke-linecap="round"
-                                     stroke-linejoin="round">
-                                    <path d="M5 22h14" />
-                                    <path d="M5 2h14" />
-                                    <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" />
-                                    <path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" />
-                                </svg>
+                                <i class="fa-solid fa-square-poll-vertical flex-shrink-0 size-5 text-gray-600 dark:text-gray-400"></i>
                             </div>
  
                             <div class="grow">
                                 <div class="flex items-center gap-x-2">
                                     <p class="text-xs uppercase tracking-wide text-gray-500">
-                                        {% translate "Employee Registration" %}
+                                        {% translate "Total surveys" %}
                                     </p>
                                 </div>
                                 <div class="mt-1 flex items-center gap-x-2">
                                     <h3 class="text-xl font-medium text-gray-800 dark:text-gray-200">
-                                        29.4%
+                                        {{ total_surveys|intcomma }}
                                     </h3>
                                 </div>
                             </div>
@@ -103,18 +91,18 @@
                     <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800">
                         <div class="p-4 md:p-5 flex gap-x-4">
                             <div class="flex-shrink-0 flex justify-center items-center size-[46px] bg-gray-100 rounded-lg dark:bg-gray-800">
-                                <i class="fa-regular fa-thumbs-up flex-shrink-0 size-5 text-gray-600 dark:text-gray-400"></i>
+                                <i class="fa-solid fa-envelope flex-shrink-0 size-5 text-gray-600 dark:text-gray-400"></i>
                             </div>
  
                             <div class="grow">
                                 <div class="flex items-center gap-x-2">
                                     <p class="text-xs uppercase tracking-wide text-gray-500">
-                                        {% translate "Employee Engagement" %}
+                                        {% translate "Total Messages" %}
                                     </p>
                                 </div>
                                 <div class="mt-1 flex items-center gap-x-2">
                                     <h3 class="text-xl sm:text-2xl font-medium text-gray-800 dark:text-gray-200">
-                                        56.8%
+                                        {{ total_contact_messages|intcomma }}
                                     </h3>
                                 </div>
                             </div>
@@ -128,14 +116,14 @@
             <section class="max-w-full px-4 sm:px-6 mx-auto">
                 <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div class="p-4 md:p-5">
-                      <h3 class="text-lg font-bold text-gray-800 dark:text-white">
-                        {% translate "Quarterly Progress" %}
-                      </h3>
-                      <div>
-                        <canvas id="quarterly-progress"></canvas>
-                      </div>
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+                            {% translate "Quarterly Progress" %}
+                        </h3>
+                        <div>
+                            <canvas id="quarterly-progress"></canvas>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </section>
         </div>
         <div>
@@ -151,11 +139,18 @@
                         </div>
                         <div class="col-span-2">
                             <h4 class="text-xl text-left dark:text-white">
-                                {% translate "Manager name" %}
+                                {{ request.user.fullname }}
                             </h4>
-                            <small class="italic text-gray-400">
-                                2024/10/15 23:05:18
-                            </small>
+                            <div class="hs-tooltip inline-block">
+                                <button type="button" class="hs-tooltip-toggle">
+                                    <small class="italic text-gray-400">
+                                        2024/10/15 23:05:18
+                                    </small>
+                                    <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-slate-700"
+                                          role="tooltip">{% translate "Date joined" %}</span>
+                                </button>
+                            </div>
+ 
                         </div>
                     </div>
                 </div>

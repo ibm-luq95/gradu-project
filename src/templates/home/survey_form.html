@@ -1,23 +1,47 @@
 {% extends "layout/master.html" %}
 
+{% load static %}
+
 {% load i18n %}
 
 {% block home_content %}
     <div class="max-w-[85rem] px-4 py-5 sm:px-6 lg:px-8 mx-auto">
         <header class="mb-5">
-            <h2 class="text-3xl dark:text-white">
+            <h2 class="text-3xl dark:text-white inline-block">
                 {% translate "Let Us Ask You Few Questions!" %}
+ 
             </h2>
+            <div id="surveySpinner"
+                 class="animate-spin ml-3 relative top-0.5 inline-block size-5 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500"
+                 role="status"
+                 aria-label="loading">
+                <span class="sr-only">{% translate "Loading..." %}</span>
+            </div>
+            <div class="inline-block mx-3 hidden" id="stepperReadyBadge">
+                <span class="inline-flex py-1 px-1.5 items-center gap-x-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full dark:bg-blue-500/10 dark:text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="16"
+                         height="16"
+                         fill="currentColor"
+                         class="bi bi-check"
+                         viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+                    </svg>
+ 
+                    {% translate "Survey ready" %}
+                </span>
+            </div>
             <p class="text-gray-700 mt-3">
                 <em>
                     {% translate "All responses are strictly confidential and are used solely for the purpose of this assessment." %}
                 </em>
             </p>
+ 
         </header>
         <section id="survey-form-section">
             <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl p-4 md:p-5 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
                 <!-- Stepper -->
-                <div data-hs-stepper>
+                <div id="stepper" data-hs-stepper="">
                     <!-- Stepper Nav -->
  
                     <ul class="relative flex flex-row gap-x-2 justify-center">
@@ -40,7 +64,7 @@
                                     </svg>
                                 </span>
                                 <span class="ms-2 text-sm font-medium text-gray-800">
-                                    Step
+                                    {% translate "Step" %}
                                 </span>
                             </span>
                             <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-blue-600 hs-stepper-completed:bg-teal-600">
@@ -66,7 +90,7 @@
                                     </svg>
                                 </span>
                                 <span class="ms-2 text-sm font-medium text-gray-800">
-                                    Step
+                                    {% translate "Step" %}
                                 </span>
                             </span>
                             <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-blue-600 hs-stepper-completed:bg-teal-600">
@@ -92,7 +116,7 @@
                                     </svg>
                                 </span>
                                 <span class="ms-2 text-sm font-medium text-gray-800">
-                                    Step
+                                    {% translate "Step" %}
                                 </span>
                             </span>
                             <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-blue-600 hs-stepper-completed:bg-teal-600">
@@ -117,7 +141,7 @@
                                     </svg>
                                 </span>
                                 <span class="ms-2 text-sm font-medium text-gray-800">
-                                    Step
+                                    {% translate "Step" %}
                                 </span>
                             </span>
                             <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-blue-600 hs-stepper-completed:bg-teal-600">
@@ -142,7 +166,7 @@
                                     </svg>
                                 </span>
                                 <span class="ms-2 text-sm font-medium text-gray-800">
-                                    Step
+                                    {% translate "Step" %}
                                 </span>
                             </span>
                             <div class="w-full h-px flex-1 bg-gray-200 group-last:hidden hs-stepper-success:bg-blue-600 hs-stepper-completed:bg-teal-600">
@@ -157,8 +181,14 @@
                         <!-- First Contnet -->
                         <div data-hs-stepper-content-item='{ "index": 1 }'>
                             <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl p-5 pt-3 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                <form action="">
-                                    <fieldset>
+                                <input type="hidden"
+                                       name="survey_url"
+                                       id="survey_url"
+                                       value="{% url 'survey:api' %}" />
+                                <form action="" id="step1Form" data-form-step="1">
+                                    <fieldset form="step1Form">
+                                        {% csrf_token %}
+ 
                                         <legend class="mb-3">
                                             <h4 class="text-xl dark:text-white">
                                                 {% translate "Let Us Get to Know You!" %}
@@ -169,29 +199,70 @@
                                                 </small>
                                             </p>
                                         </legend>
-                                        {% csrf_token %}
+ 
                                         <div class="grid sm:grid-cols-3 gap-2">
                                             <div>
                                                 <label for="input-label-with-helper-text"
                                                        class="block text-sm font-medium mb-2 dark:text-white">
                                                     {% translate "Age" %}
                                                 </label>
-                                                <select class="py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                                                    <option selected>
-                                                        Open this select menu
-                                                    </option>
-                                                    <option>
-                                                        1
-                                                    </option>
-                                                    <option>
-                                                        2
-                                                    </option>
-                                                    <option>
-                                                        3
-                                                    </option>
-                                                </select>
-                                                <p class="text-sm text-gray-500 mt-2" id="hs-input-helper-text">
-                                                    We'll never share your details.
+                                                <!-- Input Number -->
+                                                <div class="py-2 px-3 bg-gray-100 rounded-lg dark:bg-neutral-700"
+                                                     data-hs-input-number='{"min": 20,"max": 60}'>
+                                                    <div class="w-full flex justify-between items-center gap-x-5">
+                                                        <div class="grow">
+                                                            <input class="step-1-input w-full p-0 bg-transparent border-0 text-gray-800 focus:ring-0 dark:text-white {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                                   disabled
+                                                                   name="age"
+                                                                   type="text"
+                                                                   placeholder='{% translate "At least 20" %}'
+                                                                   data-hs-input-number-input="" />
+                                                        </div>
+                                                        <div class="flex justify-end items-center gap-x-1.5">
+                                                            <button type="button"
+                                                                    class="size-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                                    disabled
+                                                                    data-hs-input-number-decrement="">
+                                                                <svg class="flex-shrink-0 size-3.5"
+                                                                     xmlns="http://www.w3.org/2000/svg"
+                                                                     width="24"
+                                                                     height="24"
+                                                                     viewBox="0 0 24 24"
+                                                                     fill="none"
+                                                                     stroke="currentColor"
+                                                                     stroke-width="2"
+                                                                     stroke-linecap="round"
+                                                                     stroke-linejoin="round">
+                                                                    <path d="M5 12h14">
+                                                                    </path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button"
+                                                                    class="size-6 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                                    disabled
+                                                                    data-hs-input-number-increment="">
+                                                                <svg class="flex-shrink-0 size-3.5"
+                                                                     xmlns="http://www.w3.org/2000/svg"
+                                                                     width="24"
+                                                                     height="24"
+                                                                     viewBox="0 0 24 24"
+                                                                     fill="none"
+                                                                     stroke="currentColor"
+                                                                     stroke-width="2"
+                                                                     stroke-linecap="round"
+                                                                     stroke-linejoin="round">
+                                                                    <path d="M5 12h14">
+                                                                    </path>
+                                                                    <path d="M12 5v14">
+                                                                    </path>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End Input Number -->
+                                                <p class="text-sm text-gray-500 mt-2">
+                                                    {% translate "We'll never share your details." %}
                                                 </p>
                                             </div>
  
@@ -201,26 +272,30 @@
                                                     {% translate "Gender" %}
                                                 </label>
                                                 <div class="grid sm:grid-cols-2 gap-2">
-                                                    <label for="hs-radio-in-form"
+                                                    <label for="male"
                                                            class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
                                                         <input type="radio"
-                                                               name="hs-radio-in-form"
-                                                               class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                               id="hs-radio-in-form" />
+                                                               name="gender"
+                                                               class="step-1-input shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                               disabled
+                                                               id="male"
+                                                               value="male" />
                                                         <span class="text-sm text-gray-500 ms-3 dark:text-gray-400">{% translate "Male" %}</span>
                                                     </label>
  
-                                                    <label for="hs-radio-checked-in-form"
+                                                    <label for="female"
                                                            class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
                                                         <input type="radio"
-                                                               name="hs-radio-in-form"
-                                                               class="shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                               id="hs-radio-checked-in-form" />
+                                                               name="gender"
+                                                               class="step-1-input shrink-0 mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                               disabled
+                                                               id="female"
+                                                               value="female" />
                                                         <span class="text-sm text-gray-500 ms-3 dark:text-gray-400">{% translate "Female" %}</span>
                                                     </label>
                                                 </div>
-                                                <p class="text-sm text-gray-500 mt-2" id="hs-input-helper-text">
-                                                    We'll never share your details.
+                                                <p class="text-sm text-gray-500 mt-2">
+                                                    {% translate "We'll never share your details." %}
                                                 </p>
                                             </div>
                                             <div>
@@ -228,22 +303,15 @@
                                                        class="block text-sm font-medium mb-2 dark:text-white">
                                                     {% translate "Department" %}
                                                 </label>
-                                                <select class="py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                                                    <option selected>
-                                                        Open this select menu
-                                                    </option>
-                                                    <option>
-                                                        1
-                                                    </option>
-                                                    <option>
-                                                        2
-                                                    </option>
-                                                    <option>
-                                                        3
-                                                    </option>
-                                                </select>
-                                                <p class="text-sm text-gray-500 mt-2" id="hs-input-helper-text">
-                                                    We'll never share your details.
+                                                <div class="max-w-sm space-y-3">
+                                                    <input type="text"
+                                                           name="department"
+                                                           class="step-1-input py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                           disabled
+                                                           placeholder='{% translate "Your Department" %}' />
+                                                </div>
+                                                <p class="text-sm text-gray-500 mt-2">
+                                                    {% translate "We'll never share your details." %}
                                                 </p>
                                             </div>
                                         </div>
@@ -254,22 +322,24 @@
                                                        class="block text-sm font-medium mb-2 dark:text-white">
                                                     {% translate "Employment Status" %}
                                                 </label>
-                                                <select class="py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                                                    <option selected>
+                                                <select name="employment_status"
+                                                        class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                        disabled>
+                                                    <option disabled selected value>
                                                         Open this select menu
                                                     </option>
                                                     <option>
-                                                        1
+                                                        Status 1
                                                     </option>
                                                     <option>
-                                                        2
+                                                        Status 2
                                                     </option>
                                                     <option>
-                                                        3
+                                                        Status 3
                                                     </option>
                                                 </select>
-                                                <p class="text-sm text-gray-500 mt-2" id="hs-input-helper-text">
-                                                    We'll never share your details.
+                                                <p class="text-sm text-gray-500 mt-2">
+                                                    {% translate "We'll never share your details." %}
                                                 </p>
                                             </div>
  
@@ -278,22 +348,24 @@
                                                        class="block text-sm font-medium mb-2 dark:text-white">
                                                     {% translate "Years of Experience" %}
                                                 </label>
-                                                <select class="py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                                                    <option selected>
+                                                <select name="years_of_experience"
+                                                        class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                        disabled>
+                                                    <option disabled selected value>
                                                         Open this select menu
                                                     </option>
                                                     <option>
-                                                        1
+                                                        +2
                                                     </option>
                                                     <option>
-                                                        2
+                                                        +5
                                                     </option>
                                                     <option>
-                                                        3
+                                                        +10
                                                     </option>
                                                 </select>
-                                                <p class="text-sm text-gray-500 mt-2" id="hs-input-helper-text">
-                                                    We'll never share your details.
+                                                <p class="text-sm text-gray-500 mt-2">
+                                                    {% translate "We'll never share your details." %}
                                                 </p>
                                             </div>
                                             <div>
@@ -301,22 +373,24 @@
                                                        class="block text-sm font-medium mb-2 dark:text-white">
                                                     {% translate "Work Environment" %}
                                                 </label>
-                                                <select class="py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600">
-                                                    <option selected>
+                                                <select name="work_environment"
+                                                        class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                        disabled>
+                                                    <option disabled selected value>
                                                         Open this select menu
                                                     </option>
                                                     <option>
-                                                        1
+                                                        Remotely
                                                     </option>
                                                     <option>
-                                                        2
+                                                        Office
                                                     </option>
                                                     <option>
-                                                        3
+                                                        Hybrid
                                                     </option>
                                                 </select>
-                                                <p class="text-sm text-gray-500 mt-2" id="hs-input-helper-text">
-                                                    We'll never share your details.
+                                                <p class="text-sm text-gray-500 mt-2">
+                                                    {% translate "We'll never share your details." %}
                                                 </p>
                                             </div>
                                         </div>
@@ -327,9 +401,9 @@
                         <!-- First Contnet -->
                         <div data-hs-stepper-content-item='{ "index": 2 }' style="display: none;">
                             <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl p-5 pt-3 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                <form action="">
+                                <form action="" id="step2Form" data-form-step="2">
                                     {% csrf_token %}
-                                    <fieldset>
+                                    <fieldset form="step2Form">
                                         <legend class="mb-3">
                                             <h4 class="text-xl dark:text-white">
                                                 {% translate "Let’s talk about your work..." %}
@@ -340,173 +414,45 @@
                                                 </small>
                                             </p>
                                         </legend>
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "1. Do you often feel overwhelmed by your workload?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all overwhelmed" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
+                                        {% for step2q in step_2_questions %}
+                                            <div class="my-3">
+                                                <label class="block text-sm font-medium mb-2 dark:text-white">
+                                                    {{ step2q.question }}
                                                 </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely overwhelmed" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
+                                                <div class="grid sm:grid-cols-5 gap-2">
  
-                                                </label>
+                                                    {% for option in steps_list %}
+ 
+ 
+                                                        <label for="question-{{ option }}-{{ step2q.slug }}"
+                                                               class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                                            <span class="text-sm text-gray-500 dark:text-gray-400">{{ option }}</span>
+ 
+                                                            <small class="inline-block text-center ml-auto italic text-[11px]">
+                                                                {% if option == step2q.min_value %}
+                                                                    {{ step2q.min_value_help_text }}
+                                                                {% elif option == step2q.max_value %}
+                                                                    {{ step2q.max_value_help_text }}
+                                                                {% endif %}
+                                                            </small>
+                                                            <input type="radio"
+                                                                   value="{{ option }}"
+                                                                   data-question="{{ step2q.slug }}"
+                                                                   data-step-idx="{{ step2q.step }}"
+                                                                   name="question-input-{{ step2q.slug }}"
+                                                                   class="step-2-input shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                                   disabled
+                                                                   id="question-{{ option }}-{{ step2q.slug }}" />
+                                                        </label>
+                                                    {% endfor %}
+ 
+                                                </div>
+                                                <hr class="border-1 my-4" />
                                             </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "2. Is your workload generally manageable?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all manageable" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely manageable" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
+                                        {% endfor %}
  
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "3. Do you frequently work beyond your scheduled hours?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all frequently" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
- 
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely frequently" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
- 
-                                                </label>
-                                            </div>
-                                        </div>
                                     </fieldset>
                                 </form>
                             </div>
@@ -516,9 +462,9 @@
                         <!-- First Contnet -->
                         <div data-hs-stepper-content-item='{ "index": 3 }' style="display: none;">
                             <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl p-5 pt-3 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                <form action="">
-                                    {% csrf_token %}
-                                    <fieldset>
+                                <form action="" id="step3Form" data-form-step="3">
+                                    <fieldset form="step3Form">
+                                        {% csrf_token %}
                                         <legend class="mb-3">
                                             <h4 class="text-xl dark:text-white">
                                                 {% translate "How about a support system.." %}
@@ -529,173 +475,44 @@
                                                 </small>
                                             </p>
                                         </legend>
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "1. Do you feel supported by your manager and team?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all supported" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
+                                        {% for step3q in step_3_questions %}
+                                            <div class="my-3">
+                                                <label class="block text-sm font-medium mb-2 dark:text-white">
+                                                    {{ step3q.question }}
                                                 </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely supported" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
+                                                <div class="grid sm:grid-cols-5 gap-2">
  
-                                                </label>
+                                                    {% for option in steps_list %}
+ 
+ 
+                                                        <label for="question-{{ option }}-{{ step3q.slug }}"
+                                                               class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                                            <span class="text-sm text-gray-500 dark:text-gray-400">{{ option }}</span>
+ 
+                                                            <small class="inline-block text-center ml-auto italic text-[11px]">
+                                                                {% if option == step3q.min_value %}
+                                                                    {{ step3q.min_value_help_text }}
+                                                                {% elif option == step3q.max_value %}
+                                                                    {{ step3q.max_value_help_text }}
+                                                                {% endif %}
+                                                            </small>
+                                                            <input type="radio"
+                                                                   value="{{ option }}"
+                                                                   data-question="{{ step3q.slug }}"
+                                                                   data-step-idx="{{ step3q.step }}"
+                                                                   name="question-input-{{ step3q.slug }}"
+                                                                   class="step-2-input shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                                   disabled
+                                                                   id="question-{{ option }}-{{ step3q.slug }}" />
+                                                        </label>
+                                                    {% endfor %}
+ 
+                                                </div>
+                                                <hr class="border-1 my-4" />
                                             </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "2. Are you satisfied with the resources and help available at work?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all satisfied" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely satisfied" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
- 
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "3. Do you often feel isolated when dealing with work challenges?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all isolated" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
- 
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely isolated" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
- 
-                                                </label>
-                                            </div>
-                                        </div>
+                                        {% endfor %}
                                     </fieldset>
                                 </form>
                             </div>
@@ -705,9 +522,9 @@
                         <!-- First Contnet -->
                         <div data-hs-stepper-content-item='{ "index": 4 }' style="display: none;">
                             <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl p-5 pt-3 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                <form action="">
-                                    {% csrf_token %}
-                                    <fieldset>
+                                <form action="" id="step4Form" data-form-step="4">
+                                    <fieldset form="step4Form">
+                                        {% csrf_token %}
                                         <legend class="mb-3">
                                             <h4 class="text-xl dark:text-white">
                                                 {% translate "Life and work.." %}
@@ -718,173 +535,44 @@
                                                 </small>
                                             </p>
                                         </legend>
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "1. Do you frequently think about work in your personal time?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
+                                        {% for step4q in step_4_questions %}
+                                            <div class="my-3">
+                                                <label class="block text-sm font-medium mb-2 dark:text-white">
+                                                    {{ step4q.question }}
                                                 </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
+                                                <div class="grid sm:grid-cols-5 gap-2">
  
-                                                </label>
+                                                    {% for option in steps_list %}
+ 
+ 
+                                                        <label for="question-{{ option }}-{{ step4q.slug }}"
+                                                               class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                                            <span class="text-sm text-gray-500 dark:text-gray-400">{{ option }}</span>
+ 
+                                                            <small class="inline-block text-center ml-auto italic text-[11px]">
+                                                                {% if option == step4q.min_value %}
+                                                                    {{ step4q.min_value_help_text }}
+                                                                {% elif option == step4q.max_value %}
+                                                                    {{ step4q.max_value_help_text }}
+                                                                {% endif %}
+                                                            </small>
+                                                            <input type="radio"
+                                                                   value="{{ option }}"
+                                                                   data-question="{{ step4q.slug }}"
+                                                                   data-step-idx="{{ step4q.step }}"
+                                                                   name="question-input-{{ step4q.slug }}"
+                                                                   class="step-2-input shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                                   disabled
+                                                                   id="question-{{ option }}-{{ step4q.slug }}" />
+                                                        </label>
+                                                    {% endfor %}
+ 
+                                                </div>
+                                                <hr class="border-1 my-4" />
                                             </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "2. Do you feel you have a healthy work-life balance?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all healthy" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely healthy" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
- 
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "3. Does your work often interfere with personal or family time?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
- 
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely interfere" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
- 
-                                                </label>
-                                            </div>
-                                        </div>
+                                        {% endfor %}
                                     </fieldset>
                                 </form>
                             </div>
@@ -894,9 +582,9 @@
                         <!-- First Contnet -->
                         <div data-hs-stepper-content-item='{ "index": 5 }' style="display: none;">
                             <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl p-5 pt-3 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                <form action="">
-                                    {% csrf_token %}
-                                    <fieldset>
+                                <form action="" id="step5Form" data-form-step="5">
+                                    <fieldset form="step5Form">
+                                        {% csrf_token %}
                                         <legend class="mb-3">
                                             <h4 class="text-xl dark:text-white">
                                                 {% translate "How are your emotions?" %}
@@ -907,173 +595,44 @@
                                                 </small>
                                             </p>
                                         </legend>
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "1. Do you regularly feel physically or emotionally exhausted?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all exhausted" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
+                                        {% for step5q in step_5_questions %}
+                                            <div class="my-3">
+                                                <label class="block text-sm font-medium mb-2 dark:text-white">
+                                                    {{ step5q.question }}
                                                 </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely exhausted" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
+                                                <div class="grid sm:grid-cols-5 gap-2">
  
-                                                </label>
+                                                    {% for option in steps_list %}
+ 
+ 
+                                                        <label for="question-{{ option }}-{{ step5q.slug }}"
+                                                               class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                                            <span class="text-sm text-gray-500 dark:text-gray-400">{{ option }}</span>
+ 
+                                                            <small class="inline-block text-center ml-auto italic text-[11px]">
+                                                                {% if option == step5q.min_value %}
+                                                                    {{ step5q.min_value_help_text }}
+                                                                {% elif option == step5q.max_value %}
+                                                                    {{ step5q.max_value_help_text }}
+                                                                {% endif %}
+                                                            </small>
+                                                            <input type="radio"
+                                                                   value="{{ option }}"
+                                                                   data-question="{{ step5q.slug }}"
+                                                                   data-step-idx="{{ step5q.step }}"
+                                                                   name="question-input-{{ step5q.slug }}"
+                                                                   class="step-2-input shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                                   disabled
+                                                                   id="question-{{ option }}-{{ step5q.slug }}" />
+                                                        </label>
+                                                    {% endfor %}
+ 
+                                                </div>
+                                                <hr class="border-1 my-4" />
                                             </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "2. Do you experience symptoms like sleep issues, anxiety, or low mood?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
  
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
- 
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <hr class="border-1 my-4" />
-                                        <div class="my-3">
-                                            <label class="block text-sm font-medium mb-2 dark:text-white">
-                                                {% translate "3. Do you regularly engage in physical or leisure activities?" %}
-                                            </label>
-                                            <div class="grid sm:grid-cols-5 gap-2">
-                                                <label for="hs-radio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "1" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Not at all engage" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radio-on-right" />
-                                                </label>
- 
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "2" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "3" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right2" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "4" %}</span>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right4" />
-                                                </label>
-                                                <label for="hs-radioradio-on-right"
-                                                       class="flex p-3 w-full bg-white border border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
-                                                    <span class="text-sm text-gray-500 dark:text-gray-400">{% translate "5" %}</span>
-                                                    <small class="inline-block text-center ml-auto italic text-[11px]">
-                                                        {% translate "Extremely engage" %}
-                                                    </small>
-                                                    <input type="radio"
-                                                           name="hs-radio-on-right"
-                                                           class="shrink-0 ms-auto mt-0.5 border-gray-200 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                                                           id="hs-radioradio-on-right41" />
- 
-                                                </label>
-                                            </div>
-                                        </div>
+                                        {% endfor %}
                                     </fieldset>
                                 </form>
                             </div>
@@ -1084,10 +643,43 @@
                         <!-- Final Contnet -->
                         <div data-hs-stepper-content-item='{ "isFinal": true }'
                              style="display: none">
-                            <div class="p-4 h-48 bg-gray-50 flex justify-center items-center border border-dashed border-gray-200 rounded-xl">
-                                <h3 class="text-gray-500">
-                                    Final content
-                                </h3>
+                            <div class="p-4 w-full h-48 border border-dashed border-gray-200 rounded-xl">
+                                <div class="bg-teal-50 mt-11 border-t-2 border-teal-500 rounded-lg p-4 dark:bg-teal-800/30"
+                                     role="alert">
+                                    <div class="flex">
+                                        <div class="flex-shrink-0">
+                                            <!-- Icon -->
+                                            <span class="inline-flex justify-center items-center size-8 rounded-full border-4 border-teal-100 bg-teal-200 text-teal-800 dark:border-teal-900 dark:bg-teal-800 dark:text-teal-400">
+                                                <svg class="flex-shrink-0 size-4"
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     width="24"
+                                                     height="24"
+                                                     viewBox="0 0 24 24"
+                                                     fill="none"
+                                                     stroke="currentColor"
+                                                     stroke-width="2"
+                                                     stroke-linecap="round"
+                                                     stroke-linejoin="round">
+                                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z">
+                                                    </path>
+                                                    <path d="m9 12 2 2 4-4">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <!-- End Icon -->
+                                        </div>
+                                        <div class="ms-3">
+                                            <h3 class="text-gray-800 font-semibold dark:text-white">
+                                                Successfully updated.
+                                            </h3>
+                                            <p class="text-sm text-gray-700 dark:text-neutral-400">
+                                                You have successfully updated your email preferences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+ 
+ 
                             </div>
                         </div>
                         <!-- End Final Contnet -->
@@ -1095,7 +687,8 @@
                         <!-- Button Group -->
                         <div class="mt-5 flex justify-between items-center gap-x-2">
                             <button type="button"
-                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
+                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none {{ TW_INPUTS_CLASS }} cursor-progress"
+                                    disabled
                                     data-hs-stepper-back-btn>
                                 <svg class="flex-shrink-0 size-4"
                                      xmlns="http://www.w3.org/2000/svg"
@@ -1112,9 +705,10 @@
                                 Back
                             </button>
                             <button type="button"
-                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none {{ TW_INPUTS_CLASS }} cursor-progress"
+                                    disabled
                                     data-hs-stepper-next-btn>
-                                Next
+                                {% translate "Next" %}
                                 <svg class="flex-shrink-0 size-4"
                                      xmlns="http://www.w3.org/2000/svg"
                                      width="24"
@@ -1129,16 +723,18 @@
                                 </svg>
                             </button>
                             <button type="button"
-                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none {{ TW_INPUTS_CLASS }} cursor-progress"
+                                    disabled
                                     data-hs-stepper-finish-btn
                                     style="display: none">
-                                Finish
+                                {% translate "Finish" %}
                             </button>
                             <button type="reset"
-                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                                    class="py-2 px-3 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none {{ TW_INPUTS_CLASS }} cursor-progress"
+                                    disabled
                                     data-hs-stepper-reset-btn
                                     style="display: none">
-                                Reset
+                                {% translate "Reset" %}
                             </button>
                         </div>
                         <!-- End Button Group -->
@@ -1149,5 +745,173 @@
             </div>
  
         </section>
+        <section>
+            <!-- Testimonials -->
+            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                <!-- Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card -->
+                    <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700">
+                        <div class="flex-auto p-4 md:p-6">
+ 
+                            <p class="text-gray-800 dark:text-white">
+                                <em>
+                                    {% translate "The Survey made me more aware of my mental state and provided practical steps to manage stress at work. " %}
+                                </em>
+                            </p>
+                        </div>
+ 
+                        <div class="p-4 rounded-b-xl md:px-6">
+                            <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                                Amenah
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                Network Engineer
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700">
+                        <div class="flex-auto p-4 md:p-6">
+
+                            <p class="text-gray-800 dark:text-white">
+                                <em>
+                                    {% translate "This survey helped me realize the importance of mental health in my daily work routine" %}
+                                </em>
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-b-xl md:px-6">
+                            <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                                Mizna
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                Software Developer
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                    <!-- Card -->
+                    <div class="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700">
+                        <div class="flex-auto p-4 md:p-6">
+
+                            <p class="text-gray-800 dark:text-white">
+                                <em>
+                                    {% translate "Understanding my stress levels was the first step in making meaningful changes. " %}
+                                </em>
+                            </p>
+                        </div>
+
+                        <div class="p-4 rounded-b-xl md:px-6">
+                            <h3 class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                                Wijdan
+                            </h3>
+                            <p class="text-sm text-gray-500">
+                                IT Consultant
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Grid -->
+            </div>
+            <!-- End Testimonials -->
+        </section>
     </div>
+    {# Start Results Modal #}
+ 
+    <div id="survey-result-modal"
+         class="tw-js-modal hs-overlay hidden size-full fixed top-0 start-0 z-[80] overflow-x-hidden overflow-y-auto pointer-events-none">
+        <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all lg:max-w-4xl lg:w-full m-3 lg:mx-auto">
+            <div class="flex flex-col bg-white border shadow-sm rounded-xl pointer-events-auto dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                <div class="flex justify-between items-center py-3 px-4 border-b dark:border-neutral-700">
+                    <h3 class="font-bold text-gray-800 dark:text-white">
+                        {% translate "Survey results for " %} {{ request.user.fullname }}
+                    </h3>
+                    <button type="button"
+                            class="flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700"
+                            data-hs-overlay="#survey-result-modal">
+                        <span class="sr-only">{% translate "Close" %}</span>
+                        <svg class="flex-shrink-0 size-4"
+                             xmlns="http://www.w3.org/2000/svg"
+                             width="24"
+                             height="24"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M18 6 6 18">
+                            </path>
+                            <path d="m6 6 12 12">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="p-4 overflow-y-auto">
+                    <div class="bg-white border rounded-xl shadow-sm sm:flex dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                        <div class="flex-shrink-0 relative w-full rounded-t-xl overflow-hidden pt-[40%] sm:rounded-s-xl sm:max-w-60 md:rounded-se-none md:max-w-xs">
+                            <img class="size-full absolute top-0 start-0 object-cover"
+                                 id="survey-result-modal-img"
+                                 src=""
+                                 alt="Image Description" />
+                        </div>
+                        <div class="flex flex-wrap">
+                            <div class="p-4 flex flex-col h-full sm:p-7">
+                                <h3 id="survey-result-modal-title"
+                                    class="text-lg font-bold text-gray-800 dark:text-white">
+                                </h3>
+                                {# Start Description #}
+                                <p id="survey-result-modal-description"
+                                   class="my-2 text-gray-700 dark:text-neutral-400">
+                                </p>
+                                {# End Description #}
+                                {# Start Short Advice #}
+                                <div class="my-2">
+                                    <p class="dark:text-white text-sm">
+                                        <em id="survey-short-advice"></em>
+                                    </p>
+                                </div>
+ 
+                                {# End Short Advice #}
+                                {# Start Recommendations #}
+                                <div>
+                                    <h4 class="font-medium text-xl text-black mb-1 dark:text-neutral-400">
+                                        {% translate "Recommendations: " %}
+                                    </h4>
+                                    <ol id="survey-recommendations-list"
+                                        class="list-decimal pl-2 list-inside text-gray-800 dark:text-white">
+ 
+                                    </ol>
+                                </div>
+                                {# End Recommendations #}
+                                <hr class="my-3" />
+                                {# Start Conclusion Advice #}
+                                <div>
+                                    <p id="survey-conclusion-advice"
+                                       class="text-sm italic text-gray-700 dark:text-neutral-500">
+ 
+                                    </p>
+                                </div>
+                                {# End Conclusion Advice #}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-neutral-700">
+                    <button type="button"
+                            class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
+                            data-hs-overlay="#survey-result-modal">
+                        {% translate "Close" %}
+                    </button>
+                    <!-- <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+                        Save changes
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    {# End Results Modal #}
 {% endblock home_content %}
