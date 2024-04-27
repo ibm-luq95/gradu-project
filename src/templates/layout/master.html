@@ -12,10 +12,14 @@
 
         {% include "inc/css.html" %}
 
+ 
         {% block externalcss %}
         {% endblock externalcss %}
     </head>
     <body class="bg-slate-50 dark:bg-slate-900 h-full relative">
+
+        {% include "inc/toasts.html" %}
+
         <!-- ========== HEADER ========== -->
 
         {% include "inc/components/top_navbar.html" %}
@@ -23,7 +27,13 @@
         <!-- ========== END HEADER ========== -->
         <!-- ========== MAIN CONTENT ========== -->
         <!-- Content -->
+ 
         <div class="max-w-[85rem] mx-auto min-h-screen bg-white border-x-gray-200 xl:border-x dark:bg-gray-800 dark:border-x-gray-700">
+            {# Start Flash Message #}
+
+            {% include "inc/flash_messages.html" %}
+
+            {# End Flash Message #}
             {% comment  %}
                 <!-- Page Heading -->
             <header class="max-w-3xl">
@@ -40,11 +50,7 @@
             <!-- End Page Heading -->
             {% endcomment %}
             <main class="max-w-full">
-                {# Start Flash Message #}
-
-                {% include "inc/flash_messages.html" %}
-
-                {# End Flash Message #}
+ 
                 {% block home_content %}
                 {% endblock home_content %}
             </main>
