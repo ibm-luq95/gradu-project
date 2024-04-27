@@ -7,4 +7,10 @@ from core.admin.base_admin import BaseAdminModelMixin
 
 @admin.register(Recommendations)
 class RecommendationsAdmin(BaseAdminModelMixin):
-    pass
+    list_display = ["content", "get_classification", "created_at"]
+
+    def get_classification(self, obj):
+        if hasattr(obj, "classifications"):
+            return obj.classifications.get().slug
+        else:
+            return None

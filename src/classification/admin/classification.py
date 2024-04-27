@@ -7,4 +7,6 @@ from core.admin.base_admin import BaseAdminModelMixin
 
 @admin.register(Classification)
 class ClassificationAdmin(BaseAdminModelMixin):
-    pass
+    list_display = ["label", "slug", "min_value", "image", "is_enabled", "created_at"]
+    list_filter = ["label", "slug", "min_value", "is_enabled", "created_at"]
+    search_fields = ["label", "slug", "min_value"]
