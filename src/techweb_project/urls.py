@@ -26,7 +26,10 @@ static_and_media_path_urls = static(
 
 urlpatterns = [
     path("", include("home.urls"), name="home"),
+    path("survey/", include("survey.urls"), name="survey"),
+    path("employee/", include("employee.urls"), name="employee"),
     path("dashboard/", include("dashboard.urls"), name="dashboard"),
+    path("core/", include("core.urls"), name="core"),
 ]
 urlpatterns += static_and_media_path_urls
 if settings.DEBUG:

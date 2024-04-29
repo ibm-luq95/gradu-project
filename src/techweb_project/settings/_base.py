@@ -46,16 +46,22 @@ INSTALLED_APPS = [
     "django.contrib.humanize",
     "django.forms",
     "django_extensions",
+    "crispy_forms",
+    "crispy_tailwind",
+    "widget_tweaks",
     "webpack_boilerplate",
     "log_viewer",
     "maintenance_mode",
     "import_export",
+    "rest_framework",
+    "drf_standardized_errors",
     "core.apps.CoreConfig",
+    "home.apps.HomeConfig",
     "techweb_user.apps.TechwebUserConfig",
     "employee.apps.EmployeeConfig",
     "survey.apps.SurveyConfig",
-    "employee_history.apps.EmployeeHistoryConfig",
-    "classification.apps.ClassificationConfig"
+    "classification.apps.ClassificationConfig",
+    "techwell_model.apps.TechwellModelConfig",
 ]
 
 MIDDLEWARE = [
@@ -82,6 +88,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "core.context_processors.helpers.steps_list",
+                "core.context_processors.css_constants.css_constants",
             ],
         },
     },
@@ -137,6 +145,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Set auth user model
 AUTH_USER_MODEL = "techweb_user.TechWebUser"
+LOGOUT_REDIRECT_URL = "home:home"
+LOGIN_URL = "home:home"
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
@@ -160,7 +170,6 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     BASE_DIR / "frontend" / "build",
-    # BASE_DIR / "components",
 ]
 
 WEBPACK_LOADER = {
@@ -179,10 +188,11 @@ MEDIA_URL = "media/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Whitenoise configs
+# Default STORAGES from Django documentation
+# See: https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-STORAGES
 STORAGES = {
-    "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
-    },
+    "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
+    "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"},
 }
 # STORAGES = {
 #     "staticfiles": {
@@ -216,3 +226,10 @@ MESSAGE_TAGS = {
     messages.WARNING: "tw-warning",
     messages.ERROR: "tw-error",
 }
+REST_FRAMEWORK = {
+    # other settings
+    "EXCEPTION_HANDLER": "drf_standardized_errors.handler.exception_handler"
+}
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+
+CRISPY_TEMPLATE_PACK = "tailwind"

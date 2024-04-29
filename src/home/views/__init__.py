@@ -1,10 +1,9 @@
 from .home import HomeView
-from .contact import ContactView
-from .survey import SurveyView, SurveyFormView
+from .contact import ContactView, ContactAPIView
+
 
 __all__ = [
     "HomeView",
     "ContactView",
-    "SurveyView",
-    "SurveyFormView"
+    "ContactAPIView"
 ]

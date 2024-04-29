@@ -5,7 +5,7 @@
 {% load i18n %}
 
 {% block home_content %}
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid grid-cols-3 gap-4" id="manager-dashboard">
         <div class="col-span-2">
             <!-- Card Section -->
             <div class="max-w-full px-4 pt-14 pb-5 sm:px-6 mx-auto">
@@ -113,13 +113,23 @@
                 <!-- End Grid -->
             </div>
             <!-- End Card Section -->
-            <section class="max-w-full px-4 sm:px-6 mx-auto">
+            <section class="max-w-full px-4 sm:px-6 mx-auto"
+                     id="quarterly-progress-section">
                 <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div class="p-4 md:p-5">
                         <h3 class="text-lg font-bold text-gray-800 dark:text-white">
                             {% translate "Quarterly Progress" %}
                         </h3>
-                        <div>
+                        <div class="chart-card-loader flex flex-auto flex-col justify-center items-center p-4 md:p-5">
+                            <div class="flex justify-center">
+                                <div class="animate-spin inline-block size-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500"
+                                     role="status"
+                                     aria-label="loading">
+                                    <span class="sr-only">{% translate "Loading..." %}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative chart-card-wrapper hidden">
                             <canvas id="quarterly-progress"></canvas>
                         </div>
                     </div>
@@ -144,7 +154,7 @@
                             <div class="hs-tooltip inline-block">
                                 <button type="button" class="hs-tooltip-toggle">
                                     <small class="italic text-gray-400">
-                                        2024/10/15 23:05:18
+                                        {{ request.user.created_at }}
                                     </small>
                                     <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded-md shadow-sm dark:bg-slate-700"
                                           role="tooltip">{% translate "Date joined" %}</span>
@@ -157,13 +167,24 @@
                 {# End Manager Card #}
  
                 {# Start Start Chart Card #}
-                <section class="my-3">
+                <section class="my-3" id="employee-performance-section">
                     <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div class="p-4 md:p-5">
                             <h3 class="text-lg font-bold text-gray-800 dark:text-white text-center">
                                 {% translate "Employees Performance" %}
                             </h3>
-                            <div class="my-3 px-11" style="position: relative; height:28vh;">
+                            <div class="chart-card-loader flex flex-auto flex-col justify-center items-center p-4 md:p-5">
+                                <div class="flex justify-center">
+                                    <div class="animate-spin inline-block size-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500"
+                                         role="status"
+                                         aria-label="loading">
+                                        <span class="sr-only">{% translate "Loading..." %}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-3 px-11 chart-card-wrapper hidden"
+                                 style="position: relative;
+                                        height:28vh">
                                 <canvas id="employee-performance"></canvas>
                             </div>
                         </div>
@@ -172,13 +193,25 @@
                 {# End Start Chart Card #}
  
                 {# Start Start Chart Card #}
-                <section class="my-3">
+                <section class="my-3" id="department-chart-section">
+ 
                     <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div class="p-4 md:p-5">
                             <h3 class="text-1xl font-bold text-gray-800 dark:text-white text-center">
                                 {% translate "Department with the Highest Burnout Rate" %}
                             </h3>
-                            <div class="my-3 px-11" style="position: relative; height:30vh;">
+                            <div class="chart-card-loader flex flex-auto flex-col justify-center items-center p-4 md:p-5">
+                                <div class="flex justify-center">
+                                    <div class="animate-spin inline-block size-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500"
+                                         role="status"
+                                         aria-label="loading">
+                                        <span class="sr-only">{% translate "Loading..." %}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-3 px-11 chart-card-wrapper hidden"
+                                 style="position: relative;
+                                        height:30vh">
                                 <canvas id="department-chart"></canvas>
                             </div>
                         </div>

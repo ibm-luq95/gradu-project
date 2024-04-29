@@ -1,5 +1,6 @@
 const glob = require("glob");
 const Path = require("path");
+const Webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // const CopyWebpackPlugin = require("copy-webpack-plugin");
 const WebpackAssetsManifest = require("webpack-assets-manifest");
@@ -36,6 +37,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new Webpack.EnvironmentPlugin({
+      FETCHURLNAMEURL: "/core/fetch_url",
+    }),
     /* new CopyWebpackPlugin({
       patterns: [
         { from: Path.resolve(__dirname, "../vendors"), to: "vendors" },

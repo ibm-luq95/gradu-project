@@ -304,11 +304,19 @@
                                                     {% translate "Department" %}
                                                 </label>
                                                 <div class="max-w-sm space-y-3">
-                                                    <input type="text"
-                                                           name="department"
-                                                           class="step-1-input py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600 {{ TW_INPUTS_CLASS }} cursor-progress"
-                                                           disabled
-                                                           placeholder='{% translate "Your Department" %}' />
+                                                    <select name="department"
+                                                            class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
+                                                            disabled>
+                                                        <option disabled selected value>
+                                                            Open this select menu
+                                                        </option>
+ 
+                                                        {% for department in departments_choices %}
+                                                            <option value="{{ department.0 }}">
+                                                                {{ department.1 }}
+                                                            </option>
+                                                        {% endfor %}
+                                                    </select>
                                                 </div>
                                                 <p class="text-sm text-gray-500 mt-2">
                                                     {% translate "We'll never share your details." %}
