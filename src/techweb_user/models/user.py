@@ -25,7 +25,6 @@ class TechWebUser(BaseModelMixin, AbstractBaseUser, PermissionsMixin):
     """
 
     employee_id = models.PositiveBigIntegerField(_("ID"), unique=True)
-    token = models.CharField(_("Token"), max_length=255, null=True, blank=True)
     first_name = models.CharField(_("first name"), max_length=15)
     last_name = models.CharField(_("last name"), max_length=15)
     email = models.EmailField(_("email address"))
@@ -63,7 +62,6 @@ class TechWebUser(BaseModelMixin, AbstractBaseUser, PermissionsMixin):
             models.Index(name="user_is_active_idx", fields=["is_active"]),
             models.Index(name="user_is_staff_idx", fields=["is_staff"]),
             models.Index(name="employee_id_idx", fields=["employee_id"]),
-            models.Index(name="employee_token_idx", fields=["token"]),
         ]
         constraints = [
             models.UniqueConstraint(
@@ -73,11 +71,6 @@ class TechWebUser(BaseModelMixin, AbstractBaseUser, PermissionsMixin):
                 fields=["employee_id"],
                 name="unique_employee_id_unique_constraint",
                 condition=Q(employee_id__isnull=False),
-            ),
-            models.UniqueConstraint(
-                fields=["token"],
-                name="unique_employee_token_unique_constraint",
-                condition=Q(token__isnull=False),
             ),
         ]
         # permissions = [("developer_user", "Developer User")]

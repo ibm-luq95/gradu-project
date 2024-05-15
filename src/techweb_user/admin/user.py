@@ -9,7 +9,6 @@ from techweb_user.models import TechWebUser
 class TechWellUserAdmin(BaseAdminModelMixin):
     list_display = [
         "employee_id",
-        "token",
         "email",
         "first_name",
         "last_name",
