@@ -1,0 +1,2001 @@
+Unnamed: 0,age,Gender,Department,employment status,Years of experience,Work environment,Do you often feel overwhelmed by your workload?,Is your workload generally manageable?,Do you frequently work beyond your scheduled hours?,Do you feel supported by your manager and team?,Are you satisfied with the resources and help available at work?,Do you often feel isolated when dealing with work challenges?,Do you frequently think about work in your personal time?,Do you feel you have a healthy work-life balance?,Does your work often interfere with personal or family time?,Do you regularly feel physically or emotionally exhausted?,"Do you experience symptoms like sleep issues, anxiety, or low mood?",Do you regularly engage in physical or leisure activities?,How do you feel?
+0,41-50,male,Other,full-time,6-10,hybrid,5,1,1,5,5,5,3,3,4,2,5,3,Mildly Stressed
+1,51-60,female,Hardware engineering,contract,1-5,remote,4,4,2,1,1,5,3,5,2,3,5,1,Highly Stressed
+2,31-40,male,Software development,full-time,11-15,remote,4,1,2,2,4,3,1,4,5,5,2,5,Mildly Stressed
+3,51-60,female,Software development,full-time,less than 1 year,hybrid,2,3,3,5,5,4,5,2,5,1,5,3,Mildly Stressed
+4,51-60,male,Software development,full-time,11-15,hybrid,3,2,1,2,1,4,1,1,5,4,5,2,Highly Stressed
+5,21-30,female,IT Services,part-time,less than 1 year,hybrid,2,3,3,1,5,4,4,3,1,5,3,3,Mildly Stressed
+6,31-40,male,IT Services,contract,16-20,remote,4,3,2,1,4,3,2,4,5,5,1,3,Mildly Stressed
+7,31-40,female,Cyber Security,full-time,16-20,Office-based,3,5,1,1,5,5,4,3,1,4,2,2,Mildly Stressed
+8,31-40,female,Cyber Security,full-time,less than 1 year,remote,3,3,5,5,4,4,4,1,2,2,2,3,Mildly Stressed
+9,51-60,female,Cyber Security,part-time,11-15,remote,5,4,2,4,5,3,1,1,3,4,3,2,Mildly Stressed
+10,41-50,male,IT Services,contract,less than 1 year,Office-based,5,3,2,4,5,3,2,1,5,5,3,4,Mildly Stressed
+11,31-40,female,IT Services,contract,1-5,hybrid,1,4,2,2,2,2,5,5,4,3,1,5,Healthy
+12,51-60,male,Cyber Security,part-time,16-20,remote,5,1,1,5,4,4,4,3,4,2,4,1,Mildly Stressed
+13,21-30,male,Cyber Security,part-time,1-5,Office-based,3,5,4,3,3,5,5,5,5,4,2,3,Mildly Stressed
+14,41-50,female,Other,contract,16-20,hybrid,5,4,5,4,5,1,2,1,1,1,5,2,Mildly Stressed
+15,21-30,female,Cyber Security,part-time,16-20,hybrid,1,3,5,5,1,3,2,4,4,4,1,5,Healthy
+16,41-50,female,Other,contract,6-10,remote,4,5,3,5,2,2,1,1,4,5,2,3,Mildly Stressed
+17,51-60,male,Hardware engineering,contract,1-5,hybrid,5,5,1,4,2,1,3,5,2,5,1,5,Healthy
+18,under 20,female,IT Services,full-time,1-5,hybrid,3,4,2,5,5,3,1,1,2,1,4,4,Healthy
+19,41-50,male,Cyber Security,full-time,6-10,Office-based,4,4,4,5,3,2,5,1,2,2,2,3,Mildly Stressed
+20,21-30,male,IT Services,contract,11-15,Office-based,3,2,1,4,2,4,1,5,4,5,5,2,Mildly Stressed
+21,51-60,female,IT Services,contract,1-5,hybrid,4,2,1,1,4,2,2,5,4,2,2,4,Healthy
+22,41-50,female,IT Services,contract,less than 1 year,Office-based,3,5,4,2,5,3,4,4,5,2,1,3,Mildly Stressed
+23,under 20,female,Hardware engineering,contract,6-10,hybrid,5,2,2,3,5,4,3,5,5,4,4,5,Mildly Stressed
+24,under 20,female,Software development,contract,1-5,remote,5,3,1,2,3,5,2,4,1,2,1,4,Healthy
+25,31-40,female,Cyber Security,contract,11-15,Office-based,1,1,5,1,4,2,4,2,4,5,1,2,Highly Stressed
+26,31-40,female,Software development,part-time,1-5,hybrid,4,5,5,1,4,1,5,2,5,5,3,3,Highly Stressed
+27,21-30,male,Software development,contract,16-20,hybrid,1,1,4,5,3,4,5,5,5,3,1,5,Mildly Stressed
+28,41-50,male,Software development,part-time,less than 1 year,Office-based,2,2,2,2,1,4,5,1,2,2,4,5,Highly Stressed
+29,41-50,male,IT Services,part-time,6-10,Office-based,5,4,4,1,4,5,1,3,2,3,5,4,Mildly Stressed
+30,31-40,female,Other,contract,16-20,remote,4,5,1,2,1,2,5,1,2,4,3,3,Mildly Stressed
+31,41-50,male,IT Services,contract,11-15,hybrid,1,2,5,1,1,1,5,5,3,3,1,5,Mildly Stressed
+32,41-50,male,IT Services,part-time,16-20,remote,1,3,3,3,5,5,1,4,5,2,2,4,Healthy
+33,under 20,male,Software development,part-time,16-20,remote,2,5,4,1,5,2,4,1,2,5,3,1,Mildly Stressed
+34,31-40,male,IT Services,contract,11-15,remote,1,5,3,2,2,1,2,2,2,4,4,5,Healthy
+35,51-60,male,Software development,contract,16-20,Office-based,3,4,3,5,5,1,3,5,4,2,2,4,Healthy
+36,31-40,female,Other,part-time,6-10,remote,5,5,5,2,4,3,5,1,2,4,4,1,Highly Stressed
+37,51-60,female,Cyber Security,part-time,1-5,Office-based,1,4,4,4,4,1,5,1,4,1,2,4,Healthy
+38,under 20,male,Software development,part-time,16-20,Office-based,1,2,3,2,1,2,5,4,1,2,5,5,Mildly Stressed
+39,21-30,male,Other,full-time,6-10,remote,2,3,1,3,4,5,1,4,2,1,4,1,Healthy
+40,41-50,male,Cyber Security,part-time,1-5,remote,3,3,2,3,5,5,1,4,4,3,2,4,Healthy
+41,under 20,female,Hardware engineering,full-time,1-5,hybrid,1,5,2,3,5,3,1,3,2,2,4,3,Healthy
+42,41-50,female,Software development,contract,16-20,remote,5,5,5,1,5,2,3,5,1,1,3,1,Healthy
+43,21-30,male,Software development,contract,6-10,hybrid,5,2,4,3,3,1,2,5,2,5,4,4,Mildly Stressed
+44,21-30,female,Hardware engineering,part-time,16-20,remote,1,4,4,2,4,3,5,2,4,3,4,3,Highly Stressed
+45,under 20,female,Hardware engineering,contract,11-15,remote,3,3,2,5,2,4,4,2,1,2,2,1,Mildly Stressed
+46,21-30,male,Software development,contract,1-5,remote,5,4,1,3,4,2,5,5,1,2,4,4,Healthy
+47,51-60,female,Hardware engineering,contract,16-20,remote,5,2,2,2,4,3,5,1,1,5,5,5,Highly Stressed
+48,21-30,female,IT Services,contract,1-5,hybrid,3,3,2,1,3,5,5,5,3,5,1,1,Mildly Stressed
+49,41-50,male,Cyber Security,full-time,6-10,hybrid,3,3,4,1,4,3,5,3,4,1,3,1,Highly Stressed
+50,41-50,female,Cyber Security,full-time,less than 1 year,remote,1,1,3,5,1,4,2,2,3,1,2,3,Mildly Stressed
+51,41-50,female,Cyber Security,part-time,16-20,remote,4,2,1,5,5,2,4,2,1,1,4,4,Healthy
+52,41-50,male,IT Services,part-time,16-20,hybrid,2,2,4,2,5,3,1,2,3,4,4,5,Mildly Stressed
+53,51-60,female,Hardware engineering,part-time,1-5,Office-based,4,1,2,5,3,1,4,5,2,3,4,3,Healthy
+54,31-40,female,Other,contract,6-10,Office-based,4,4,3,5,5,2,5,2,3,2,3,1,Mildly Stressed
+55,under 20,male,Hardware engineering,contract,11-15,Office-based,5,1,1,1,1,3,4,2,5,3,1,3,Highly Stressed
+56,41-50,male,Software development,full-time,6-10,hybrid,3,2,5,2,3,3,5,5,1,5,5,3,Highly Stressed
+57,21-30,male,Cyber Security,full-time,16-20,hybrid,5,4,1,5,2,2,4,1,1,3,5,3,Mildly Stressed
+58,41-50,female,Hardware engineering,part-time,11-15,Office-based,2,3,1,2,5,5,3,2,4,3,2,1,Mildly Stressed
+59,21-30,male,Other,full-time,6-10,Office-based,1,1,2,3,4,1,4,2,2,1,1,2,Healthy
+60,21-30,female,Software development,full-time,less than 1 year,remote,2,4,2,1,1,2,1,2,4,5,1,3,Mildly Stressed
+61,41-50,male,IT Services,full-time,1-5,hybrid,5,4,5,1,1,1,1,3,3,3,3,2,Highly Stressed
+62,51-60,female,IT Services,full-time,6-10,hybrid,5,4,5,1,5,1,4,5,5,2,4,5,Mildly Stressed
+63,21-30,male,Other,full-time,6-10,Office-based,5,1,5,4,2,2,4,2,5,1,1,5,Mildly Stressed
+64,21-30,male,Software development,part-time,less than 1 year,Office-based,5,3,4,2,4,3,2,3,5,3,4,5,Mildly Stressed
+65,41-50,male,Cyber Security,part-time,16-20,hybrid,4,4,4,3,2,5,4,1,5,5,3,4,Burned out
+66,21-30,male,Hardware engineering,full-time,1-5,remote,1,1,2,5,2,1,1,1,2,2,2,1,Healthy
+67,21-30,female,Software development,part-time,6-10,Office-based,4,2,2,3,5,1,3,3,3,5,2,2,Mildly Stressed
+68,41-50,male,IT Services,contract,11-15,hybrid,5,1,5,2,4,3,1,1,5,5,4,4,Highly Stressed
+69,41-50,male,Other,full-time,6-10,hybrid,3,1,4,1,5,2,2,4,1,5,4,2,Mildly Stressed
+70,under 20,female,Other,contract,1-5,remote,4,1,3,4,5,5,4,1,3,4,1,1,Highly Stressed
+71,51-60,male,Hardware engineering,part-time,6-10,remote,5,4,4,2,1,1,3,4,2,2,3,3,Mildly Stressed
+72,51-60,female,Other,part-time,less than 1 year,Office-based,5,1,2,2,5,1,1,3,5,5,2,4,Mildly Stressed
+73,21-30,male,Other,contract,6-10,Office-based,1,2,4,5,3,2,3,4,2,4,1,1,Healthy
+74,51-60,male,Software development,part-time,6-10,Office-based,2,4,2,3,4,3,5,1,5,1,5,4,Mildly Stressed
+75,21-30,male,Cyber Security,full-time,11-15,hybrid,4,2,5,3,1,4,1,2,1,4,1,5,Mildly Stressed
+76,under 20,female,Hardware engineering,contract,less than 1 year,Office-based,4,5,5,5,4,3,5,4,3,1,4,4,Healthy
+77,41-50,male,Software development,full-time,less than 1 year,hybrid,4,1,5,4,1,1,3,1,1,4,5,3,Highly Stressed
+78,41-50,male,Cyber Security,contract,6-10,Office-based,5,4,3,1,3,1,4,2,5,5,1,3,Highly Stressed
+79,41-50,male,Software development,part-time,11-15,remote,1,4,3,1,5,5,4,3,4,4,3,2,Mildly Stressed
+80,51-60,female,Software development,contract,6-10,remote,5,1,2,4,1,3,4,3,3,4,2,4,Highly Stressed
+81,under 20,female,Other,contract,6-10,hybrid,5,3,1,5,1,4,5,5,2,5,5,5,Highly Stressed
+82,51-60,male,Cyber Security,full-time,1-5,remote,3,3,3,2,1,5,4,3,5,1,3,3,Highly Stressed
+83,51-60,female,Hardware engineering,part-time,1-5,hybrid,1,2,2,3,3,4,2,5,1,5,1,2,Healthy
+84,under 20,male,Hardware engineering,full-time,11-15,hybrid,4,1,4,2,4,5,1,3,4,2,4,5,Mildly Stressed
+85,under 20,male,Cyber Security,part-time,16-20,remote,2,1,5,3,3,3,1,3,5,4,4,5,Mildly Stressed
+86,under 20,male,Other,full-time,1-5,hybrid,4,5,5,2,1,1,3,3,2,2,3,5,Healthy
+87,under 20,male,IT Services,contract,16-20,remote,5,3,5,5,1,4,5,5,1,5,4,1,Highly Stressed
+88,41-50,male,Software development,full-time,less than 1 year,Office-based,1,3,2,5,5,3,1,5,3,5,2,3,Healthy
+89,31-40,male,Other,part-time,1-5,Office-based,1,1,5,4,3,4,5,4,4,3,3,1,Highly Stressed
+90,31-40,male,Cyber Security,part-time,1-5,remote,1,2,3,2,3,3,3,1,5,2,3,1,Highly Stressed
+91,under 20,female,Software development,contract,11-15,remote,3,1,4,2,2,5,4,1,5,3,4,3,Burned Out
+92,31-40,female,Hardware engineering,part-time,16-20,remote,4,2,5,4,4,3,3,1,5,2,3,4,Mildly Stressed
+93,31-40,female,IT Services,full-time,1-5,remote,3,3,2,4,2,5,2,3,5,3,1,2,Mildly Stressed
+94,under 20,female,Hardware engineering,contract,1-5,Office-based,2,5,4,5,2,1,4,1,1,3,5,3,Mildly Stressed
+95,31-40,female,Cyber Security,part-time,11-15,hybrid,5,4,5,5,4,5,4,5,3,2,5,2,Mildly Stressed
+96,51-60,female,Software development,part-time,11-15,hybrid,3,3,1,2,5,2,4,4,2,5,4,4,Mildly Stressed
+97,21-30,female,Cyber Security,full-time,16-20,Office-based,3,2,5,5,5,1,3,2,4,1,2,3,Healthy
+98,21-30,male,Software development,full-time,less than 1 year,hybrid,5,1,3,5,4,3,2,4,5,5,2,5,Mildly Stressed
+99,under 20,male,Other,contract,less than 1 year,Office-based,1,3,4,2,4,3,5,1,5,1,4,3,Highly Stressed
+100,41-50,male,IT Services,part-time,6-10,hybrid,5,5,3,4,3,2,3,1,3,2,4,4,Mildly Stressed
+101,under 20,male,Other,full-time,1-5,remote,4,2,1,2,3,3,1,5,3,4,3,1,Mildly Stressed
+102,41-50,female,Other,contract,16-20,remote,5,1,1,1,3,1,1,4,1,5,2,3,Mildly Stressed
+103,21-30,female,Cyber Security,part-time,1-5,remote,1,4,3,2,3,1,3,5,1,3,5,5,Healthy
+104,under 20,male,IT Services,part-time,16-20,Office-based,5,2,4,1,1,5,5,5,1,5,4,3,Burned Out
+105,51-60,male,Software development,contract,16-20,Office-based,3,1,1,2,1,4,1,2,4,2,5,1,Highly Stressed
+106,31-40,female,Software development,contract,16-20,hybrid,2,4,1,1,5,3,5,5,1,4,5,3,Healthy
+107,41-50,male,Hardware engineering,full-time,1-5,hybrid,3,1,5,1,1,2,4,5,5,4,2,5,Highly Stressed
+108,31-40,male,Software development,part-time,11-15,hybrid,2,4,2,2,1,1,3,2,1,5,5,4,Mildly Stressed
+109,31-40,male,Cyber Security,part-time,1-5,Office-based,5,4,1,5,3,1,4,3,4,5,3,5,Healthy
+110,under 20,male,Other,part-time,16-20,hybrid,4,4,4,3,3,1,1,3,1,5,3,4,Healthy
+111,31-40,female,Other,contract,6-10,remote,5,1,4,5,4,4,5,2,1,2,2,5,Mildly Stressed
+112,51-60,male,Other,full-time,less than 1 year,hybrid,1,4,5,1,3,4,4,5,5,1,3,2,Mildly Stressed
+113,31-40,male,IT Services,part-time,16-20,remote,5,2,4,2,4,3,1,1,5,1,4,3,Highly Stressed
+114,under 20,female,Software development,contract,6-10,Office-based,2,5,5,2,4,2,2,4,5,3,2,3,Healthy
+115,51-60,female,Cyber Security,part-time,11-15,remote,3,5,1,2,1,4,4,1,1,2,5,1,Highly Stressed
+116,21-30,male,IT Services,full-time,16-20,remote,4,4,1,2,3,5,2,1,5,4,4,2,Highly Stressed
+117,31-40,female,Hardware engineering,part-time,6-10,remote,5,5,1,3,1,4,2,5,3,3,2,1,Mildly Stressed
+118,under 20,male,Cyber Security,full-time,16-20,Office-based,5,5,1,4,3,1,1,4,2,4,5,3,Healthy
+119,21-30,male,Cyber Security,full-time,1-5,Office-based,3,4,2,1,1,2,3,4,2,4,5,1,Highly Stressed
+120,21-30,female,Cyber Security,part-time,6-10,Office-based,4,4,2,3,1,3,5,3,5,5,5,4,Highly Stressed
+121,41-50,male,Other,part-time,1-5,Office-based,5,2,1,5,1,4,1,2,4,4,5,2,Highly Stressed
+122,51-60,male,Cyber Security,full-time,1-5,hybrid,5,3,4,4,5,1,4,5,5,4,5,5,Mildly Stressed
+123,31-40,male,Software development,contract,6-10,Office-based,2,1,5,4,1,5,5,4,5,2,2,4,Highly Stressed
+124,under 20,male,Cyber Security,full-time,less than 1 year,remote,2,4,3,2,2,5,3,5,1,5,3,5,Mildly Stressed
+125,41-50,female,Other,part-time,6-10,Office-based,1,4,5,3,2,3,1,3,4,5,5,1,Highly Stressed
+126,51-60,female,Cyber Security,part-time,less than 1 year,hybrid,3,5,3,5,2,3,3,1,5,3,4,3,Mildly Stressed
+127,41-50,male,Hardware engineering,contract,16-20,hybrid,4,2,3,2,4,4,4,4,3,5,2,4,Highly Stressed
+128,51-60,female,Hardware engineering,full-time,16-20,hybrid,5,5,1,2,1,3,1,3,2,1,1,2,Healthy
+129,51-60,male,Other,full-time,6-10,remote,5,4,3,1,2,1,4,5,3,2,3,5,Mildly Stressed
+130,31-40,male,Software development,full-time,16-20,Office-based,1,4,1,4,4,1,5,3,3,3,4,4,Healthy
+131,51-60,male,Software development,part-time,11-15,Office-based,5,5,2,5,2,1,5,3,3,1,5,3,Healthy
+132,41-50,male,IT Services,full-time,1-5,Office-based,3,4,4,4,3,4,3,3,4,4,2,2,Mildly Stressed
+133,51-60,male,Other,contract,1-5,remote,1,3,3,3,5,4,3,3,4,1,2,2,Healthy
+134,31-40,female,Cyber Security,part-time,less than 1 year,remote,3,1,4,1,1,3,5,3,4,3,5,5,Highly Stressed
+135,31-40,male,Other,part-time,16-20,hybrid,1,1,1,2,5,4,2,3,2,5,4,4,Healthy
+136,41-50,female,IT Services,full-time,less than 1 year,hybrid,5,1,3,1,5,1,5,2,1,2,2,4,Mildly Stressed
+137,21-30,female,Other,contract,1-5,Office-based,1,3,5,2,3,2,1,5,5,3,3,2,Mildly Stressed
+138,21-30,male,Other,part-time,1-5,remote,2,4,2,1,3,1,4,1,5,1,4,1,Highly Stressed
+139,51-60,male,IT Services,part-time,16-20,remote,4,5,2,2,3,2,5,5,1,1,5,2,Healthy
+140,under 20,male,Software development,full-time,11-15,Office-based,5,2,3,4,4,3,5,4,5,3,4,3,Highly Stressed
+141,51-60,male,Cyber Security,full-time,11-15,Office-based,4,4,2,4,2,5,4,4,3,3,4,4,Mildly Stressed
+142,41-50,male,IT Services,contract,16-20,hybrid,5,3,5,4,1,4,4,5,2,3,1,5,Mildly Stressed
+143,41-50,female,Hardware engineering,full-time,16-20,hybrid,4,3,4,4,3,4,1,3,5,5,5,4,Highly Stressed
+144,41-50,male,Software development,contract,less than 1 year,hybrid,2,1,5,1,1,1,4,2,2,3,3,2,Highly Stressed
+145,41-50,male,Hardware engineering,part-time,16-20,Office-based,4,4,2,2,1,1,3,1,1,4,5,3,Mildly Stressed
+146,41-50,female,Software development,contract,11-15,Office-based,1,1,4,4,1,2,5,3,5,2,1,1,Highly Stressed
+147,31-40,female,Cyber Security,contract,16-20,hybrid,4,2,5,1,3,4,4,5,2,2,5,4,Highly Stressed
+148,21-30,male,Cyber Security,contract,less than 1 year,hybrid,5,1,1,2,3,3,1,5,3,4,5,2,Mildly Stressed
+149,41-50,female,Other,part-time,less than 1 year,remote,3,2,1,1,2,1,4,2,3,1,3,2,Mildly Stressed
+150,under 20,male,Hardware engineering,full-time,less than 1 year,remote,4,3,4,4,3,4,5,2,1,1,1,2,Mildly Stressed
+151,under 20,female,Software development,part-time,less than 1 year,hybrid,4,1,4,3,3,5,2,5,4,1,5,3,Highly Stressed
+152,under 20,female,Cyber Security,full-time,6-10,hybrid,4,1,4,1,1,2,4,3,5,1,5,2,Burned Out
+153,under 20,male,IT Services,contract,16-20,remote,5,5,1,4,2,1,3,3,3,5,2,2,Healthy
+154,31-40,female,Cyber Security,contract,1-5,hybrid,4,3,5,5,5,1,5,3,3,4,5,2,Mildly Stressed
+155,under 20,female,IT Services,contract,16-20,remote,5,5,4,2,3,3,1,1,1,2,3,4,Healthy
+156,41-50,female,Software development,contract,6-10,remote,5,2,1,4,3,1,5,1,3,4,2,2,Highly Stressed
+157,51-60,female,Cyber Security,contract,less than 1 year,remote,3,2,4,5,5,4,2,3,5,2,1,3,Healthy
+158,under 20,female,Cyber Security,full-time,6-10,Office-based,1,3,4,1,1,4,1,5,1,1,4,4,Healthy
+159,31-40,female,Software development,full-time,11-15,Office-based,5,2,4,1,2,4,2,2,2,5,3,2,Highly Stressed
+160,31-40,male,Cyber Security,contract,11-15,hybrid,2,3,1,5,1,5,2,4,1,3,1,1,Healthy
+161,under 20,male,IT Services,part-time,16-20,remote,4,2,5,5,4,5,3,2,5,3,2,3,Highly Stressed
+162,51-60,female,Cyber Security,part-time,16-20,Office-based,2,4,1,2,3,1,4,2,5,1,4,1,Mildly Stressed
+163,under 20,male,Hardware engineering,contract,1-5,hybrid,4,1,1,1,4,5,3,4,2,1,1,3,Mildly Stressed
+164,31-40,male,Other,full-time,1-5,hybrid,3,4,4,5,3,5,3,3,1,4,3,1,Mildly Stressed
+165,21-30,male,IT Services,part-time,11-15,hybrid,5,3,3,3,4,3,3,2,5,5,2,2,Highly Stressed
+166,41-50,female,Hardware engineering,part-time,less than 1 year,hybrid,1,3,3,3,5,5,1,4,5,5,3,1,Mildly Stressed
+167,31-40,male,Software development,part-time,6-10,hybrid,5,4,3,5,3,2,4,5,2,4,3,1,Mildly Stressed
+168,under 20,female,IT Services,contract,1-5,remote,4,1,1,2,3,2,4,5,4,5,2,3,Mildly Stressed
+169,41-50,male,Other,part-time,1-5,hybrid,1,1,4,1,4,2,1,5,1,5,5,2,Mildly Stressed
+170,under 20,female,Other,part-time,less than 1 year,remote,5,5,3,3,2,1,3,3,5,3,3,3,Mildly Stressed
+171,under 20,female,Software development,part-time,less than 1 year,Office-based,1,2,2,5,4,4,3,2,3,5,2,2,Mildly Stressed
+172,21-30,male,Software development,part-time,16-20,hybrid,4,5,2,5,3,3,2,2,2,1,3,5,Healthy
+173,41-50,male,IT Services,full-time,6-10,Office-based,3,1,2,4,3,1,2,1,4,3,5,4,Mildly Stressed
+174,41-50,female,Cyber Security,contract,less than 1 year,remote,3,4,5,5,2,4,5,5,4,1,2,4,Mildly Stressed
+175,21-30,male,Software development,contract,1-5,remote,5,2,4,2,1,3,2,3,2,1,1,3,Mildly Stressed
+176,31-40,male,Cyber Security,full-time,1-5,Office-based,2,4,1,3,2,3,4,4,4,4,1,2,Mildly Stressed
+177,under 20,male,Hardware engineering,full-time,11-15,hybrid,4,5,1,4,1,3,1,3,5,5,1,1,Mildly Stressed
+178,51-60,female,Other,contract,less than 1 year,hybrid,5,3,4,3,3,2,3,2,4,5,4,4,Highly Stressed
+179,under 20,female,Cyber Security,part-time,16-20,Office-based,5,4,5,3,5,2,5,5,1,5,3,3,Mildly Stressed
+180,under 20,male,Other,part-time,6-10,Office-based,3,5,4,2,5,2,2,1,3,5,3,3,Mildly Stressed
+181,31-40,male,Cyber Security,contract,16-20,Office-based,1,5,5,5,4,3,5,3,5,3,2,3,Healthy
+182,under 20,male,Hardware engineering,part-time,1-5,hybrid,4,5,3,2,2,3,1,1,2,2,4,2,Mildly Stressed
+183,21-30,female,Software development,full-time,16-20,hybrid,1,3,3,5,2,2,1,2,3,1,3,3,Healthy
+184,21-30,female,Hardware engineering,part-time,1-5,hybrid,4,3,5,4,5,3,5,4,5,2,2,5,Mildly Stressed
+185,41-50,male,Software development,part-time,1-5,Office-based,2,3,4,2,1,2,5,3,3,2,5,1,Highly Stressed
+186,51-60,male,Software development,part-time,1-5,hybrid,3,2,3,2,2,2,5,2,4,2,3,3,Mildly Stressed
+187,under 20,male,Other,contract,1-5,remote,2,3,4,1,1,2,3,5,2,3,3,2,Mildly Stressed
+188,under 20,male,Hardware engineering,full-time,1-5,Office-based,5,3,3,2,1,4,4,3,2,2,5,1,Highly Stressed
+189,31-40,male,Cyber Security,part-time,11-15,hybrid,3,3,4,1,1,3,2,1,1,3,5,1,Highly Stressed
+190,21-30,male,Hardware engineering,contract,16-20,Office-based,5,4,4,5,1,1,2,3,4,4,3,4,Mildly Stressed
+191,51-60,female,Other,part-time,11-15,remote,2,3,2,5,4,2,2,2,1,4,5,3,Healthy
+192,41-50,male,Software development,full-time,11-15,remote,4,2,5,5,4,1,5,2,1,4,2,3,Mildly Stressed
+193,21-30,female,Other,part-time,less than 1 year,Office-based,5,5,1,1,5,4,5,1,4,3,3,2,Highly Stressed
+194,41-50,male,IT Services,full-time,less than 1 year,Office-based,1,4,5,5,4,3,5,2,5,3,3,5,Mildly Stressed
+195,31-40,male,IT Services,part-time,less than 1 year,remote,4,1,4,3,2,2,3,3,1,1,1,5,Healthy
+196,31-40,female,Cyber Security,full-time,6-10,Office-based,4,3,4,2,4,2,3,1,3,2,3,4,Mildly Stressed
+197,under 20,female,Other,part-time,less than 1 year,remote,2,5,5,1,2,2,3,2,5,5,1,5,Mildly Stressed
+198,51-60,female,Cyber Security,full-time,16-20,remote,2,5,4,5,2,1,3,2,4,5,5,2,Highly Stressed
+199,41-50,female,Cyber Security,part-time,11-15,hybrid,3,4,3,3,1,4,1,3,2,2,5,4,Mildly Stressed
+200,21-30,male,IT Services,part-time,16-20,Office-based,3,1,4,2,5,3,3,2,5,5,2,3,Highly Stressed
+201,31-40,female,Cyber Security,contract,less than 1 year,Office-based,1,2,5,2,1,4,3,3,1,5,1,5,Mildly Stressed
+202,under 20,male,IT Services,contract,6-10,hybrid,4,5,5,5,1,2,3,5,3,5,3,2,Mildly Stressed
+203,under 20,female,Software development,full-time,6-10,remote,1,5,5,3,4,4,2,3,4,3,1,2,Mildly Stressed
+204,41-50,male,Other,part-time,11-15,Office-based,1,5,2,1,4,1,2,4,2,3,5,3,Healthy
+205,31-40,male,Cyber Security,full-time,16-20,hybrid,2,5,2,5,2,5,2,2,3,3,5,2,Mildly Stressed
+206,51-60,male,IT Services,contract,1-5,hybrid,1,4,2,2,4,5,4,5,2,2,2,4,Healthy
+207,31-40,male,Hardware engineering,full-time,16-20,Office-based,1,1,2,2,4,3,1,1,4,4,5,4,Mildly Stressed
+208,41-50,male,Cyber Security,full-time,less than 1 year,hybrid,5,5,2,2,3,3,5,4,5,5,1,1,Highly Stressed
+209,41-50,male,Software development,contract,1-5,remote,3,2,2,5,2,4,3,1,1,1,3,3,Mildly Stressed
+210,31-40,female,Software development,part-time,6-10,hybrid,3,2,2,4,2,3,2,4,4,3,3,2,Mildly Stressed
+211,41-50,male,Hardware engineering,full-time,11-15,remote,4,3,5,4,3,1,1,5,3,1,1,5,Healthy
+212,31-40,female,IT Services,contract,11-15,remote,3,5,1,4,2,2,3,5,5,5,2,4,Healthy
+213,21-30,female,Cyber Security,part-time,6-10,Office-based,4,5,2,3,5,2,4,5,2,4,3,3,Healthy
+214,31-40,male,IT Services,contract,less than 1 year,hybrid,5,5,5,5,5,4,5,4,5,1,1,3,Healthy
+215,31-40,female,Software development,full-time,6-10,remote,3,5,1,2,3,2,3,3,5,5,1,4,Mildly Stressed
+216,41-50,male,IT Services,part-time,less than 1 year,remote,5,5,2,3,4,4,5,1,3,5,5,1,Highly Stressed
+217,41-50,female,Software development,part-time,1-5,hybrid,3,2,1,4,5,3,3,3,1,3,5,3,Healthy
+218,under 20,male,IT Services,contract,6-10,remote,3,1,1,1,3,3,4,3,5,4,2,2,Highly Stressed
+219,under 20,female,Hardware engineering,contract,less than 1 year,hybrid,5,1,3,3,5,1,1,2,5,5,2,5,Mildly Stressed
+220,21-30,male,Other,contract,1-5,Office-based,1,3,4,3,1,2,5,1,1,4,2,5,Mildly Stressed
+221,under 20,male,Hardware engineering,part-time,6-10,remote,1,2,3,5,3,1,5,4,1,3,1,4,Healthy
+222,31-40,male,Hardware engineering,part-time,11-15,remote,1,5,1,3,2,5,1,2,2,1,1,3,Healthy
+223,41-50,male,Other,full-time,6-10,hybrid,1,1,5,5,5,1,5,2,2,2,5,5,Healthy
+224,under 20,female,Other,part-time,16-20,hybrid,3,4,2,1,2,4,2,5,1,2,3,3,Healthy
+225,under 20,male,Cyber Security,full-time,6-10,hybrid,2,4,4,2,3,4,1,4,4,2,2,4,Healthy
+226,21-30,female,Cyber Security,contract,16-20,hybrid,5,4,2,2,5,1,4,3,1,4,4,1,Mildly Stressed
+227,21-30,female,Hardware engineering,contract,1-5,remote,2,5,5,4,2,3,3,3,2,2,2,5,Healthy
+228,31-40,female,Hardware engineering,part-time,6-10,Office-based,2,5,4,4,4,5,3,3,3,1,5,2,Mildly Stressed
+229,41-50,male,Software development,contract,1-5,Office-based,4,3,3,1,4,1,1,5,3,5,1,4,Healthy
+230,21-30,female,Software development,contract,1-5,Office-based,1,3,1,2,1,3,2,3,5,4,5,1,Highly Stressed
+231,under 20,female,Cyber Security,part-time,less than 1 year,Office-based,3,3,5,4,3,1,4,1,3,1,5,2,Mildly Stressed
+232,41-50,female,Cyber Security,full-time,1-5,hybrid,1,4,1,3,2,2,3,3,2,4,5,2,Healthy
+233,41-50,male,Software development,part-time,1-5,remote,1,5,1,5,1,4,3,3,3,4,4,5,Healthy
+234,under 20,male,Software development,full-time,6-10,remote,2,4,2,4,3,2,2,1,4,4,4,3,Mildly Stressed
+235,21-30,female,IT Services,part-time,6-10,remote,4,3,5,1,4,2,5,5,1,3,2,4,Mildly Stressed
+236,under 20,male,IT Services,part-time,11-15,hybrid,1,5,1,2,2,5,1,2,1,5,1,2,Healthy
+237,41-50,male,Software development,contract,less than 1 year,remote,5,2,3,1,5,3,2,4,2,2,5,5,Mildly Stressed
+238,51-60,female,IT Services,part-time,1-5,hybrid,5,1,4,5,4,4,2,5,5,3,3,1,Mildly Stressed
+239,51-60,female,Other,part-time,less than 1 year,remote,1,1,5,5,5,2,2,3,1,5,2,2,Healthy
+240,31-40,male,Cyber Security,full-time,16-20,Office-based,2,3,2,1,5,4,2,2,3,2,2,1,Mildly Stressed
+241,under 20,female,Cyber Security,contract,1-5,hybrid,2,4,5,4,2,3,5,4,4,3,5,4,Mildly Stressed
+242,under 20,male,Software development,full-time,less than 1 year,remote,3,2,2,4,2,1,4,4,5,3,2,5,Healthy
+243,31-40,male,Hardware engineering,full-time,11-15,Office-based,4,5,4,2,5,2,2,4,5,1,5,1,Mildly Stressed
+244,31-40,male,Software development,contract,11-15,Office-based,2,4,3,2,1,3,2,1,5,3,2,3,Highly Stressed
+245,31-40,male,IT Services,contract,1-5,Office-based,3,3,1,3,5,4,1,1,1,4,1,1,Healthy
+246,41-50,male,Hardware engineering,contract,16-20,hybrid,5,4,5,3,5,3,3,2,5,3,2,1,Highly Stressed
+247,under 20,male,IT Services,part-time,11-15,hybrid,5,3,2,2,2,1,5,3,2,4,2,5,Mildly Stressed
+248,41-50,female,Other,contract,11-15,remote,5,1,4,3,3,3,2,2,3,5,3,5,Highly Stressed
+249,31-40,female,IT Services,contract,16-20,Office-based,1,1,1,1,4,4,4,3,4,5,1,2,Mildly Stressed
+250,under 20,male,Other,contract,less than 1 year,remote,4,4,4,4,2,2,4,5,3,4,1,1,Mildly Stressed
+251,41-50,male,Other,full-time,11-15,remote,3,2,3,3,1,2,4,4,2,1,1,1,Mildly Stressed
+252,41-50,male,IT Services,full-time,6-10,Office-based,4,5,1,3,4,5,1,4,2,1,2,5,Healthy
+253,31-40,female,IT Services,part-time,11-15,remote,1,3,1,1,2,4,4,1,3,5,4,3,Highly Stressed
+254,under 20,male,Other,full-time,less than 1 year,hybrid,3,5,1,5,2,5,1,5,1,3,2,5,Healthy
+255,31-40,female,Hardware engineering,part-time,less than 1 year,remote,3,1,2,2,3,5,5,5,2,5,5,3,Highly Stressed
+256,under 20,male,Other,full-time,1-5,Office-based,2,2,1,1,1,1,4,3,5,5,3,5,Mildly Stressed
+257,51-60,male,Cyber Security,contract,6-10,hybrid,4,2,4,5,1,4,3,5,4,4,1,4,Mildly Stressed
+258,21-30,female,Other,full-time,less than 1 year,hybrid,4,5,2,1,2,2,2,1,4,1,5,1,Mildly Stressed
+259,21-30,female,Hardware engineering,part-time,16-20,remote,2,1,1,4,3,4,5,3,2,4,5,3,Mildly Stressed
+260,21-30,male,Cyber Security,full-time,6-10,remote,5,5,4,1,2,1,3,2,5,5,4,4,Highly Stressed
+261,31-40,male,Software development,contract,6-10,hybrid,1,4,4,1,5,4,5,3,3,2,1,3,Mildly Stressed
+262,51-60,male,Software development,part-time,16-20,remote,4,2,5,4,5,4,4,2,4,3,2,2,Highly Stressed
+263,under 20,female,Hardware engineering,contract,11-15,Office-based,2,2,4,2,3,5,5,3,5,5,1,2,Burned out
+264,41-50,female,Other,contract,16-20,remote,3,4,3,5,2,4,5,4,5,4,3,1,Highly Stressed
+265,under 20,female,IT Services,part-time,16-20,remote,2,1,1,3,3,5,5,2,1,2,1,4,Mildly Stressed
+266,41-50,female,Hardware engineering,contract,11-15,hybrid,5,2,1,2,2,5,1,1,2,2,5,4,Mildly Stressed
+267,under 20,female,Cyber Security,contract,11-15,remote,1,3,1,1,2,3,3,2,5,5,5,2,Highly Stressed
+268,51-60,female,Cyber Security,full-time,11-15,remote,5,3,4,3,5,1,4,2,3,1,2,1,Mildly Stressed
+269,41-50,male,Software development,contract,11-15,remote,3,1,4,4,4,5,2,3,4,2,2,2,Mildly Stressed
+270,31-40,male,Cyber Security,contract,11-15,Office-based,3,4,1,2,1,4,4,4,1,3,2,4,Healthy
+271,under 20,female,Hardware engineering,contract,16-20,remote,3,5,2,5,1,5,4,3,3,4,3,3,Mildly Stressed
+272,under 20,male,Cyber Security,contract,1-5,Office-based,3,1,2,2,3,5,1,3,4,4,1,4,Mildly Stressed
+273,41-50,male,Hardware engineering,part-time,1-5,Office-based,2,5,3,2,1,5,1,4,2,4,4,1,Mildly Stressed
+274,31-40,female,IT Services,full-time,less than 1 year,Office-based,3,1,5,3,5,2,5,3,3,5,1,4,Mildly Stressed
+275,31-40,male,Software development,contract,1-5,Office-based,3,3,3,4,4,2,4,4,4,4,2,5,Healthy
+276,51-60,female,Cyber Security,contract,1-5,hybrid,2,4,1,4,2,2,3,1,1,4,3,4,Healthy
+277,31-40,female,Hardware engineering,part-time,16-20,Office-based,3,3,1,2,2,2,1,4,4,3,1,5,Healthy
+278,31-40,male,Other,contract,11-15,remote,5,4,1,4,5,3,1,5,5,1,5,2,Healthy
+279,31-40,female,Software development,part-time,11-15,Office-based,5,5,5,3,1,5,3,4,1,5,1,5,Mildly Stressed
+280,21-30,female,IT Services,full-time,16-20,remote,4,1,4,3,2,3,1,4,3,5,5,4,Highly Stressed
+281,51-60,female,Hardware engineering,full-time,1-5,Office-based,5,2,5,5,1,4,3,5,2,4,1,4,Mildly Stressed
+282,under 20,female,IT Services,contract,16-20,hybrid,1,2,3,4,5,1,2,4,1,3,1,4,Healthy
+283,41-50,female,IT Services,contract,less than 1 year,Office-based,1,4,4,5,2,3,3,2,1,2,1,1,Healthy
+284,under 20,female,Cyber Security,contract,11-15,Office-based,1,4,4,1,3,2,2,3,1,4,2,2,Healthy
+285,51-60,female,Cyber Security,part-time,6-10,hybrid,2,3,3,3,4,2,5,3,4,4,5,5,Mildly Stressed
+286,41-50,female,Hardware engineering,contract,less than 1 year,Office-based,5,2,4,2,1,4,5,1,5,5,3,3,Burned Out
+287,51-60,male,Other,contract,less than 1 year,remote,1,3,2,3,1,5,1,1,2,5,4,5,Mildly Stressed
+288,31-40,male,Hardware engineering,full-time,16-20,Office-based,4,5,3,1,1,1,3,5,2,4,5,4,Mildly Stressed
+289,41-50,male,Other,contract,1-5,Office-based,2,2,3,2,1,3,1,2,5,5,2,3,Highly Stressed
+290,31-40,female,IT Services,full-time,11-15,Office-based,4,5,2,4,5,5,3,1,4,3,5,3,Mildly Stressed
+291,under 20,female,Software development,contract,6-10,hybrid,5,1,5,4,5,5,1,3,4,2,3,5,Mildly Stressed
+292,under 20,male,Hardware engineering,full-time,less than 1 year,Office-based,3,3,5,3,5,3,5,1,5,2,5,5,Highly Stressed
+293,41-50,male,Hardware engineering,contract,6-10,Office-based,4,4,5,2,5,3,5,1,5,2,2,5,Mildly Stressed
+294,41-50,male,Other,full-time,1-5,remote,3,2,4,2,2,3,1,4,3,4,2,5,Mildly Stressed
+295,51-60,female,IT Services,part-time,1-5,Office-based,2,3,2,5,5,3,3,1,4,4,4,2,Mildly Stressed
+296,51-60,male,IT Services,full-time,6-10,Office-based,4,4,3,1,2,2,4,5,1,4,3,1,Mildly Stressed
+297,31-40,male,Other,full-time,11-15,Office-based,4,1,3,4,3,5,3,3,2,3,4,1,Highly Stressed
+298,41-50,female,IT Services,full-time,1-5,Office-based,2,2,3,3,5,5,1,5,4,2,1,5,Healthy
+299,under 20,male,Cyber Security,contract,6-10,remote,2,5,4,2,3,2,3,5,5,5,2,1,Mildly Stressed
+300,51-60,female,Software development,contract,less than 1 year,remote,1,1,4,4,5,5,2,2,1,5,4,5,Mildly Stressed
+301,51-60,female,Hardware engineering,contract,6-10,hybrid,5,4,5,3,3,3,3,4,3,1,2,5,Healthy
+302,under 20,female,Software development,part-time,6-10,Office-based,4,2,4,4,4,1,5,5,3,1,2,5,Healthy
+303,51-60,male,Hardware engineering,part-time,16-20,hybrid,4,2,5,3,3,5,5,2,1,5,1,2,Highly Stressed
+304,31-40,male,Cyber Security,full-time,1-5,hybrid,2,1,5,4,2,1,2,3,1,2,2,4,Healthy
+305,41-50,female,IT Services,part-time,11-15,Office-based,2,2,3,5,1,1,3,3,5,4,4,1,Highly Stressed
+306,under 20,male,Other,full-time,11-15,remote,5,4,4,1,3,2,4,2,5,5,3,1,Burned Out
+307,41-50,male,Cyber Security,full-time,16-20,remote,2,1,5,4,1,4,3,5,2,5,5,2,Highly Stressed
+308,51-60,male,Software development,full-time,11-15,Office-based,3,5,2,1,4,5,5,5,2,1,4,2,Mildly Stressed
+309,51-60,male,Other,part-time,6-10,Office-based,3,1,2,4,4,2,5,4,3,2,1,5,Healthy
+310,under 20,female,IT Services,contract,16-20,remote,3,1,4,2,2,2,1,4,1,5,5,5,Mildly Stressed
+311,31-40,male,Cyber Security,part-time,less than 1 year,Office-based,3,5,3,5,2,1,5,3,3,4,2,4,Healthy
+312,21-30,female,Other,full-time,1-5,Office-based,5,4,3,5,3,5,1,4,5,4,4,1,Highly Stressed
+313,under 20,female,Cyber Security,full-time,1-5,Office-based,4,3,5,1,5,2,5,2,4,3,5,2,Highly Stressed
+314,21-30,male,Cyber Security,part-time,1-5,remote,3,3,4,2,4,3,5,3,5,4,4,4,Highly Stressed
+315,21-30,female,IT Services,full-time,6-10,hybrid,2,5,2,3,1,2,4,5,4,5,2,1,Mildly Stressed
+316,31-40,male,Hardware engineering,full-time,less than 1 year,hybrid,3,4,5,5,5,3,1,3,1,5,4,4,Healthy
+317,21-30,male,Other,part-time,16-20,Office-based,5,2,5,2,4,4,1,1,1,4,1,4,Mildly Stressed
+318,21-30,female,IT Services,part-time,16-20,remote,2,5,1,2,3,3,5,3,1,1,5,5,Healthy
+319,31-40,female,Cyber Security,part-time,1-5,Office-based,3,3,4,1,4,3,1,4,2,2,5,4,Mildly Stressed
+320,21-30,female,IT Services,full-time,less than 1 year,remote,4,4,5,2,2,1,5,2,2,5,5,5,Highly Stressed
+321,21-30,female,Hardware engineering,full-time,less than 1 year,Office-based,2,1,2,2,1,2,5,5,4,4,4,1,Highly Stressed
+322,21-30,male,Other,contract,less than 1 year,remote,2,4,1,3,1,4,3,5,3,4,2,1,Mildly Stressed
+323,under 20,male,Hardware engineering,contract,11-15,remote,4,4,2,1,2,2,1,4,3,5,4,5,Mildly Stressed
+324,under 20,male,Software development,part-time,11-15,hybrid,2,3,3,1,5,3,2,4,4,3,4,3,Mildly Stressed
+325,under 20,female,Other,contract,1-5,Office-based,3,3,1,2,2,3,1,4,2,2,5,4,Healthy
+326,31-40,female,Hardware engineering,full-time,less than 1 year,hybrid,2,2,1,3,1,2,1,1,5,5,2,1,Mildly Stressed
+327,51-60,female,Cyber Security,contract,less than 1 year,hybrid,3,2,5,4,3,4,4,2,4,4,3,4,Highly Stressed
+328,21-30,male,Other,full-time,16-20,remote,4,5,3,5,5,4,2,1,3,3,2,3,Healthy
+329,21-30,female,Other,part-time,16-20,Office-based,1,1,5,1,4,1,2,4,4,5,4,4,Highly Stressed
+330,31-40,male,IT Services,part-time,1-5,remote,4,2,4,3,3,3,4,2,4,2,1,3,Mildly Stressed
+331,21-30,female,Cyber Security,full-time,less than 1 year,remote,3,3,2,3,5,3,4,4,1,3,2,2,Healthy
+332,under 20,male,Software development,contract,1-5,remote,5,4,2,2,1,1,1,2,2,4,5,3,Highly Stressed
+333,51-60,male,Hardware engineering,part-time,16-20,Office-based,4,5,5,5,1,2,3,5,1,1,1,1,Healthy
+334,41-50,female,IT Services,part-time,16-20,Office-based,5,2,2,1,3,3,4,1,2,2,3,5,Mildly Stressed
+335,21-30,female,Hardware engineering,contract,11-15,remote,5,4,2,4,5,2,2,4,4,3,3,5,Healthy
+336,under 20,male,Software development,contract,1-5,Office-based,3,4,4,2,4,4,2,4,2,5,1,4,Healthy
+337,41-50,male,Software development,full-time,1-5,remote,3,2,3,1,4,5,1,3,3,5,3,2,Highly Stressed
+338,51-60,female,Other,contract,less than 1 year,Office-based,1,1,1,1,2,1,3,5,1,3,1,4,Healthy
+339,41-50,female,Software development,contract,less than 1 year,Office-based,2,1,5,3,3,3,5,4,4,5,4,3,Highly Stressed
+340,under 20,male,Hardware engineering,contract,11-15,hybrid,4,5,5,5,5,1,4,1,3,3,1,5,Healthy
+341,41-50,female,Cyber Security,full-time,6-10,remote,3,1,4,4,3,4,4,5,2,2,4,3,Mildly Stressed
+342,31-40,male,Cyber Security,full-time,6-10,hybrid,4,5,4,5,4,4,1,4,2,5,5,5,Healthy
+343,41-50,male,Other,part-time,6-10,hybrid,5,3,1,3,5,4,3,1,3,2,5,5,Mildly Stressed
+344,21-30,female,Hardware engineering,full-time,1-5,remote,2,2,3,4,1,4,2,3,2,4,3,5,Mildly Stressed
+345,21-30,female,Hardware engineering,part-time,1-5,remote,1,4,5,4,1,5,2,3,1,4,1,1,Mildly Stressed
+346,31-40,female,Software development,contract,16-20,Office-based,4,5,4,2,5,2,5,1,5,4,4,3,Highly Stressed
+347,under 20,female,Hardware engineering,part-time,1-5,remote,2,1,5,4,3,2,2,5,2,4,5,4,Mildly Stressed
+348,21-30,female,IT Services,part-time,1-5,hybrid,1,5,2,1,3,5,4,1,4,5,5,2,Highly Stressed
+349,51-60,male,Software development,contract,1-5,hybrid,4,5,5,5,1,2,5,1,2,3,5,4,Highly Stressed
+350,21-30,male,IT Services,part-time,11-15,remote,2,1,3,5,1,4,3,3,4,5,3,3,Mildly Stressed
+351,21-30,female,Other,full-time,1-5,hybrid,3,1,3,2,4,2,5,3,2,5,5,2,Highly Stressed
+352,under 20,female,Cyber Security,full-time,less than 1 year,Office-based,4,2,5,4,5,1,3,3,2,2,2,4,Healthy
+353,41-50,female,Other,full-time,less than 1 year,hybrid,2,4,2,3,3,2,2,4,4,3,3,2,Healthy
+354,21-30,male,Cyber Security,full-time,16-20,Office-based,1,2,3,1,4,1,1,4,1,1,1,3,Healthy
+355,31-40,female,Other,part-time,11-15,hybrid,2,2,4,2,3,3,5,2,5,1,2,5,Mildly Stressed
+356,41-50,female,Hardware engineering,part-time,less than 1 year,Office-based,3,1,5,4,1,1,5,4,5,3,3,3,Highly Stressed
+357,51-60,male,IT Services,contract,11-15,Office-based,4,1,2,3,5,1,4,5,1,1,3,1,Healthy
+358,under 20,male,Cyber Security,part-time,11-15,remote,4,4,4,4,2,4,4,5,2,3,4,2,Mildly Stressed
+359,51-60,female,Software development,part-time,16-20,Office-based,4,5,5,2,5,4,3,3,5,2,2,3,Mildly Stressed
+360,41-50,female,IT Services,part-time,11-15,remote,3,2,2,3,2,4,1,1,1,2,2,5,Healthy
+361,41-50,female,Software development,contract,1-5,hybrid,1,4,4,3,4,1,4,3,1,5,2,5,Healthy
+362,41-50,male,IT Services,full-time,11-15,hybrid,4,2,3,3,2,5,4,1,5,1,5,3,Highly Stressed
+363,51-60,female,IT Services,part-time,16-20,hybrid,1,5,5,3,2,4,2,3,4,3,5,4,Mildly Stressed
+364,41-50,female,Other,contract,16-20,Office-based,2,2,5,4,4,4,2,3,3,2,1,3,Mildly Stressed
+365,51-60,female,Cyber Security,contract,16-20,hybrid,1,3,3,3,5,1,4,5,4,5,1,5,Healthy
+366,41-50,male,Cyber Security,contract,less than 1 year,hybrid,1,4,1,4,4,3,3,1,2,1,1,3,Healthy
+367,31-40,male,IT Services,full-time,1-5,remote,4,1,4,3,1,3,1,2,4,1,5,1,Highly Stressed
+368,41-50,female,Hardware engineering,part-time,less than 1 year,remote,5,2,3,3,1,2,4,2,3,1,4,4,Highly Stressed
+369,51-60,female,Hardware engineering,contract,6-10,hybrid,5,4,5,2,2,3,3,3,3,2,1,3,Mildly Stressed
+370,21-30,male,Software development,full-time,1-5,hybrid,3,4,4,4,4,4,3,3,1,2,3,5,Healthy
+371,41-50,male,Software development,contract,11-15,Office-based,3,2,4,4,4,5,4,5,2,1,5,3,Mildly Stressed
+372,21-30,male,Other,contract,16-20,Office-based,5,1,1,5,4,2,3,1,1,2,4,3,Mildly Stressed
+373,31-40,male,IT Services,contract,6-10,hybrid,2,1,5,2,5,5,5,3,4,1,3,2,Highly Stressed
+374,under 20,male,Software development,contract,1-5,remote,4,2,2,4,3,5,3,2,4,4,3,3,Highly Stressed
+375,31-40,male,Software development,contract,less than 1 year,hybrid,4,4,1,2,3,4,4,1,5,2,5,1,Highly Stressed
+376,41-50,male,IT Services,full-time,16-20,Office-based,2,1,1,2,3,1,3,3,1,3,2,5,Healthy
+377,21-30,male,Other,part-time,less than 1 year,remote,2,2,2,2,5,1,4,1,1,2,4,2,Mildly Stressed
+378,21-30,male,Software development,part-time,1-5,remote,5,2,2,1,4,1,2,5,1,1,5,3,Healthy
+379,51-60,female,Other,part-time,1-5,Office-based,3,2,1,4,3,3,4,2,1,3,2,4,Healthy
+380,21-30,female,Cyber Security,part-time,6-10,hybrid,2,4,4,2,4,1,3,1,3,5,5,1,Highly Stressed
+381,51-60,female,Other,full-time,11-15,hybrid,3,1,3,1,2,4,4,2,5,3,5,1,Burned Out
+382,under 20,male,Hardware engineering,full-time,less than 1 year,hybrid,1,4,3,1,3,3,1,3,2,3,3,1,Mildly Stressed
+383,41-50,female,Hardware engineering,full-time,6-10,Office-based,4,3,1,3,2,1,4,4,2,2,5,2,Mildly Stressed
+384,51-60,male,Other,contract,16-20,remote,5,1,4,3,5,5,4,1,2,3,2,3,Highly Stressed
+385,under 20,male,Hardware engineering,contract,11-15,Office-based,4,4,2,4,1,4,1,2,3,3,3,1,Mildly Stressed
+386,21-30,female,Cyber Security,contract,6-10,hybrid,5,1,1,3,5,4,1,1,5,1,2,3,Mildly Stressed
+387,21-30,male,IT Services,part-time,less than 1 year,Office-based,1,3,5,4,5,2,1,3,5,2,2,4,Healthy
+388,under 20,female,Hardware engineering,contract,1-5,remote,4,5,4,1,5,4,5,3,3,1,3,3,Mildly Stressed
+389,21-30,female,Hardware engineering,part-time,16-20,Office-based,1,2,5,1,3,5,4,2,1,2,2,3,Highly Stressed
+390,under 20,female,Other,contract,less than 1 year,hybrid,5,4,5,4,2,4,1,5,4,5,1,3,Mildly Stressed
+391,51-60,male,Cyber Security,part-time,11-15,remote,2,3,1,3,3,2,1,1,1,3,5,5,Healthy
+392,51-60,female,IT Services,contract,11-15,Office-based,4,3,4,3,1,4,2,1,2,2,3,2,Highly Stressed
+393,under 20,male,Other,contract,1-5,Office-based,1,1,5,4,5,4,5,3,1,3,3,3,Mildly Stressed
+394,51-60,female,Other,full-time,1-5,remote,4,1,4,5,4,2,4,1,3,3,1,1,Highly Stressed
+395,51-60,female,Cyber Security,contract,16-20,remote,4,2,3,3,1,4,3,2,2,4,1,5,Mildly Stressed
+396,51-60,female,IT Services,contract,16-20,hybrid,4,1,5,2,2,3,5,4,4,1,1,3,Mildly Stressed
+397,31-40,male,Cyber Security,full-time,1-5,remote,3,4,5,3,1,4,5,3,2,2,1,5,Mildly Stressed
+398,41-50,male,IT Services,part-time,1-5,hybrid,1,4,4,5,3,1,2,4,1,5,4,2,Healthy
+399,21-30,male,Cyber Security,full-time,11-15,Office-based,1,4,3,1,4,1,4,1,5,4,3,5,Mildly Stressed
+400,31-40,female,Other,full-time,1-5,hybrid,4,5,5,1,3,3,4,5,5,1,2,1,Mildly Stressed
+401,51-60,female,Other,part-time,6-10,Office-based,2,4,1,1,5,4,1,2,5,5,3,3,Mildly Stressed
+402,under 20,male,Software development,contract,less than 1 year,remote,4,1,4,3,5,5,1,1,2,5,3,1,Highly Stressed
+403,51-60,male,Hardware engineering,part-time,1-5,Office-based,3,1,4,1,1,4,5,2,5,3,3,4,Burned Out
+404,41-50,male,Cyber Security,contract,16-20,remote,5,4,5,5,5,1,2,1,3,1,1,5,Healthy
+405,51-60,male,Software development,contract,6-10,Office-based,3,3,3,5,5,2,4,1,4,4,1,5,Healthy
+406,under 20,male,Hardware engineering,part-time,16-20,Office-based,2,3,5,3,2,3,2,1,5,2,4,5,Mildly Stressed
+407,41-50,male,Cyber Security,full-time,6-10,Office-based,4,3,2,2,2,2,3,3,3,2,3,2,Mildly Stressed
+408,51-60,female,IT Services,part-time,1-5,Office-based,1,2,5,3,3,5,4,4,3,4,5,1,Highly Stressed
+409,41-50,male,Hardware engineering,contract,less than 1 year,hybrid,4,5,2,1,3,4,1,5,2,3,4,4,Healthy
+410,21-30,female,Other,part-time,16-20,Office-based,2,4,1,3,2,5,5,4,2,3,1,2,Healthy
+411,21-30,female,Software development,part-time,6-10,hybrid,1,2,4,5,1,2,2,4,4,5,3,2,Mildly Stressed
+412,51-60,male,Hardware engineering,contract,11-15,remote,3,3,4,3,2,4,1,2,4,1,1,3,Mildly Stressed
+413,41-50,male,Hardware engineering,full-time,1-5,remote,5,4,3,3,3,5,5,3,1,5,2,4,Mildly Stressed
+414,under 20,female,Other,part-time,less than 1 year,hybrid,5,2,5,2,4,1,1,3,4,2,1,5,Healthy
+415,51-60,male,Cyber Security,contract,1-5,remote,4,1,1,5,5,1,4,1,2,4,1,5,Healthy
+416,21-30,male,IT Services,contract,11-15,remote,3,3,2,4,4,3,2,4,3,1,4,3,Healthy
+417,21-30,female,Other,part-time,less than 1 year,Office-based,2,2,3,4,4,1,3,5,1,4,2,5,Healthy
+418,51-60,female,IT Services,full-time,11-15,Office-based,5,1,1,5,5,1,1,2,4,1,5,1,Healthy
+419,41-50,female,Cyber Security,part-time,1-5,Office-based,3,3,1,4,2,2,2,3,3,2,5,5,Healthy
+420,21-30,male,Hardware engineering,full-time,6-10,hybrid,4,5,2,1,1,1,4,1,2,2,5,1,Highly Stressed
+421,41-50,female,IT Services,full-time,1-5,hybrid,1,3,2,4,4,1,1,5,5,1,3,3,Healthy
+422,21-30,male,Software development,full-time,1-5,remote,4,5,4,1,1,2,4,4,1,3,5,3,Highly Stressed
+423,21-30,female,Software development,full-time,1-5,Office-based,4,5,5,5,3,1,3,5,3,1,3,1,Healthy
+424,31-40,female,Other,part-time,16-20,hybrid,3,5,3,4,4,1,3,3,2,2,1,5,Healthy
+425,21-30,female,Cyber Security,contract,11-15,hybrid,5,4,5,4,3,3,5,2,2,4,5,3,Highly Stressed
+426,under 20,male,Other,contract,11-15,Office-based,3,4,3,1,2,1,5,4,1,5,4,3,Mildly Stressed
+427,51-60,male,Other,contract,11-15,hybrid,1,5,1,1,4,1,5,2,1,4,2,1,Healthy
+428,51-60,female,Other,contract,16-20,Office-based,3,1,2,3,3,3,4,5,4,2,2,3,Mildly Stressed
+429,41-50,female,Software development,contract,6-10,remote,2,5,2,2,3,2,5,5,4,4,1,5,Healthy
+430,21-30,female,Software development,contract,1-5,remote,4,2,1,4,2,1,2,1,1,3,2,3,Healthy
+431,under 20,male,Other,part-time,6-10,remote,5,5,1,2,1,5,4,4,1,3,2,1,Highly Stressed
+432,41-50,female,Software development,full-time,16-20,Office-based,1,4,3,2,1,2,4,5,3,1,1,5,Healthy
+433,31-40,male,Cyber Security,contract,11-15,hybrid,4,4,1,4,4,2,5,3,4,4,1,4,Healthy
+434,41-50,female,Other,part-time,1-5,remote,3,2,3,1,2,1,5,3,2,4,1,1,Mildly Stressed
+435,41-50,female,Software development,contract,less than 1 year,remote,2,2,5,3,4,3,4,2,4,2,4,4,Mildly Stressed
+436,21-30,female,IT Services,contract,less than 1 year,remote,3,3,2,5,1,2,3,3,4,1,1,3,Healthy
+437,31-40,female,Other,full-time,6-10,hybrid,4,1,2,4,2,3,3,5,1,1,1,5,Healthy
+438,41-50,female,Other,full-time,11-15,hybrid,1,1,2,4,5,5,5,3,1,4,1,3,Healthy
+439,under 20,female,Cyber Security,full-time,less than 1 year,Office-based,5,1,5,5,2,3,3,4,4,5,5,5,Highly Stressed
+440,under 20,male,Hardware engineering,contract,6-10,remote,4,4,5,2,2,4,2,2,5,4,5,2,Burned Out
+441,51-60,female,Hardware engineering,contract,16-20,hybrid,1,1,4,3,5,3,2,4,5,4,4,3,Mildly Stressed
+442,31-40,male,Cyber Security,contract,6-10,Office-based,4,3,3,2,3,2,2,5,4,4,4,3,Mildly Stressed
+443,31-40,female,Cyber Security,full-time,6-10,remote,2,3,3,5,3,3,4,5,5,3,2,3,Healthy
+444,51-60,female,Cyber Security,part-time,6-10,hybrid,3,1,4,5,3,3,4,3,4,1,5,1,Highly Stressed
+445,41-50,male,Hardware engineering,contract,1-5,hybrid,5,2,2,3,1,4,4,1,1,3,4,5,Highly Stressed
+446,31-40,female,Cyber Security,contract,6-10,Office-based,1,3,3,5,2,4,4,1,1,5,4,5,Mildly Stressed
+447,under 20,male,Software development,contract,6-10,remote,5,2,3,5,5,1,4,5,1,2,2,5,Healthy
+448,under 20,male,Other,part-time,1-5,remote,5,4,2,3,1,2,5,5,2,5,1,1,Mildly Stressed
+449,21-30,female,Other,contract,1-5,hybrid,5,3,1,4,5,1,3,2,1,1,3,5,Healthy
+450,31-40,male,IT Services,part-time,16-20,remote,1,2,1,2,1,4,5,5,1,2,2,3,Healthy
+451,41-50,male,IT Services,contract,11-15,Office-based,1,1,4,4,1,3,3,5,4,5,3,4,Mildly Stressed
+452,51-60,female,Other,part-time,less than 1 year,hybrid,5,4,5,4,1,4,5,2,5,1,2,2,Highly Stressed
+453,51-60,male,Software development,contract,less than 1 year,hybrid,3,5,3,2,5,5,2,4,5,5,2,5,Mildly Stressed
+454,41-50,female,Hardware engineering,full-time,6-10,Office-based,4,5,3,4,4,3,1,4,1,2,1,1,Healthy
+455,21-30,female,Hardware engineering,full-time,16-20,hybrid,5,1,4,3,1,1,4,2,1,2,4,1,Highly Stressed
+456,51-60,female,Software development,full-time,6-10,remote,2,4,4,2,3,3,1,2,1,5,5,5,Mildly Stressed
+457,31-40,female,Hardware engineering,full-time,less than 1 year,remote,5,4,3,1,2,5,1,4,4,3,2,4,Mildly Stressed
+458,21-30,male,Cyber Security,contract,1-5,hybrid,1,4,2,4,4,4,2,4,4,5,1,5,Healthy
+459,31-40,female,Other,full-time,11-15,Office-based,4,4,2,5,4,2,1,4,4,5,3,1,Healthy
+460,under 20,female,Other,part-time,16-20,Office-based,2,5,5,2,5,2,1,4,5,5,4,2,Mildly Stressed
+461,21-30,male,Software development,full-time,1-5,remote,4,2,3,1,4,2,2,3,2,3,2,4,Healthy
+462,51-60,female,Hardware engineering,full-time,11-15,Office-based,4,4,3,5,5,4,3,2,5,4,3,5,Mildly Stressed
+463,21-30,female,IT Services,full-time,16-20,hybrid,2,2,3,1,5,2,5,1,4,2,2,2,Mildly Stressed
+464,21-30,male,IT Services,contract,16-20,hybrid,5,4,3,4,3,5,1,3,3,1,5,5,Healthy
+465,21-30,male,Hardware engineering,full-time,less than 1 year,remote,5,3,4,5,1,4,4,1,2,2,5,4,Highly Stressed
+466,21-30,male,IT Services,part-time,1-5,remote,5,3,1,4,4,2,2,1,1,2,4,1,Healthy
+467,31-40,male,Software development,full-time,16-20,remote,3,3,3,5,1,1,1,5,5,4,3,4,Healthy
+468,under 20,male,Software development,full-time,16-20,Office-based,5,4,1,2,1,4,3,2,2,2,5,3,Highly Stressed
+469,41-50,male,Hardware engineering,full-time,11-15,hybrid,2,2,2,3,1,4,3,3,3,2,1,5,Healthy
+470,21-30,male,IT Services,part-time,less than 1 year,hybrid,3,5,5,3,5,3,4,2,2,3,4,2,Mildly Stressed
+471,51-60,female,Software development,full-time,6-10,hybrid,5,1,2,1,1,2,1,4,5,3,2,2,Highly Stressed
+472,21-30,male,Software development,part-time,less than 1 year,remote,3,5,3,5,4,1,4,2,4,3,3,4,Healthy
+473,51-60,male,Cyber Security,part-time,6-10,hybrid,2,4,2,4,5,5,3,1,1,3,3,4,Healthy
+474,31-40,male,Cyber Security,full-time,1-5,Office-based,5,3,4,2,4,4,3,4,4,3,1,4,Mildly Stressed
+475,51-60,female,Software development,part-time,1-5,Office-based,1,3,1,2,5,5,5,2,4,1,5,2,Mildly Stressed
+476,41-50,female,Hardware engineering,contract,16-20,hybrid,2,2,3,2,2,5,3,2,5,4,3,1,Highly Stressed
+477,under 20,male,Other,full-time,1-5,remote,4,4,4,3,2,5,2,1,4,5,1,2,Highly Stressed
+478,51-60,male,Other,full-time,16-20,hybrid,4,5,1,4,2,3,5,4,4,3,1,1,Mildly Stressed
+479,51-60,male,Software development,part-time,less than 1 year,Office-based,2,4,4,2,2,5,4,1,5,4,2,4,Highly Stressed
+480,under 20,female,Software development,part-time,1-5,Office-based,4,4,2,2,5,2,3,2,5,5,1,3,Mildly Stressed
+481,41-50,female,Software development,full-time,less than 1 year,Office-based,2,3,3,1,1,2,2,3,3,2,4,2,Mildly Stressed
+482,21-30,male,Hardware engineering,contract,less than 1 year,hybrid,1,5,2,5,3,1,5,3,4,2,3,4,Healthy
+483,51-60,female,Cyber Security,part-time,1-5,Office-based,2,1,5,5,3,1,2,5,2,4,4,2,Mildly Stressed
+484,under 20,male,Software development,part-time,less than 1 year,remote,5,3,3,5,2,5,5,3,1,1,1,4,Mildly Stressed
+485,31-40,female,Software development,contract,1-5,hybrid,5,5,2,1,1,5,5,4,1,1,1,2,Mildly Stressed
+486,under 20,female,IT Services,contract,1-5,hybrid,3,2,3,3,4,3,5,5,5,4,4,5,Mildly Stressed
+487,31-40,male,Hardware engineering,full-time,1-5,Office-based,4,3,1,1,1,5,4,4,5,1,2,2,Highly Stressed
+488,41-50,male,Software development,contract,6-10,Office-based,4,2,3,2,4,5,5,3,3,1,1,5,Mildly Stressed
+489,21-30,male,IT Services,full-time,less than 1 year,remote,2,3,3,4,3,5,5,3,4,2,4,1,Highly Stressed
+490,under 20,male,Other,contract,11-15,hybrid,4,4,1,2,1,4,2,2,5,1,4,2,Highly Stressed
+491,51-60,female,Software development,part-time,1-5,Office-based,5,5,2,2,1,4,5,4,5,1,3,1,Highly Stressed
+492,41-50,female,Software development,full-time,less than 1 year,remote,1,2,3,4,3,3,4,1,1,4,2,3,Mildly Stressed
+493,under 20,female,IT Services,full-time,16-20,Office-based,2,3,4,5,1,3,2,2,4,1,5,5,Mildly Stressed
+494,51-60,male,Hardware engineering,full-time,1-5,hybrid,4,2,3,1,4,2,5,4,3,3,4,2,Highly Stressed
+495,under 20,female,Software development,contract,1-5,Office-based,5,3,2,3,1,3,2,5,5,3,3,1,Highly Stressed
+496,31-40,male,Other,part-time,11-15,hybrid,3,3,1,2,4,2,4,4,5,4,5,4,Mildly Stressed
+497,under 20,female,Software development,full-time,6-10,Office-based,4,1,2,2,2,5,2,5,5,3,3,1,Highly Stressed
+498,under 20,male,Other,full-time,6-10,hybrid,1,1,5,3,1,3,4,5,1,2,3,2,Mildly Stressed
+499,under 20,male,Cyber Security,full-time,1-5,remote,1,1,3,1,4,3,3,3,5,4,2,3,Mildly Stressed
+500,41-50,female,Cyber Security,full-time,less than 1 year,hybrid,4,2,3,2,3,3,5,1,5,1,1,5,Mildly Stressed
+501,under 20,male,Other,part-time,16-20,remote,4,4,1,3,2,2,4,4,1,3,2,4,Healthy
+502,51-60,male,Hardware engineering,contract,16-20,hybrid,5,3,3,2,1,2,5,1,5,2,5,1,Burned Out
+503,31-40,female,Software development,part-time,less than 1 year,remote,4,5,4,5,4,1,4,5,4,4,2,2,Healthy
+504,31-40,male,Software development,full-time,1-5,Office-based,3,1,4,5,1,2,1,3,4,4,1,2,Mildly Stressed
+505,under 20,male,Cyber Security,part-time,16-20,hybrid,5,2,2,2,4,2,1,1,1,1,2,5,Healthy
+506,41-50,male,Other,full-time,6-10,Office-based,2,2,1,2,1,4,1,2,4,5,2,4,Mildly Stressed
+507,41-50,female,Software development,contract,less than 1 year,remote,3,2,5,5,2,3,4,5,3,3,2,1,Mildly Stressed
+508,51-60,female,Software development,contract,11-15,hybrid,5,5,2,2,2,2,5,2,5,2,4,1,Highly Stressed
+509,under 20,male,Hardware engineering,contract,1-5,hybrid,5,5,1,1,1,3,1,1,3,4,4,1,Highly Stressed
+510,31-40,female,IT Services,full-time,less than 1 year,Office-based,1,1,1,1,1,3,5,1,4,3,2,5,Highly Stressed
+511,41-50,male,Cyber Security,part-time,16-20,hybrid,5,5,2,4,5,4,4,1,1,2,1,5,Healthy
+512,under 20,male,Cyber Security,contract,1-5,hybrid,3,1,2,1,1,3,5,4,1,2,1,4,Mildly Stressed
+513,41-50,male,IT Services,full-time,6-10,Office-based,4,5,3,2,1,2,5,5,3,4,1,1,Mildly Stressed
+514,41-50,male,Software development,full-time,1-5,hybrid,3,5,5,2,2,3,1,5,4,3,1,1,Mildly Stressed
+515,31-40,male,Hardware engineering,part-time,1-5,Office-based,2,5,4,3,1,1,2,5,5,2,3,4,Healthy
+516,21-30,female,Hardware engineering,contract,6-10,Office-based,5,1,3,1,3,1,3,4,4,4,2,4,Highly Stressed
+517,51-60,male,Cyber Security,full-time,6-10,Office-based,5,3,1,5,1,4,4,1,4,3,2,4,Mildly Stressed
+518,51-60,female,Hardware engineering,part-time,1-5,Office-based,5,1,5,5,5,2,4,1,1,3,3,2,Mildly Stressed
+519,31-40,female,IT Services,contract,6-10,Office-based,5,3,5,4,4,4,4,2,2,4,1,4,Highly Stressed
+520,41-50,male,Software development,part-time,less than 1 year,remote,1,2,2,3,2,1,3,4,5,3,5,3,Mildly Stressed
+521,under 20,male,IT Services,part-time,6-10,remote,1,2,5,5,3,2,2,3,5,5,5,5,Mildly Stressed
+522,41-50,female,Other,full-time,6-10,Office-based,4,1,5,4,4,3,5,4,1,2,3,4,Mildly Stressed
+523,31-40,female,Cyber Security,full-time,1-5,remote,5,3,1,1,3,2,4,2,4,2,5,2,Highly Stressed
+524,51-60,female,Hardware engineering,full-time,less than 1 year,remote,2,3,3,3,2,5,5,2,1,3,4,3,Highly Stressed
+525,41-50,male,Other,part-time,11-15,hybrid,4,3,5,3,5,2,1,2,4,4,2,2,Mildly Stressed
+526,51-60,female,Hardware engineering,full-time,11-15,Office-based,5,2,2,2,2,3,1,1,2,1,5,2,Highly Stressed
+527,under 20,male,Software development,part-time,16-20,remote,1,1,3,1,3,5,1,3,2,3,4,2,Mildly Stressed
+528,51-60,male,Software development,part-time,6-10,hybrid,2,4,2,3,3,4,4,2,3,1,2,2,Mildly Stressed
+529,51-60,male,Software development,full-time,6-10,hybrid,4,3,5,4,2,2,3,5,4,3,4,1,Highly Stressed
+530,21-30,female,Hardware engineering,contract,less than 1 year,Office-based,2,3,3,5,1,4,4,1,1,1,2,5,Healthy
+531,21-30,male,Other,contract,11-15,Office-based,5,4,5,1,2,2,1,3,1,3,2,1,Mildly Stressed
+532,21-30,male,Software development,contract,16-20,hybrid,3,1,1,1,5,1,1,5,1,4,5,3,Healthy
+533,51-60,male,Other,part-time,less than 1 year,Office-based,2,3,3,3,2,1,4,3,3,1,3,1,Mildly Stressed
+534,31-40,male,Hardware engineering,part-time,6-10,Office-based,2,1,2,3,4,3,3,3,5,5,5,3,Highly Stressed
+535,51-60,male,Other,part-time,11-15,hybrid,1,3,1,3,1,1,3,5,1,4,1,4,Healthy
+536,31-40,female,Hardware engineering,full-time,16-20,hybrid,5,5,4,4,4,5,5,4,2,3,4,3,Mildly Stressed
+537,31-40,male,Hardware engineering,part-time,1-5,Office-based,2,3,2,2,2,5,2,3,1,1,1,1,Healthy
+538,21-30,male,Cyber Security,full-time,11-15,remote,5,5,5,3,1,2,1,4,1,2,2,1,Mildly Stressed
+539,41-50,female,Hardware engineering,full-time,16-20,Office-based,1,1,2,2,4,4,3,3,1,4,5,3,Mildly Stressed
+540,under 20,male,Hardware engineering,contract,less than 1 year,remote,5,3,4,2,4,5,1,5,5,1,1,1,Mildly Stressed
+541,21-30,female,IT Services,contract,1-5,hybrid,1,2,2,1,1,2,2,3,1,4,1,3,Healthy
+542,21-30,male,Software development,contract,16-20,remote,1,2,1,5,1,4,1,2,5,1,1,2,Healthy
+543,41-50,female,Cyber Security,full-time,16-20,hybrid,4,4,2,5,3,1,3,2,5,2,2,5,Healthy
+544,under 20,female,Cyber Security,full-time,6-10,Office-based,5,2,3,4,1,2,5,3,3,5,2,3,Highly Stressed
+545,51-60,male,Cyber Security,full-time,11-15,Office-based,3,5,4,4,2,4,4,5,2,2,2,2,Healthy
+546,51-60,male,IT Services,part-time,6-10,hybrid,4,2,2,5,5,3,4,5,1,3,1,2,Healthy
+547,21-30,male,Hardware engineering,full-time,1-5,hybrid,1,2,4,5,3,3,3,1,1,4,4,2,Mildly Stressed
+548,under 20,female,Software development,contract,16-20,hybrid,3,2,1,1,1,5,3,5,1,5,5,2,Highly Stressed
+549,21-30,female,Other,contract,6-10,Office-based,2,3,3,1,5,4,2,4,5,4,5,3,Mildly Stressed
+550,31-40,female,Hardware engineering,full-time,11-15,Office-based,2,4,5,5,3,3,1,3,4,1,2,1,Healthy
+551,21-30,male,IT Services,full-time,1-5,remote,4,1,2,3,2,5,2,2,2,3,1,2,Mildly Stressed
+552,21-30,female,Hardware engineering,contract,less than 1 year,hybrid,3,4,1,3,5,2,4,5,1,3,4,4,Healthy
+553,51-60,female,Hardware engineering,full-time,6-10,remote,5,5,4,1,1,2,1,2,4,4,3,2,Highly Stressed
+554,51-60,male,IT Services,contract,1-5,Office-based,3,3,4,2,1,4,2,1,4,3,2,1,Highly Stressed
+555,51-60,female,Cyber Security,part-time,less than 1 year,remote,4,3,1,5,2,4,4,3,4,4,3,1,Mildly Stressed
+556,31-40,female,Cyber Security,contract,6-10,remote,5,2,2,4,3,4,1,5,2,1,5,5,Healthy
+557,51-60,male,Software development,part-time,1-5,Office-based,5,2,5,3,5,4,5,2,4,1,5,5,Highly Stressed
+558,under 20,female,Software development,full-time,1-5,Office-based,2,5,2,2,2,3,5,5,1,4,4,2,Mildly Stressed
+559,41-50,male,Cyber Security,full-time,6-10,hybrid,3,3,3,3,3,3,2,1,1,2,4,2,Mildly Stressed
+560,under 20,male,Other,part-time,1-5,remote,5,1,2,2,4,5,3,2,3,2,3,5,Highly Stressed
+561,under 20,male,Hardware engineering,full-time,16-20,Office-based,4,4,3,5,4,3,1,2,5,1,5,2,Mildly Stressed
+562,51-60,male,Other,part-time,6-10,Office-based,2,3,4,5,3,2,2,3,4,5,4,4,Mildly Stressed
+563,41-50,male,Hardware engineering,full-time,1-5,remote,5,1,3,5,1,5,3,3,5,2,4,3,Highly Stressed
+564,41-50,female,Cyber Security,contract,less than 1 year,Office-based,3,1,5,1,1,3,3,2,5,4,5,5,Burned Out
+565,41-50,female,Software development,full-time,less than 1 year,hybrid,2,4,1,2,4,4,1,3,5,1,5,5,Healthy
+566,31-40,male,Software development,contract,16-20,hybrid,3,1,3,4,1,3,1,2,5,3,1,1,Highly Stressed
+567,51-60,male,Other,contract,6-10,remote,3,5,2,4,1,1,3,4,5,3,4,2,Mildly Stressed
+568,41-50,female,Software development,part-time,1-5,hybrid,3,1,3,5,3,5,4,5,1,2,3,5,Healthy
+569,31-40,male,Cyber Security,full-time,1-5,Office-based,2,5,4,4,3,3,2,4,2,5,2,5,Healthy
+570,21-30,male,Other,part-time,less than 1 year,Office-based,5,1,3,3,1,3,1,4,4,2,2,4,Mildly Stressed
+571,21-30,male,Hardware engineering,full-time,16-20,Office-based,1,2,5,2,3,2,3,5,4,5,5,2,Highly Stressed
+572,31-40,female,Software development,contract,less than 1 year,Office-based,5,1,3,2,5,4,4,2,1,2,3,3,Mildly Stressed
+573,31-40,female,IT Services,contract,less than 1 year,remote,2,5,5,2,4,4,5,2,1,3,1,4,Healthy
+574,51-60,male,Software development,full-time,16-20,hybrid,1,1,2,3,5,2,3,3,5,5,4,3,Mildly Stressed
+575,51-60,male,Hardware engineering,full-time,6-10,hybrid,1,1,4,1,5,2,4,1,2,3,1,1,Mildly Stressed
+576,21-30,female,Other,part-time,1-5,Office-based,1,1,1,3,1,1,5,2,4,4,3,5,Mildly Stressed
+577,41-50,female,Hardware engineering,full-time,6-10,remote,4,5,2,2,1,5,4,5,3,4,1,4,Mildly Stressed
+578,21-30,male,IT Services,full-time,11-15,Office-based,2,1,2,2,5,4,1,1,1,1,5,3,Mildly Stressed
+579,41-50,male,Cyber Security,full-time,11-15,Office-based,4,4,1,2,5,2,3,5,3,3,2,2,Healthy
+580,41-50,female,Software development,part-time,11-15,remote,1,4,3,4,2,2,5,5,4,3,5,1,Mildly Stressed
+581,51-60,female,Other,full-time,16-20,remote,4,5,3,1,2,5,4,5,1,1,4,1,Mildly Stressed
+582,under 20,female,Cyber Security,contract,less than 1 year,Office-based,4,2,3,3,4,2,5,1,4,4,5,5,Highly Stressed
+583,under 20,male,Hardware engineering,part-time,6-10,hybrid,2,4,4,2,5,1,2,4,1,4,3,5,Healthy
+584,31-40,female,Other,part-time,1-5,Office-based,3,3,2,5,3,5,3,5,4,5,3,3,Mildly Stressed
+585,51-60,male,Cyber Security,contract,11-15,hybrid,4,4,5,1,2,1,1,3,3,5,4,3,Highly Stressed
+586,41-50,female,Other,contract,6-10,hybrid,4,3,1,5,1,3,5,2,2,4,4,1,Highly Stressed
+587,under 20,female,IT Services,contract,11-15,remote,1,5,2,1,5,4,4,2,1,2,2,3,Healthy
+588,41-50,female,IT Services,full-time,11-15,remote,1,2,3,2,3,2,5,2,3,3,1,5,Mildly Stressed
+589,under 20,female,Software development,contract,1-5,Office-based,1,3,1,1,3,5,4,1,4,5,2,1,Highly Stressed
+590,under 20,male,Software development,full-time,16-20,hybrid,5,3,5,1,3,1,5,3,3,2,5,1,Burned out
+591,under 20,male,IT Services,part-time,less than 1 year,hybrid,4,4,2,2,1,4,1,3,1,5,1,2,Mildly Stressed
+592,51-60,female,Other,part-time,16-20,Office-based,1,3,2,5,2,4,1,3,3,1,4,2,Healthy
+593,21-30,male,IT Services,contract,6-10,Office-based,2,5,4,5,3,2,3,3,4,3,3,3,Healthy
+594,41-50,female,Software development,full-time,16-20,Office-based,5,5,2,4,2,4,1,3,5,5,5,3,Highly Stressed
+595,51-60,female,IT Services,contract,6-10,remote,3,5,2,5,4,2,5,4,2,4,2,5,Healthy
+596,51-60,female,IT Services,contract,6-10,Office-based,4,4,5,5,1,3,5,3,2,1,4,5,Mildly Stressed
+597,51-60,female,Other,full-time,less than 1 year,Office-based,4,2,5,1,2,2,1,3,5,1,1,2,Mildly Stressed
+598,51-60,male,Cyber Security,contract,1-5,hybrid,2,4,1,4,2,1,2,1,1,4,1,1,Healthy
+599,51-60,female,Software development,part-time,less than 1 year,Office-based,3,5,3,2,3,4,5,1,3,1,3,4,Mildly Stressed
+600,31-40,female,Other,contract,16-20,hybrid,3,4,5,2,3,4,3,3,3,3,4,4,Mildly Stressed
+601,41-50,male,IT Services,full-time,6-10,hybrid,5,5,1,3,1,4,2,4,5,5,4,3,Highly Stressed
+602,51-60,female,IT Services,full-time,11-15,remote,4,1,2,4,2,2,1,3,5,1,5,4,Mildly Stressed
+603,41-50,female,Cyber Security,part-time,11-15,Office-based,1,1,1,1,5,5,4,3,4,3,5,4,Mildly Stressed
+604,31-40,female,Software development,full-time,6-10,Office-based,2,3,1,3,3,2,5,3,4,4,1,2,Mildly Stressed
+605,31-40,male,Software development,full-time,less than 1 year,hybrid,2,2,1,3,3,1,4,5,2,5,2,1,Healthy
+606,41-50,female,Hardware engineering,part-time,1-5,remote,2,1,1,2,4,2,3,4,1,4,1,5,Healthy
+607,under 20,male,Software development,contract,less than 1 year,remote,2,5,5,5,1,4,2,2,1,5,5,2,Mildly Stressed
+608,21-30,female,Cyber Security,part-time,6-10,Office-based,1,4,3,1,2,3,4,3,5,1,5,5,Mildly Stressed
+609,under 20,female,Hardware engineering,contract,6-10,hybrid,1,4,1,4,2,1,3,2,2,1,5,2,Healthy
+610,under 20,male,Hardware engineering,part-time,1-5,Office-based,5,3,4,3,2,3,4,4,2,5,1,2,Mildly Stressed
+611,under 20,female,IT Services,contract,16-20,Office-based,4,4,2,1,3,1,4,3,4,3,4,4,Mildly Stressed
+612,51-60,female,IT Services,part-time,16-20,Office-based,1,1,2,2,1,1,3,2,3,3,2,5,Mildly Stressed
+613,31-40,male,Software development,contract,1-5,Office-based,5,4,2,3,2,4,5,2,1,3,2,2,Mildly Stressed
+614,under 20,male,Hardware engineering,part-time,16-20,hybrid,3,1,2,3,5,2,4,4,2,2,5,4,Healthy
+615,31-40,male,IT Services,contract,11-15,remote,4,1,2,2,4,4,3,3,4,3,3,3,Highly Stressed
+616,41-50,male,Cyber Security,part-time,16-20,Office-based,1,2,1,2,4,4,4,5,4,1,1,5,Healthy
+617,21-30,male,IT Services,full-time,16-20,Office-based,3,3,3,2,2,4,5,4,4,2,4,2,Highly Stressed
+618,41-50,female,IT Services,contract,16-20,Office-based,5,5,4,1,3,3,3,5,3,3,5,3,Mildly Stressed
+619,41-50,male,Hardware engineering,part-time,11-15,Office-based,1,1,5,1,4,1,4,3,2,1,3,4,Mildly Stressed
+620,51-60,female,Hardware engineering,contract,16-20,remote,1,3,4,1,4,5,1,2,5,2,5,2,Highly Stressed
+621,21-30,female,Other,contract,11-15,remote,3,5,5,5,4,2,5,4,5,1,3,4,Healthy
+622,41-50,female,Cyber Security,part-time,1-5,remote,1,4,5,3,4,4,4,4,4,5,2,4,Mildly Stressed
+623,41-50,male,Hardware engineering,contract,less than 1 year,remote,2,3,4,1,2,1,2,4,4,1,3,4,Healthy
+624,21-30,male,Software development,part-time,1-5,Office-based,1,3,1,5,1,2,3,1,3,2,2,5,Healthy
+625,21-30,female,Cyber Security,full-time,less than 1 year,hybrid,4,3,2,3,1,5,4,3,4,3,2,3,Highly Stressed
+626,41-50,male,Cyber Security,contract,1-5,remote,3,4,1,1,3,5,5,1,2,2,1,3,Mildly Stressed
+627,21-30,male,Hardware engineering,full-time,less than 1 year,remote,4,4,2,2,5,4,5,4,4,3,3,1,Mildly Stressed
+628,41-50,male,Cyber Security,contract,less than 1 year,Office-based,5,3,3,4,1,5,2,4,4,3,4,2,Highly Stressed
+629,41-50,male,Hardware engineering,contract,6-10,Office-based,4,2,5,1,5,5,2,5,2,4,4,4,Highly Stressed
+630,51-60,female,IT Services,contract,less than 1 year,Office-based,2,1,4,4,1,2,4,1,1,5,3,2,Highly Stressed
+631,under 20,female,Other,part-time,less than 1 year,Office-based,2,4,3,1,1,2,1,2,5,4,1,3,Mildly Stressed
+632,41-50,male,IT Services,full-time,6-10,hybrid,4,2,2,2,3,4,5,3,4,2,4,3,Highly Stressed
+633,31-40,female,Hardware engineering,contract,16-20,hybrid,5,4,1,4,4,1,1,2,2,4,5,4,Healthy
+634,under 20,male,Hardware engineering,part-time,16-20,remote,1,3,4,5,3,4,1,2,5,3,4,5,Mildly Stressed
+635,under 20,male,IT Services,contract,6-10,hybrid,2,2,5,2,1,3,4,3,3,2,1,4,Mildly Stressed
+636,under 20,female,Software development,part-time,11-15,remote,4,5,3,4,4,5,3,4,1,4,2,4,Healthy
+637,51-60,female,Software development,contract,less than 1 year,remote,4,1,5,4,4,1,3,5,4,1,2,1,Mildly Stressed
+638,41-50,female,Software development,full-time,less than 1 year,hybrid,4,1,2,2,4,2,3,4,1,5,2,5,Healthy
+639,51-60,male,Hardware engineering,full-time,6-10,remote,1,4,5,2,5,3,2,4,4,1,1,2,Healthy
+640,41-50,female,Cyber Security,contract,6-10,Office-based,3,1,1,2,1,3,5,1,4,2,2,5,Highly Stressed
+641,51-60,male,Hardware engineering,part-time,11-15,remote,5,5,3,3,2,5,2,2,4,4,2,4,Mildly Stressed
+642,51-60,female,Cyber Security,contract,16-20,Office-based,3,2,3,5,3,2,5,2,1,3,1,4,Healthy
+643,31-40,female,IT Services,part-time,1-5,hybrid,5,2,1,1,5,1,5,2,3,4,5,4,Highly Stressed
+644,51-60,male,Other,contract,16-20,hybrid,5,3,5,4,3,2,5,5,2,2,4,4,Mildly Stressed
+645,21-30,male,Cyber Security,part-time,less than 1 year,remote,4,2,1,1,2,5,4,5,2,2,1,4,Mildly Stressed
+646,31-40,male,Software development,full-time,6-10,Office-based,2,4,4,2,4,3,3,5,3,2,1,5,Healthy
+647,51-60,male,Hardware engineering,contract,11-15,remote,4,5,1,5,2,5,2,3,3,2,3,4,Healthy
+648,under 20,male,IT Services,full-time,16-20,hybrid,1,3,5,5,3,4,2,5,4,4,2,3,Healthy
+649,21-30,male,Software development,full-time,11-15,remote,5,4,1,3,2,3,4,1,4,1,5,3,Highly Stressed
+650,21-30,male,IT Services,contract,16-20,remote,2,4,2,2,1,5,5,1,2,3,3,1,Highly Stressed
+651,21-30,male,Other,contract,less than 1 year,Office-based,5,4,1,4,2,1,3,4,4,3,5,2,Mildly Stressed
+652,31-40,female,Hardware engineering,part-time,1-5,hybrid,5,1,1,3,1,1,1,4,4,5,2,3,Mildly Stressed
+653,51-60,male,Hardware engineering,part-time,11-15,remote,4,4,5,2,2,1,1,4,3,2,2,1,Mildly Stressed
+654,51-60,male,Other,full-time,11-15,Office-based,2,1,4,3,1,4,4,4,1,2,2,5,Mildly Stressed
+655,under 20,female,Hardware engineering,part-time,1-5,remote,2,2,4,1,1,2,3,1,5,2,4,2,Highly Stressed
+656,under 20,male,Cyber Security,part-time,11-15,Office-based,5,1,5,2,2,1,1,4,5,1,5,4,Highly Stressed
+657,21-30,female,IT Services,contract,11-15,Office-based,2,4,5,4,5,4,1,1,4,2,5,4,Mildly Stressed
+658,under 20,female,Software development,part-time,16-20,remote,2,5,5,4,4,1,2,5,4,5,3,5,Healthy
+659,31-40,male,Other,full-time,16-20,hybrid,4,5,2,2,4,4,3,5,5,5,1,2,Mildly Stressed
+660,51-60,female,Cyber Security,part-time,1-5,hybrid,3,2,3,3,4,1,1,3,3,1,2,3,Healthy
+661,21-30,male,Software development,full-time,less than 1 year,Office-based,1,4,1,5,1,2,2,4,5,2,2,2,Healthy
+662,under 20,female,Software development,contract,11-15,hybrid,3,1,5,2,4,5,3,5,5,4,3,1,Highly Stressed
+663,31-40,female,Other,full-time,less than 1 year,Office-based,2,5,5,4,1,1,5,5,5,4,5,5,Mildly Stressed
+664,31-40,female,Cyber Security,part-time,1-5,hybrid,5,3,5,1,5,5,3,2,4,3,4,3,Highly Stressed
+665,under 20,male,Software development,contract,1-5,remote,1,4,4,4,2,1,4,2,4,1,5,2,Mildly Stressed
+666,51-60,male,Software development,part-time,16-20,hybrid,1,4,5,5,2,2,2,1,5,4,4,2,Mildly Stressed
+667,under 20,female,Cyber Security,contract,11-15,Office-based,5,3,1,4,1,5,5,3,4,3,4,3,Highly Stressed
+668,21-30,female,Hardware engineering,contract,6-10,Office-based,1,5,5,5,1,4,2,2,5,5,5,1,Highly Stressed
+669,under 20,male,Software development,part-time,1-5,hybrid,5,3,1,2,5,1,2,3,3,3,2,1,Healthy
+670,31-40,male,IT Services,part-time,11-15,remote,1,2,2,4,4,1,1,5,4,2,4,2,Healthy
+671,under 20,female,Cyber Security,contract,less than 1 year,Office-based,3,1,3,3,5,4,3,1,1,2,3,4,Mildly Stressed
+672,51-60,female,Software development,contract,16-20,Office-based,1,1,4,3,2,2,2,3,4,5,3,3,Mildly Stressed
+673,41-50,male,Other,part-time,less than 1 year,Office-based,4,5,1,4,2,3,2,2,3,1,4,1,Healthy
+674,under 20,male,IT Services,full-time,1-5,Office-based,5,3,2,4,4,1,4,5,3,2,2,1,Healthy
+675,51-60,male,Software development,part-time,1-5,Office-based,1,4,3,1,2,4,4,4,4,2,4,1,Highly Stressed
+676,51-60,male,IT Services,contract,less than 1 year,remote,5,4,3,4,1,3,4,5,2,3,3,5,Mildly Stressed
+677,31-40,male,IT Services,part-time,1-5,hybrid,4,4,3,1,2,1,2,2,5,3,3,4,Mildly Stressed
+678,51-60,female,Hardware engineering,full-time,11-15,remote,1,2,1,1,3,5,5,2,5,3,5,1,Highly Stressed
+679,51-60,male,IT Services,part-time,1-5,remote,1,2,2,1,4,4,3,4,3,4,2,4,Mildly Stressed
+680,51-60,female,Hardware engineering,contract,16-20,Office-based,4,4,5,1,4,5,2,5,4,5,5,2,Highly Stressed
+681,51-60,male,Cyber Security,part-time,11-15,remote,4,5,2,2,4,2,1,3,2,1,1,2,Healthy
+682,21-30,female,Hardware engineering,contract,6-10,Office-based,4,2,2,3,3,3,5,3,1,3,4,5,Mildly Stressed
+683,21-30,male,Other,contract,1-5,remote,5,2,2,1,5,4,5,5,5,1,5,4,Highly Stressed
+684,31-40,male,Software development,part-time,1-5,Office-based,4,1,1,3,1,1,3,3,2,3,2,3,Mildly Stressed
+685,under 20,female,Cyber Security,contract,16-20,Office-based,5,1,1,1,4,1,5,5,5,2,4,5,Mildly Stressed
+686,51-60,female,Cyber Security,contract,16-20,remote,3,5,1,3,2,3,3,5,4,1,4,1,Healthy
+687,under 20,male,Other,full-time,less than 1 year,remote,1,2,2,4,1,5,5,2,5,4,4,2,Highly Stressed
+688,under 20,male,Hardware engineering,full-time,less than 1 year,hybrid,1,2,1,4,2,5,3,1,1,3,4,2,Mildly Stressed
+689,31-40,male,Software development,full-time,less than 1 year,hybrid,2,3,3,3,1,4,4,2,4,5,4,3,Highly Stressed
+690,51-60,male,Hardware engineering,full-time,16-20,hybrid,3,5,1,1,1,4,4,3,3,2,2,5,Healthy
+691,51-60,male,IT Services,contract,less than 1 year,remote,4,5,4,2,2,5,5,1,2,3,1,4,Highly Stressed
+692,41-50,female,Hardware engineering,part-time,less than 1 year,remote,4,3,1,3,2,4,5,5,5,1,3,2,Mildly Stressed
+693,under 20,female,Cyber Security,contract,6-10,Office-based,3,3,1,5,1,5,3,3,4,3,1,1,Mildly Stressed
+694,under 20,male,Software development,contract,less than 1 year,hybrid,4,1,1,2,4,3,3,4,4,2,3,3,Mildly Stressed
+695,21-30,female,Hardware engineering,contract,1-5,Office-based,2,5,1,5,2,4,2,3,5,5,5,3,Mildly Stressed
+696,41-50,female,Software development,part-time,16-20,Office-based,5,5,4,3,3,5,4,1,3,5,4,3,Highly Stressed
+697,21-30,female,Software development,full-time,11-15,Office-based,1,3,5,1,3,4,2,1,5,5,5,1,Burned Out
+698,21-30,male,IT Services,contract,6-10,Office-based,3,4,1,5,1,1,2,5,3,2,5,3,Healthy
+699,21-30,female,IT Services,contract,16-20,hybrid,1,4,3,3,5,1,1,4,5,3,3,4,Healthy
+700,31-40,male,Cyber Security,full-time,16-20,Office-based,5,1,4,2,1,2,3,5,4,2,2,4,Highly Stressed
+701,31-40,female,Other,contract,1-5,remote,3,4,5,1,1,5,1,4,1,2,4,5,Mildly Stressed
+702,21-30,male,Software development,part-time,less than 1 year,remote,5,4,1,5,4,2,1,4,1,3,5,5,Healthy
+703,41-50,female,Other,contract,1-5,remote,4,4,5,3,4,5,2,5,4,4,1,4,Mildly Stressed
+704,under 20,male,Cyber Security,contract,less than 1 year,hybrid,4,2,3,1,5,4,1,3,1,5,4,1,Mildly Stressed
+705,41-50,male,Software development,full-time,less than 1 year,Office-based,4,1,4,1,5,5,3,2,3,1,2,5,Highly Stressed
+706,51-60,female,Software development,contract,16-20,hybrid,5,3,4,4,5,1,2,4,4,1,4,3,Healthy
+707,31-40,male,Other,contract,less than 1 year,Office-based,5,4,5,1,5,4,3,1,3,3,5,4,Highly Stressed
+708,under 20,male,Hardware engineering,part-time,6-10,hybrid,5,2,1,3,5,1,5,5,4,1,1,2,Healthy
+709,under 20,male,IT Services,full-time,6-10,hybrid,1,4,2,2,1,4,1,3,3,4,5,1,Mildly Stressed
+710,51-60,male,Hardware engineering,full-time,6-10,Office-based,5,2,4,4,1,5,2,4,3,2,2,1,Highly Stressed
+711,51-60,male,Other,part-time,16-20,hybrid,4,1,2,3,3,5,4,3,1,5,3,4,Highly Stressed
+712,21-30,male,IT Services,contract,1-5,Office-based,2,4,4,3,3,1,3,5,4,1,1,2,Healthy
+713,31-40,male,Hardware engineering,full-time,11-15,remote,5,2,1,3,2,3,1,1,5,1,2,1,Mildly Stressed
+714,31-40,male,IT Services,full-time,less than 1 year,remote,2,5,1,5,1,5,3,4,1,3,2,5,Healthy
+715,41-50,female,Software development,contract,11-15,remote,4,5,4,5,5,3,3,4,3,3,5,2,Mildly Stressed
+716,21-30,female,Hardware engineering,contract,1-5,hybrid,5,2,5,2,2,4,5,3,3,2,5,3,Burned Out
+717,21-30,male,IT Services,full-time,1-5,remote,1,4,1,3,4,3,3,5,5,5,5,5,Healthy
+718,21-30,male,IT Services,contract,16-20,Office-based,1,4,1,5,1,1,5,2,5,1,3,2,Healthy
+719,21-30,female,IT Services,full-time,6-10,remote,2,1,3,5,3,2,5,4,3,2,4,4,Mildly Stressed
+720,31-40,female,Hardware engineering,contract,6-10,remote,1,1,1,5,1,2,5,1,5,5,4,1,Highly Stressed
+721,31-40,female,Cyber Security,contract,1-5,hybrid,1,3,3,2,1,1,1,4,2,2,5,5,Healthy
+722,21-30,male,Hardware engineering,part-time,16-20,Office-based,1,1,1,2,1,2,3,4,1,1,5,4,Healthy
+723,41-50,female,Other,contract,16-20,hybrid,4,4,1,3,1,1,3,2,4,3,3,2,Mildly Stressed
+724,under 20,male,Hardware engineering,part-time,less than 1 year,hybrid,1,3,5,4,4,5,5,2,5,3,4,3,Highly Stressed
+725,under 20,male,IT Services,contract,6-10,Office-based,3,1,5,3,3,3,3,5,5,3,3,1,Highly Stressed
+726,41-50,female,Software development,full-time,1-5,hybrid,5,2,1,5,1,2,3,4,2,4,2,1,Mildly Stressed
+727,21-30,male,Hardware engineering,full-time,11-15,Office-based,1,5,4,5,4,5,5,4,4,2,4,5,Healthy
+728,31-40,male,Hardware engineering,contract,6-10,remote,1,1,4,1,2,2,4,3,2,1,5,4,Highly Stressed
+729,under 20,male,IT Services,contract,less than 1 year,Office-based,1,1,1,3,1,4,4,3,4,2,1,2,Mildly Stressed
+730,51-60,male,Software development,full-time,16-20,Office-based,3,2,4,5,4,1,5,1,1,3,2,2,Mildly Stressed
+731,51-60,female,Software development,contract,1-5,Office-based,1,4,1,5,5,1,1,1,5,2,1,4,Healthy
+732,41-50,female,Other,part-time,6-10,hybrid,1,2,5,4,2,5,3,3,1,5,3,1,Mildly Stressed
+733,21-30,male,Hardware engineering,part-time,11-15,Office-based,5,1,2,1,3,4,3,1,4,2,3,4,Highly Stressed
+734,under 20,male,Software development,part-time,less than 1 year,Office-based,3,4,3,3,1,3,4,4,5,4,3,2,Highly Stressed
+735,21-30,female,Software development,part-time,less than 1 year,Office-based,3,3,4,2,1,4,5,2,2,4,5,4,Burned out
+736,under 20,male,Cyber Security,part-time,6-10,remote,1,1,4,3,4,4,1,4,3,3,3,1,Mildly Stressed
+737,41-50,female,Cyber Security,contract,11-15,Office-based,3,2,5,3,3,3,5,3,2,1,1,5,Mildly Stressed
+738,41-50,male,Software development,contract,less than 1 year,hybrid,2,3,4,4,5,3,4,5,3,5,2,1,Mildly Stressed
+739,51-60,male,Other,part-time,1-5,Office-based,3,5,1,3,2,4,4,5,2,1,5,3,Healthy
+740,21-30,female,Software development,contract,less than 1 year,Office-based,3,3,1,4,3,2,3,3,4,1,2,3,Healthy
+741,51-60,female,IT Services,contract,11-15,remote,3,2,2,4,1,2,2,4,1,5,3,4,Mildly Stressed
+742,21-30,female,Hardware engineering,part-time,16-20,Office-based,4,3,2,5,4,4,1,1,3,4,4,1,Mildly Stressed
+743,51-60,female,Other,contract,16-20,hybrid,4,2,2,2,5,2,1,1,4,3,5,1,Mildly Stressed
+744,31-40,male,IT Services,contract,6-10,Office-based,4,1,1,4,4,3,2,5,1,2,3,2,Healthy
+745,31-40,female,Other,contract,11-15,hybrid,3,4,2,1,2,3,4,3,1,4,5,5,Mildly Stressed
+746,31-40,male,IT Services,part-time,less than 1 year,remote,2,5,2,1,3,2,5,3,5,3,4,1,Highly Stressed
+747,31-40,female,Hardware engineering,contract,less than 1 year,Office-based,3,4,1,2,4,3,1,2,5,4,1,4,Healthy
+748,under 20,female,Hardware engineering,full-time,16-20,remote,1,4,5,4,4,1,2,5,5,5,1,2,Healthy
+749,31-40,male,Cyber Security,full-time,16-20,Office-based,2,4,4,2,1,3,3,3,3,1,1,2,Mildly Stressed
+750,41-50,female,IT Services,part-time,1-5,hybrid,4,2,3,5,4,4,3,2,3,5,4,4,Mildly Stressed
+751,41-50,female,Cyber Security,full-time,16-20,remote,5,2,1,1,5,5,4,1,1,2,2,4,Mildly Stressed
+752,under 20,female,IT Services,part-time,1-5,Office-based,2,5,1,3,3,2,1,5,3,5,4,1,Healthy
+753,31-40,female,Cyber Security,full-time,less than 1 year,hybrid,4,2,3,1,2,2,5,5,1,1,4,1,Mildly Stressed
+754,31-40,male,Hardware engineering,full-time,1-5,remote,2,2,3,4,4,3,1,3,4,4,3,2,Mildly Stressed
+755,31-40,male,Other,full-time,1-5,Office-based,2,2,2,2,5,3,3,3,2,3,1,2,Healthy
+756,51-60,female,Cyber Security,part-time,6-10,remote,3,2,3,1,2,5,1,4,1,2,5,5,Mildly Stressed
+757,21-30,female,IT Services,part-time,16-20,Office-based,1,1,4,3,5,5,3,1,1,4,2,2,Mildly Stressed
+758,51-60,female,IT Services,contract,1-5,hybrid,5,5,4,3,4,4,2,1,4,3,5,4,Mildly Stressed
+759,21-30,male,Hardware engineering,part-time,less than 1 year,hybrid,4,2,4,2,4,1,2,2,5,1,3,4,Mildly Stressed
+760,31-40,male,IT Services,full-time,11-15,remote,2,5,4,2,3,4,3,2,5,5,3,5,Highly Stressed
+761,31-40,male,Software development,full-time,1-5,remote,5,3,4,1,1,2,5,4,5,4,2,3,Highly Stressed
+762,51-60,male,Other,part-time,16-20,Office-based,2,1,2,4,5,3,5,1,1,3,5,3,Mildly Stressed
+763,51-60,female,Cyber Security,part-time,6-10,hybrid,1,2,1,5,1,4,1,2,1,3,2,4,Healthy
+764,21-30,female,Other,part-time,less than 1 year,Office-based,5,1,3,3,1,3,3,1,3,5,2,3,Highly Stressed
+765,41-50,female,Hardware engineering,contract,6-10,hybrid,4,1,1,2,2,3,4,1,3,4,1,3,Mildly Stressed
+766,21-30,male,Cyber Security,full-time,11-15,remote,2,3,3,5,2,4,5,2,2,4,5,5,Mildly Stressed
+767,51-60,female,Cyber Security,contract,1-5,Office-based,1,5,2,5,5,4,5,3,2,1,1,2,Healthy
+768,51-60,male,Software development,contract,1-5,Office-based,5,1,2,5,1,5,2,3,3,4,1,2,Mildly Stressed
+769,under 20,male,Hardware engineering,full-time,16-20,hybrid,2,4,5,4,3,1,5,2,1,5,1,3,Mildly Stressed
+770,51-60,female,IT Services,full-time,1-5,hybrid,2,3,5,2,1,5,5,4,4,4,4,1,Burned Out
+771,under 20,female,Software development,part-time,less than 1 year,hybrid,4,4,2,3,2,1,5,5,3,1,3,5,Healthy
+772,41-50,female,Software development,part-time,11-15,remote,1,3,2,2,1,4,3,1,1,3,3,3,Mildly Stressed
+773,21-30,male,Other,contract,6-10,Office-based,3,4,3,1,4,1,3,5,3,4,4,1,Mildly Stressed
+774,21-30,male,Other,part-time,11-15,hybrid,2,4,2,3,4,2,2,2,5,5,2,1,Mildly Stressed
+775,under 20,female,Other,part-time,1-5,remote,5,1,1,2,3,5,1,1,3,4,5,5,Highly Stressed
+776,21-30,female,Software development,full-time,6-10,hybrid,4,1,3,3,5,5,5,5,5,2,5,2,Highly Stressed
+777,51-60,male,IT Services,full-time,16-20,Office-based,4,3,2,1,1,5,1,3,1,1,5,4,Mildly Stressed
+778,31-40,female,Cyber Security,part-time,11-15,hybrid,2,5,3,3,4,3,3,4,5,3,1,1,Healthy
+779,under 20,male,Other,full-time,6-10,Office-based,2,1,3,5,5,3,5,5,3,2,5,4,Healthy
+780,21-30,male,IT Services,part-time,6-10,remote,2,1,4,4,4,4,1,4,5,5,5,4,Mildly Stressed
+781,under 20,female,Hardware engineering,full-time,6-10,remote,3,2,5,1,5,4,1,3,4,4,5,5,Highly Stressed
+782,under 20,female,Other,full-time,less than 1 year,hybrid,2,1,3,3,5,3,4,5,5,1,3,2,Mildly Stressed
+783,31-40,female,Cyber Security,full-time,11-15,Office-based,1,5,3,1,4,5,3,2,5,4,4,5,Mildly Stressed
+784,51-60,female,Hardware engineering,full-time,6-10,Office-based,5,2,4,5,2,3,2,1,2,4,2,1,Highly Stressed
+785,under 20,male,Hardware engineering,part-time,11-15,Office-based,2,4,2,4,5,1,2,3,4,4,4,2,Healthy
+786,21-30,male,Cyber Security,contract,6-10,hybrid,3,4,3,1,1,5,4,4,1,4,5,3,Highly Stressed
+787,41-50,male,Other,full-time,16-20,Office-based,5,2,4,5,4,3,1,4,5,1,2,2,Mildly Stressed
+788,under 20,female,Software development,part-time,16-20,Office-based,4,2,1,5,2,4,4,3,4,2,2,5,Mildly Stressed
+789,under 20,male,Cyber Security,part-time,16-20,Office-based,2,2,4,5,4,3,4,2,1,5,4,5,Mildly Stressed
+790,31-40,female,Cyber Security,full-time,1-5,Office-based,5,3,5,3,3,2,3,2,4,2,4,4,Highly Stressed
+791,51-60,female,Cyber Security,contract,6-10,hybrid,4,5,5,2,1,3,5,4,2,1,4,3,Mildly Stressed
+792,41-50,female,Hardware engineering,full-time,1-5,hybrid,3,5,2,1,3,5,1,3,1,5,4,2,Mildly Stressed
+793,21-30,female,IT Services,part-time,11-15,Office-based,1,4,2,2,5,3,2,3,1,3,1,3,Healthy
+794,41-50,female,Software development,contract,1-5,Office-based,2,4,5,5,5,4,2,1,5,2,3,4,Mildly Stressed
+795,21-30,female,Other,part-time,11-15,remote,1,4,5,2,3,1,4,4,3,1,3,3,Healthy
+796,51-60,male,Other,full-time,11-15,remote,3,1,3,5,3,2,4,2,1,1,5,3,Mildly Stressed
+797,21-30,female,IT Services,contract,11-15,Office-based,5,4,5,5,5,5,4,5,1,1,1,2,Healthy
+798,31-40,male,Cyber Security,part-time,1-5,Office-based,5,2,2,4,2,4,1,2,2,5,2,3,Mildly Stressed
+799,31-40,male,Software development,part-time,6-10,remote,3,4,5,4,1,2,4,2,2,4,4,4,Mildly Stressed
+800,31-40,female,Other,part-time,1-5,remote,3,2,2,2,4,3,4,5,2,3,5,1,Mildly Stressed
+801,31-40,female,Other,full-time,6-10,Office-based,2,3,1,1,3,2,5,4,5,5,2,1,Highly Stressed
+802,41-50,female,Cyber Security,contract,6-10,hybrid,4,1,5,2,1,1,1,1,1,5,3,5,Highly Stressed
+803,51-60,male,IT Services,full-time,11-15,hybrid,1,1,2,1,4,2,3,2,2,2,2,1,Mildly Stressed
+804,21-30,female,Software development,full-time,1-5,Office-based,1,5,4,2,4,2,3,2,2,3,4,2,Mildly Stressed
+805,21-30,male,IT Services,full-time,6-10,Office-based,5,3,3,3,3,3,5,4,4,1,4,5,Mildly Stressed
+806,31-40,female,IT Services,contract,16-20,remote,5,2,2,3,2,3,2,4,4,5,3,1,Highly Stressed
+807,31-40,female,Software development,full-time,6-10,remote,2,3,5,1,2,5,3,3,2,3,4,1,Highly Stressed
+808,under 20,male,Software development,full-time,16-20,hybrid,3,1,5,4,1,3,1,4,5,2,1,5,Mildly Stressed
+809,51-60,male,Other,full-time,1-5,Office-based,1,2,1,1,1,2,2,4,3,4,5,2,Mildly Stressed
+810,41-50,female,Other,full-time,1-5,remote,2,3,4,2,5,1,4,2,4,3,3,5,Mildly Stressed
+811,21-30,male,Software development,part-time,1-5,hybrid,5,1,2,5,2,3,1,1,4,1,3,2,Mildly Stressed
+812,under 20,male,Hardware engineering,full-time,6-10,hybrid,5,2,4,3,1,5,2,2,1,5,2,2,Highly Stressed
+813,under 20,male,Other,part-time,less than 1 year,hybrid,1,2,1,5,5,5,3,4,1,4,3,4,Healthy
+814,21-30,male,Hardware engineering,full-time,6-10,remote,5,1,3,3,4,2,4,3,2,2,5,1,Highly Stressed
+815,41-50,male,Software development,contract,6-10,remote,5,2,4,2,1,3,4,1,1,1,1,1,Highly Stressed
+816,under 20,female,Other,part-time,11-15,Office-based,4,1,1,3,5,3,1,3,1,4,2,3,Healthy
+817,under 20,female,IT Services,part-time,11-15,Office-based,3,4,2,1,2,5,4,5,3,2,5,5,Mildly Stressed
+818,51-60,male,Software development,part-time,6-10,hybrid,5,4,3,5,4,3,2,3,5,1,3,4,Healthy
+819,41-50,female,Cyber Security,part-time,16-20,hybrid,4,2,5,5,1,2,5,3,2,5,4,1,Burned out
+820,under 20,female,Hardware engineering,contract,11-15,remote,2,2,1,2,2,1,3,4,3,2,4,3,Healthy
+821,41-50,male,Software development,full-time,6-10,remote,5,1,5,5,4,2,1,4,2,4,5,4,Mildly Stressed
+822,21-30,female,Software development,part-time,less than 1 year,Office-based,2,2,3,2,3,3,5,4,5,1,1,2,Mildly Stressed
+823,31-40,male,Other,contract,16-20,Office-based,5,5,1,4,2,2,5,4,2,3,4,1,Mildly Stressed
+824,under 20,male,Other,part-time,1-5,Office-based,1,4,1,1,3,4,1,4,1,1,5,5,Healthy
+825,51-60,female,Other,full-time,6-10,remote,4,2,3,3,1,4,2,3,5,4,2,4,Mildly Stressed
+826,21-30,male,Cyber Security,part-time,6-10,hybrid,4,2,2,3,5,3,3,5,3,4,3,3,Healthy
+827,41-50,male,Other,contract,16-20,Office-based,1,3,1,3,1,3,1,4,3,3,1,5,Healthy
+828,21-30,male,Software development,full-time,11-15,Office-based,3,2,3,4,2,1,5,5,4,4,1,2,Mildly Stressed
+829,under 20,male,Other,contract,11-15,remote,4,5,4,1,3,2,5,5,3,1,2,5,Healthy
+830,41-50,male,IT Services,full-time,11-15,Office-based,2,4,5,5,3,1,1,2,4,2,1,3,Healthy
+831,31-40,female,Other,full-time,1-5,hybrid,4,3,1,5,4,3,5,2,1,1,5,2,Mildly Stressed
+832,21-30,female,Cyber Security,full-time,16-20,remote,3,1,4,1,1,3,1,1,3,4,1,3,Highly Stressed
+833,under 20,male,IT Services,part-time,16-20,Office-based,2,1,1,1,1,5,1,2,5,3,1,1,Highly Stressed
+834,51-60,male,Software development,contract,11-15,Office-based,2,4,2,3,2,1,3,4,4,3,1,3,Healthy
+835,41-50,female,Software development,contract,11-15,remote,1,1,3,5,3,3,1,5,3,5,5,5,Healthy
+836,21-30,male,Hardware engineering,contract,less than 1 year,remote,5,5,1,1,2,4,5,1,1,3,3,1,Highly Stressed
+837,21-30,female,IT Services,full-time,less than 1 year,Office-based,1,2,3,5,2,5,4,2,5,3,4,1,Highly Stressed
+838,31-40,male,Hardware engineering,part-time,6-10,hybrid,5,4,1,1,3,2,3,3,5,4,1,4,Mildly Stressed
+839,31-40,male,IT Services,full-time,6-10,remote,1,3,2,2,2,5,5,1,1,2,2,5,Mildly Stressed
+840,51-60,male,IT Services,contract,16-20,hybrid,5,2,2,3,3,2,5,4,3,2,2,5,Mildly Stressed
+841,51-60,male,Cyber Security,part-time,16-20,Office-based,4,1,4,1,2,4,3,5,2,4,5,2,Burned out
+842,under 20,male,Hardware engineering,part-time,1-5,hybrid,2,1,2,4,5,2,3,4,3,3,3,3,Healthy
+843,under 20,male,Cyber Security,part-time,1-5,Office-based,5,3,3,1,2,1,5,4,4,1,1,3,Mildly Stressed
+844,51-60,male,IT Services,contract,less than 1 year,Office-based,4,5,2,2,2,2,4,3,4,2,5,5,Mildly Stressed
+845,51-60,female,Software development,part-time,6-10,Office-based,3,3,1,4,5,2,2,3,3,4,4,3,Healthy
+846,41-50,female,IT Services,part-time,less than 1 year,Office-based,1,4,2,4,1,5,5,5,4,1,3,5,Healthy
+847,31-40,female,Cyber Security,full-time,less than 1 year,hybrid,3,3,3,1,3,4,3,2,2,3,3,1,Highly Stressed
+848,under 20,male,Hardware engineering,full-time,6-10,Office-based,4,1,1,2,4,2,1,4,2,4,5,3,Mildly Stressed
+849,31-40,male,Hardware engineering,part-time,1-5,Office-based,3,5,4,4,5,1,1,2,5,2,2,3,Healthy
+850,31-40,male,Cyber Security,part-time,6-10,hybrid,3,5,4,3,1,5,3,5,4,1,3,5,Mildly Stressed
+851,51-60,male,Hardware engineering,full-time,11-15,remote,4,3,4,3,2,4,3,4,3,1,2,5,Mildly Stressed
+852,41-50,male,Other,full-time,11-15,hybrid,2,4,1,5,1,4,2,2,5,2,3,2,Mildly Stressed
+853,21-30,male,Software development,full-time,11-15,hybrid,5,1,4,5,5,3,3,4,2,1,3,3,Mildly Stressed
+854,41-50,male,Software development,contract,16-20,hybrid,1,2,2,2,2,1,1,3,5,2,3,4,Healthy
+855,41-50,female,Software development,contract,1-5,Office-based,5,5,1,4,1,5,4,3,1,4,4,5,Mildly Stressed
+856,31-40,male,Hardware engineering,full-time,1-5,Office-based,1,3,1,3,4,5,3,1,4,5,2,4,Mildly Stressed
+857,41-50,female,Hardware engineering,part-time,16-20,Office-based,5,4,1,3,3,1,2,5,3,3,4,1,Healthy
+858,under 20,female,IT Services,full-time,less than 1 year,remote,3,4,5,2,3,4,4,2,2,4,2,1,Highly Stressed
+859,31-40,male,IT Services,contract,11-15,Office-based,2,1,3,4,5,2,2,4,5,3,4,4,Healthy
+860,under 20,male,Software development,part-time,11-15,remote,3,5,5,2,2,1,4,1,3,3,4,1,Highly Stressed
+861,21-30,female,Other,contract,less than 1 year,Office-based,2,1,5,1,2,5,3,5,4,2,4,4,Highly Stressed
+862,31-40,female,IT Services,part-time,6-10,hybrid,4,2,5,3,3,1,1,5,3,5,5,2,Mildly Stressed
+863,21-30,male,IT Services,contract,6-10,Office-based,1,2,3,2,1,4,4,5,4,3,4,2,Mildly Stressed
+864,31-40,male,Hardware engineering,part-time,1-5,remote,1,2,5,2,2,3,5,2,4,3,3,1,Highly Stressed
+865,51-60,female,Other,part-time,16-20,remote,4,4,4,1,4,3,2,3,4,4,1,4,Mildly Stressed
+866,41-50,male,Software development,part-time,1-5,Office-based,5,5,1,5,4,2,4,1,5,5,4,4,Mildly Stressed
+867,51-60,male,IT Services,part-time,6-10,hybrid,4,1,1,3,2,2,2,2,4,5,1,4,Mildly Stressed
+868,21-30,male,Other,contract,less than 1 year,Office-based,4,1,2,2,2,4,1,4,3,3,1,1,Mildly Stressed
+869,41-50,female,Other,contract,1-5,Office-based,2,2,4,3,3,2,2,2,1,5,3,4,Mildly Stressed
+870,31-40,female,Software development,part-time,11-15,Office-based,4,5,3,5,5,3,2,4,3,4,1,5,Healthy
+871,41-50,female,Other,part-time,11-15,hybrid,1,5,1,2,3,4,5,4,5,2,1,4,Healthy
+872,under 20,male,Other,contract,less than 1 year,remote,3,3,5,1,5,4,2,5,4,3,1,5,Healthy
+873,41-50,male,Other,part-time,6-10,hybrid,2,5,2,3,4,4,4,2,1,1,2,2,Healthy
+874,under 20,female,IT Services,part-time,11-15,remote,2,5,2,1,5,1,2,3,5,3,4,5,Healthy
+875,41-50,female,Software development,part-time,11-15,remote,5,1,1,5,3,2,3,4,2,3,4,2,Mildly Stressed
+876,under 20,female,Other,full-time,16-20,remote,3,5,4,5,2,5,2,5,2,2,1,1,Healthy
+877,21-30,male,Other,part-time,1-5,hybrid,2,5,2,3,5,3,3,3,2,1,3,2,Healthy
+878,51-60,female,IT Services,full-time,6-10,Office-based,4,1,1,5,3,2,2,2,1,1,2,2,Healthy
+879,31-40,female,Software development,part-time,1-5,Office-based,2,5,4,4,4,3,2,3,3,1,3,4,Healthy
+880,41-50,male,Hardware engineering,contract,6-10,Office-based,2,1,1,3,5,2,4,2,1,2,3,3,Healthy
+881,51-60,male,IT Services,full-time,11-15,Office-based,2,3,1,4,4,5,3,4,1,5,1,2,Healthy
+882,31-40,male,Software development,full-time,16-20,Office-based,5,4,4,5,4,3,3,1,1,1,5,5,Healthy
+883,31-40,female,Other,part-time,1-5,hybrid,2,1,4,3,1,5,5,1,2,5,1,1,Burned Out
+884,under 20,male,Software development,part-time,11-15,hybrid,2,1,4,4,5,3,2,4,3,4,5,5,Healthy
+885,21-30,male,Software development,full-time,6-10,hybrid,5,5,1,5,3,1,2,3,1,2,2,1,Healthy
+886,21-30,female,Software development,contract,1-5,hybrid,3,1,2,2,5,1,4,2,3,5,5,5,Highly Stressed
+887,51-60,male,Hardware engineering,contract,1-5,hybrid,1,2,3,2,5,3,5,1,4,1,1,2,Mildly Stressed
+888,21-30,female,Software development,part-time,11-15,hybrid,5,2,3,1,4,3,5,2,1,1,1,3,Mildly Stressed
+889,41-50,female,Hardware engineering,contract,1-5,hybrid,5,3,1,2,4,5,4,4,1,5,3,2,Mildly Stressed
+890,21-30,male,Other,contract,16-20,Office-based,2,1,1,4,4,4,3,3,1,5,1,4,Healthy
+891,51-60,male,Hardware engineering,part-time,16-20,remote,2,5,2,2,4,3,1,2,4,4,1,5,Healthy
+892,21-30,male,Other,contract,11-15,hybrid,1,5,4,3,3,2,4,3,4,2,4,3,Mildly Stressed
+893,41-50,male,Other,part-time,6-10,remote,2,4,1,3,2,2,3,1,2,3,4,5,Healthy
+894,under 20,male,Hardware engineering,full-time,11-15,hybrid,4,3,5,3,1,2,5,2,5,4,3,4,Highly Stressed
+895,51-60,male,IT Services,part-time,16-20,hybrid,2,5,4,2,4,1,4,5,3,4,5,4,Mildly Stressed
+896,under 20,female,Cyber Security,full-time,less than 1 year,Office-based,2,4,1,2,4,5,1,1,5,4,5,4,Mildly Stressed
+897,under 20,female,Software development,full-time,less than 1 year,remote,4,5,5,1,1,1,2,3,1,1,4,2,Mildly Stressed
+898,under 20,male,Cyber Security,contract,1-5,Office-based,1,4,2,5,4,2,4,4,1,5,2,2,Healthy
+899,31-40,female,Software development,contract,1-5,Office-based,4,2,5,1,2,3,1,5,2,2,4,3,Mildly Stressed
+900,31-40,male,Software development,contract,less than 1 year,remote,5,2,1,4,5,2,1,2,5,1,2,4,Healthy
+901,under 20,female,Other,part-time,16-20,Office-based,4,5,3,3,1,3,4,1,1,4,5,2,Highly Stressed
+902,51-60,female,Software development,contract,1-5,hybrid,3,3,1,2,3,5,3,2,5,2,4,1,Highly Stressed
+903,41-50,female,Software development,full-time,11-15,hybrid,5,1,3,5,1,4,4,2,2,1,1,1,Highly Stressed
+904,41-50,male,Hardware engineering,contract,11-15,hybrid,2,3,2,5,2,3,5,5,5,3,2,2,Mildly Stressed
+905,21-30,female,Cyber Security,contract,16-20,hybrid,5,3,2,2,3,1,1,5,3,4,2,3,Healthy
+906,51-60,male,Hardware engineering,part-time,1-5,hybrid,1,1,4,1,5,2,1,5,2,1,2,5,Healthy
+907,31-40,female,Software development,part-time,11-15,Office-based,1,2,4,5,4,2,2,5,5,1,5,4,Healthy
+908,under 20,female,Other,full-time,1-5,Office-based,4,2,3,1,1,2,1,4,1,4,3,2,Mildly Stressed
+909,21-30,female,Hardware engineering,part-time,1-5,hybrid,5,1,3,2,3,3,2,3,4,3,1,3,Highly Stressed
+910,41-50,female,Hardware engineering,contract,11-15,hybrid,2,4,2,1,1,5,1,5,4,5,4,5,Mildly Stressed
+911,31-40,female,IT Services,part-time,less than 1 year,Office-based,1,3,5,3,5,3,1,1,2,3,2,3,Healthy
+912,31-40,male,Software development,full-time,11-15,remote,2,5,3,2,1,1,4,2,4,4,5,5,Mildly Stressed
+913,under 20,male,Other,contract,16-20,Office-based,3,2,3,2,3,2,4,5,3,5,2,1,Mildly Stressed
+914,41-50,female,Hardware engineering,full-time,6-10,Office-based,1,5,5,5,2,3,5,1,2,1,4,5,Healthy
+915,51-60,female,Hardware engineering,part-time,11-15,Office-based,4,1,4,5,3,2,3,4,1,3,1,1,Mildly Stressed
+916,31-40,female,Other,part-time,1-5,Office-based,3,5,4,5,1,1,5,1,1,3,2,4,Mildly Stressed
+917,under 20,female,Software development,full-time,1-5,Office-based,5,5,3,3,5,4,1,1,2,5,5,2,Highly Stressed
+918,51-60,male,IT Services,contract,11-15,remote,2,3,4,3,4,4,5,4,4,1,5,1,Highly Stressed
+919,41-50,female,Hardware engineering,part-time,6-10,hybrid,1,1,4,4,4,4,4,4,4,3,3,3,Mildly Stressed
+920,31-40,male,IT Services,part-time,11-15,hybrid,3,5,4,2,5,2,1,2,1,5,5,5,Healthy
+921,51-60,female,Cyber Security,contract,6-10,remote,3,2,2,5,1,3,1,5,3,3,3,3,Healthy
+922,51-60,male,Software development,part-time,6-10,hybrid,1,1,1,2,5,2,5,1,4,1,1,1,Mildly Stressed
+923,51-60,female,Cyber Security,full-time,16-20,hybrid,5,2,3,1,1,5,2,3,3,1,4,3,Highly Stressed
+924,31-40,female,Cyber Security,part-time,1-5,hybrid,5,4,3,3,3,3,3,3,4,2,3,5,Mildly Stressed
+925,31-40,male,Cyber Security,part-time,1-5,remote,4,5,2,4,2,1,5,2,2,5,2,2,Mildly Stressed
+926,21-30,female,Software development,contract,6-10,remote,5,1,1,1,1,4,5,3,5,4,2,3,Burned Out
+927,41-50,female,Software development,full-time,1-5,hybrid,4,2,1,2,4,3,3,2,1,3,4,4,Mildly Stressed
+928,under 20,female,Other,contract,less than 1 year,hybrid,3,5,2,3,4,3,1,5,2,1,5,5,Healthy
+929,51-60,male,IT Services,part-time,6-10,hybrid,1,3,5,5,2,4,1,2,4,3,2,5,Healthy
+930,21-30,female,IT Services,part-time,1-5,Office-based,5,2,5,1,1,1,2,4,1,3,3,4,Mildly Stressed
+931,under 20,female,Other,contract,less than 1 year,Office-based,4,2,1,3,2,2,5,4,5,4,4,1,Highly Stressed
+932,21-30,male,Other,contract,16-20,Office-based,3,4,5,2,3,2,3,4,5,1,2,4,Mildly Stressed
+933,31-40,male,Cyber Security,contract,1-5,remote,5,3,5,2,2,3,5,4,4,2,5,1,Burned Out
+934,51-60,male,Other,full-time,less than 1 year,hybrid,2,4,5,1,3,4,4,4,1,5,5,2,Highly Stressed
+935,under 20,female,Hardware engineering,part-time,11-15,remote,3,3,1,1,4,5,5,4,4,3,2,1,Highly Stressed
+936,under 20,female,IT Services,contract,11-15,remote,5,2,5,1,3,1,5,4,5,4,4,2,Burned Out
+937,under 20,female,Other,part-time,less than 1 year,remote,3,4,3,4,1,2,4,4,2,4,1,2,Healthy
+938,under 20,male,Hardware engineering,full-time,6-10,hybrid,1,5,1,5,1,1,4,4,2,5,2,4,Healthy
+939,under 20,female,Hardware engineering,full-time,6-10,Office-based,1,3,2,3,1,1,3,5,3,5,5,2,Mildly Stressed
+940,21-30,female,Hardware engineering,full-time,1-5,hybrid,1,2,5,2,1,1,1,4,5,1,1,1,Mildly Stressed
+941,51-60,male,Hardware engineering,full-time,11-15,hybrid,2,1,4,2,5,4,2,2,5,3,4,3,Highly Stressed
+942,31-40,male,Cyber Security,part-time,6-10,remote,1,3,1,5,3,4,4,5,4,3,5,5,Healthy
+943,31-40,male,Hardware engineering,full-time,6-10,remote,2,3,2,1,1,4,1,3,3,5,4,5,Mildly Stressed
+944,31-40,male,Cyber Security,full-time,11-15,remote,1,5,3,1,2,3,3,1,3,2,2,1,Mildly Stressed
+945,31-40,male,Cyber Security,contract,16-20,Office-based,3,3,2,2,2,4,5,5,1,3,4,3,Mildly Stressed
+946,21-30,female,Hardware engineering,full-time,6-10,Office-based,5,3,5,5,5,3,3,4,4,4,5,2,Mildly Stressed
+947,41-50,male,IT Services,contract,less than 1 year,Office-based,5,5,4,2,3,2,3,5,2,5,2,1,Mildly Stressed
+948,51-60,female,Hardware engineering,full-time,1-5,hybrid,1,5,5,1,3,2,4,1,1,3,5,2,Highly Stressed
+949,under 20,female,Hardware engineering,full-time,6-10,remote,5,4,2,3,3,2,2,1,3,1,5,4,Mildly Stressed
+950,41-50,male,Hardware engineering,contract,6-10,hybrid,1,2,1,1,5,2,4,4,2,5,1,3,Healthy
+951,31-40,male,IT Services,full-time,16-20,Office-based,1,2,4,3,3,2,5,4,5,4,3,5,Mildly Stressed
+952,41-50,male,Software development,part-time,less than 1 year,remote,4,4,4,4,3,4,4,2,4,1,4,1,Highly Stressed
+953,51-60,female,Software development,part-time,1-5,Office-based,4,2,2,5,1,5,5,1,3,5,4,5,Highly Stressed
+954,under 20,male,Cyber Security,full-time,6-10,remote,4,3,5,4,3,4,4,4,5,5,1,2,Highly Stressed
+955,under 20,male,Cyber Security,part-time,1-5,remote,2,4,2,1,1,5,2,1,3,3,4,2,Highly Stressed
+956,51-60,male,IT Services,contract,11-15,hybrid,4,4,4,5,1,4,1,2,2,1,1,4,Healthy
+957,51-60,male,Other,full-time,6-10,hybrid,1,2,2,1,3,2,2,3,1,5,4,2,Mildly Stressed
+958,31-40,male,Software development,full-time,6-10,Office-based,3,1,4,5,2,1,4,1,2,4,4,2,Highly Stressed
+959,under 20,female,Cyber Security,contract,11-15,hybrid,4,2,5,5,4,5,3,2,4,1,5,5,Mildly Stressed
+960,41-50,female,Software development,contract,16-20,hybrid,4,1,1,1,2,1,1,2,4,3,1,5,Mildly Stressed
+961,21-30,female,IT Services,contract,6-10,hybrid,3,4,1,1,3,2,3,2,3,2,4,1,Mildly Stressed
+962,21-30,male,IT Services,full-time,1-5,remote,1,1,2,5,3,5,2,5,2,5,3,1,Mildly Stressed
+963,51-60,male,Other,contract,less than 1 year,hybrid,2,3,4,5,2,1,1,4,1,2,1,2,Healthy
+964,31-40,male,Other,contract,1-5,Office-based,4,5,1,1,3,4,4,1,4,5,1,3,Highly Stressed
+965,21-30,female,IT Services,part-time,16-20,remote,3,1,4,1,1,2,3,5,1,3,1,1,Highly Stressed
+966,under 20,male,Cyber Security,part-time,less than 1 year,remote,1,5,5,2,5,4,4,1,5,3,5,2,Highly Stressed
+967,51-60,male,Software development,full-time,1-5,hybrid,5,3,2,2,3,4,5,5,3,3,1,5,Mildly Stressed
+968,41-50,male,Hardware engineering,part-time,1-5,remote,2,5,4,2,3,2,1,4,1,3,5,4,Healthy
+969,51-60,female,Other,part-time,11-15,Office-based,3,3,2,4,2,5,3,2,3,1,3,5,Healthy
+970,41-50,male,Hardware engineering,contract,16-20,Office-based,3,5,4,5,1,3,2,1,5,1,2,5,Healthy
+971,51-60,female,Cyber Security,contract,11-15,remote,3,5,4,3,2,3,2,2,1,5,5,4,Mildly Stressed
+972,51-60,male,Other,part-time,less than 1 year,hybrid,4,2,5,4,2,2,2,4,1,1,4,5,Healthy
+973,51-60,female,Hardware engineering,part-time,11-15,hybrid,5,1,2,5,3,3,2,1,5,5,1,1,Highly Stressed
+974,41-50,female,Cyber Security,part-time,16-20,remote,2,5,3,3,1,1,3,3,2,1,2,5,Healthy
+975,41-50,female,Software development,full-time,6-10,Office-based,1,4,4,2,3,5,5,3,1,1,5,4,Mildly Stressed
+976,51-60,male,Cyber Security,full-time,6-10,remote,1,2,4,3,3,4,2,3,1,1,4,2,Healthy
+977,21-30,male,Other,full-time,less than 1 year,hybrid,5,1,1,1,3,4,2,4,4,4,2,2,Highly Stressed
+978,31-40,female,IT Services,part-time,6-10,hybrid,3,2,2,1,3,2,2,3,2,3,3,2,Mildly Stressed
+979,31-40,female,Software development,part-time,11-15,remote,3,1,3,5,5,4,5,1,1,4,5,4,Mildly Stressed
+980,31-40,male,Hardware engineering,full-time,less than 1 year,Office-based,3,3,5,4,4,1,1,3,5,1,5,4,Healthy
+981,41-50,male,Other,full-time,16-20,remote,3,5,3,2,1,1,2,1,3,1,3,1,Mildly Stressed
+982,41-50,female,IT Services,part-time,less than 1 year,Office-based,3,4,5,5,5,2,2,4,5,4,5,4,Mildly Stressed
+983,21-30,male,Cyber Security,contract,less than 1 year,Office-based,5,2,3,2,4,4,2,2,2,5,1,2,Highly Stressed
+984,31-40,male,IT Services,full-time,1-5,remote,4,2,3,1,4,3,1,5,4,3,5,4,Mildly Stressed
+985,31-40,male,Other,part-time,1-5,remote,2,2,2,4,4,3,2,3,4,5,1,3,Healthy
+986,51-60,male,Other,part-time,less than 1 year,Office-based,3,2,1,4,5,5,1,5,4,3,5,5,Healthy
+987,41-50,female,IT Services,contract,6-10,Office-based,4,5,3,1,1,2,1,2,5,2,4,1,Highly Stressed
+988,31-40,male,Cyber Security,part-time,1-5,Office-based,1,1,4,3,2,5,4,4,3,3,4,2,Highly Stressed
+989,21-30,male,IT Services,part-time,16-20,Office-based,5,5,4,4,4,3,4,4,3,5,2,2,Mildly Stressed
+990,21-30,female,Other,full-time,11-15,hybrid,4,3,4,3,2,3,2,2,1,3,4,3,Mildly Stressed
+991,31-40,female,Other,full-time,1-5,remote,3,5,1,2,2,3,3,5,3,2,3,1,Healthy
+992,41-50,male,Hardware engineering,contract,less than 1 year,Office-based,3,5,3,4,3,5,4,3,3,2,2,5,Healthy
+993,21-30,male,Hardware engineering,contract,6-10,remote,3,3,5,1,2,2,4,1,1,1,4,1,Highly Stressed
+994,51-60,male,Software development,part-time,11-15,Office-based,4,5,5,3,3,1,3,4,5,2,1,1,Mildly Stressed
+995,21-30,male,Other,full-time,1-5,remote,3,1,2,2,1,1,5,2,5,4,5,2,Burned Out
+996,under 20,female,Hardware engineering,contract,6-10,remote,4,4,1,2,1,3,2,5,2,5,4,4,Mildly Stressed
+997,under 20,female,IT Services,contract,6-10,Office-based,3,3,3,4,3,2,5,3,5,4,1,5,Mildly Stressed
+998,41-50,female,Cyber Security,contract,6-10,Office-based,1,2,4,4,1,2,5,5,4,4,2,1,Mildly Stressed
+999,31-40,male,IT Services,part-time,less than 1 year,remote,1,1,1,5,4,4,1,3,4,5,5,3,Mildly Stressed
+1000,41-50,male,Cyber Security,full-time,16-20,remote,2,4,1,5,1,4,1,1,2,4,4,2,Mildly Stressed
+1001,41-50,male,Hardware engineering,contract,6-10,remote,3,1,3,4,3,5,2,1,3,4,2,4,Highly Stressed
+1002,41-50,male,Software development,full-time,11-15,hybrid,3,1,2,5,4,4,3,2,2,4,4,4,Mildly Stressed
+1003,41-50,female,IT Services,contract,1-5,Office-based,4,2,2,1,2,5,1,2,1,2,2,2,Mildly Stressed
+1004,51-60,female,IT Services,contract,11-15,hybrid,4,4,2,1,2,1,4,3,2,5,4,1,Highly Stressed
+1005,51-60,male,IT Services,full-time,less than 1 year,hybrid,3,1,4,5,2,3,2,3,2,5,1,2,Mildly Stressed
+1006,21-30,female,Cyber Security,full-time,less than 1 year,Office-based,2,2,4,4,3,2,5,3,4,5,3,4,Mildly Stressed
+1007,under 20,male,Hardware engineering,full-time,11-15,Office-based,3,3,3,1,2,1,2,3,1,4,1,4,Healthy
+1008,41-50,male,IT Services,part-time,16-20,hybrid,4,2,2,2,1,1,1,1,1,2,5,3,Mildly Stressed
+1009,21-30,female,IT Services,contract,less than 1 year,Office-based,3,5,3,4,2,5,3,2,2,5,4,3,Mildly Stressed
+1010,under 20,male,Software development,part-time,less than 1 year,remote,4,2,2,3,5,3,5,2,1,3,3,4,Mildly Stressed
+1011,31-40,male,Software development,full-time,11-15,remote,3,2,1,3,5,5,3,4,1,5,3,3,Mildly Stressed
+1012,51-60,female,Hardware engineering,contract,less than 1 year,hybrid,5,2,5,4,2,1,2,2,5,1,5,3,Highly Stressed
+1013,under 20,male,Hardware engineering,part-time,16-20,hybrid,4,1,5,5,2,2,3,2,1,3,5,3,Mildly Stressed
+1014,31-40,male,Other,contract,16-20,Office-based,2,4,2,1,5,4,3,5,3,5,3,4,Healthy
+1015,under 20,female,Software development,part-time,16-20,Office-based,5,2,3,1,2,5,2,5,1,4,5,1,Highly Stressed
+1016,51-60,male,Other,full-time,1-5,hybrid,3,2,4,4,4,1,5,4,4,5,5,1,Highly Stressed
+1017,51-60,female,Cyber Security,part-time,16-20,hybrid,4,5,2,2,5,4,3,3,5,2,4,5,Mildly Stressed
+1018,21-30,male,Other,contract,16-20,remote,5,5,2,5,3,4,3,4,4,2,1,3,Healthy
+1019,41-50,female,IT Services,contract,1-5,remote,2,3,4,2,5,1,2,4,4,5,2,1,Mildly Stressed
+1020,under 20,female,Other,contract,6-10,Office-based,4,3,2,4,1,3,4,1,3,4,3,5,Mildly Stressed
+1021,under 20,female,Hardware engineering,contract,less than 1 year,remote,5,5,1,4,4,1,3,2,5,4,2,2,Mildly Stressed
+1022,31-40,male,Cyber Security,full-time,16-20,Office-based,5,4,4,2,3,2,1,1,2,4,3,3,Mildly Stressed
+1023,51-60,female,IT Services,part-time,less than 1 year,Office-based,5,3,1,3,2,4,5,2,1,5,3,1,Highly Stressed
+1024,under 20,female,Other,full-time,11-15,Office-based,1,4,5,4,1,2,3,4,3,5,1,1,Mildly Stressed
+1025,51-60,female,Cyber Security,full-time,less than 1 year,remote,3,5,4,5,1,5,2,2,3,1,3,1,Mildly Stressed
+1026,under 20,female,Cyber Security,full-time,1-5,hybrid,4,3,4,2,4,4,1,3,2,2,3,5,Healthy
+1027,21-30,female,IT Services,contract,less than 1 year,hybrid,4,2,3,3,3,3,2,3,3,3,1,2,Mildly Stressed
+1028,41-50,male,Other,contract,less than 1 year,remote,4,5,3,2,1,1,3,4,2,3,5,3,Mildly Stressed
+1029,under 20,male,Cyber Security,contract,less than 1 year,hybrid,5,3,4,3,3,5,1,5,2,2,2,1,Mildly Stressed
+1030,51-60,male,Cyber Security,part-time,6-10,Office-based,3,4,5,3,3,2,5,3,2,1,3,4,Mildly Stressed
+1031,21-30,male,Software development,contract,6-10,hybrid,2,4,2,5,1,5,5,4,3,2,1,3,Healthy
+1032,under 20,male,Cyber Security,part-time,11-15,remote,4,3,3,4,3,3,5,1,2,1,3,4,Mildly Stressed
+1033,31-40,male,Software development,contract,1-5,hybrid,3,4,5,3,4,1,4,5,3,1,1,5,Healthy
+1034,41-50,male,Other,contract,less than 1 year,Office-based,3,3,5,4,1,5,2,3,5,4,2,1,Highly Stressed
+1035,under 20,female,Other,full-time,less than 1 year,Office-based,1,3,3,5,4,2,3,4,2,2,4,3,Healthy
+1036,21-30,male,Other,full-time,less than 1 year,remote,4,4,2,4,4,5,1,4,3,3,5,3,Mildly Stressed
+1037,31-40,female,Hardware engineering,full-time,less than 1 year,remote,5,1,3,1,3,1,2,1,3,5,4,1,Highly Stressed
+1038,21-30,female,Other,part-time,6-10,remote,3,2,5,3,3,5,3,1,3,5,1,2,Highly Stressed
+1039,21-30,male,Cyber Security,part-time,11-15,Office-based,3,5,1,5,1,2,4,5,1,2,3,5,Healthy
+1040,31-40,female,IT Services,contract,16-20,hybrid,2,2,3,2,2,1,3,3,1,5,5,1,Highly Stressed
+1041,21-30,female,Software development,part-time,1-5,hybrid,1,5,5,5,1,3,2,4,2,1,2,3,Healthy
+1042,31-40,female,Hardware engineering,contract,less than 1 year,remote,3,5,3,3,4,3,3,5,5,5,5,2,Mildly Stressed
+1043,under 20,female,Other,part-time,11-15,hybrid,3,2,5,5,3,4,1,5,2,1,3,3,Healthy
+1044,31-40,male,Other,part-time,16-20,hybrid,5,3,2,2,4,5,4,1,4,1,4,4,Mildly Stressed
+1045,31-40,male,IT Services,part-time,11-15,remote,5,4,5,1,5,2,1,4,4,3,1,3,Mildly Stressed
+1046,41-50,male,IT Services,full-time,6-10,remote,2,1,4,3,5,5,4,2,5,5,4,5,Highly Stressed
+1047,31-40,male,Hardware engineering,part-time,16-20,Office-based,2,1,1,3,4,1,4,1,5,3,5,1,Highly Stressed
+1048,31-40,male,Software development,full-time,11-15,Office-based,2,1,5,5,2,4,3,4,5,5,3,3,Highly Stressed
+1049,under 20,male,Other,full-time,6-10,Office-based,5,2,3,4,2,2,1,5,1,1,1,4,Healthy
+1050,41-50,male,Hardware engineering,part-time,11-15,Office-based,5,2,3,4,1,5,4,5,1,5,3,4,Highly Stressed
+1051,51-60,male,Cyber Security,contract,11-15,hybrid,1,3,5,2,1,2,4,3,4,3,3,1,Highly Stressed
+1052,under 20,male,Cyber Security,contract,16-20,hybrid,4,1,4,1,1,1,3,2,5,4,5,4,Burned Out
+1053,under 20,male,Hardware engineering,contract,6-10,Office-based,4,3,5,1,3,4,2,1,3,3,4,1,Highly Stressed
+1054,51-60,female,Other,part-time,less than 1 year,Office-based,1,1,2,5,2,2,2,3,4,4,3,5,Healthy
+1055,31-40,male,Hardware engineering,contract,1-5,remote,4,2,4,5,4,1,5,3,5,2,3,1,Mildly Stressed
+1056,21-30,female,Other,full-time,16-20,hybrid,5,4,5,4,5,3,5,2,3,3,3,2,Highly Stressed
+1057,41-50,female,IT Services,contract,6-10,hybrid,4,4,1,1,2,2,4,1,5,5,1,4,Highly Stressed
+1058,21-30,female,Hardware engineering,part-time,11-15,Office-based,5,4,4,1,2,4,2,1,2,4,3,4,Highly Stressed
+1059,51-60,female,Other,contract,6-10,hybrid,1,4,5,1,2,2,4,5,3,5,3,3,Mildly Stressed
+1060,under 20,male,Hardware engineering,full-time,1-5,remote,2,5,1,2,1,2,1,1,2,4,5,2,Mildly Stressed
+1061,under 20,female,Hardware engineering,part-time,1-5,remote,1,1,5,2,3,1,2,3,1,3,3,3,Mildly Stressed
+1062,41-50,male,Other,contract,less than 1 year,hybrid,4,4,2,5,4,5,2,5,4,3,3,1,Mildly Stressed
+1063,under 20,male,Other,part-time,less than 1 year,Office-based,5,5,3,4,1,5,2,1,5,5,5,5,Highly Stressed
+1064,under 20,female,Software development,part-time,1-5,hybrid,4,5,5,3,3,2,5,2,4,3,1,4,Mildly Stressed
+1065,41-50,male,Hardware engineering,part-time,16-20,remote,4,5,4,4,2,4,3,3,5,5,4,5,Highly Stressed
+1066,41-50,female,Cyber Security,contract,16-20,Office-based,2,3,5,2,3,4,3,4,2,1,5,1,Highly Stressed
+1067,51-60,female,Hardware engineering,part-time,11-15,hybrid,4,3,5,2,1,1,5,2,3,4,1,1,Highly Stressed
+1068,under 20,male,Hardware engineering,contract,less than 1 year,Office-based,2,5,5,5,2,2,5,2,3,5,4,2,Highly Stressed
+1069,under 20,male,Other,full-time,11-15,Office-based,5,4,5,3,1,2,5,1,5,4,3,3,Burned Out
+1070,51-60,female,Hardware engineering,contract,less than 1 year,remote,5,1,4,1,4,5,3,5,2,1,5,4,Highly Stressed
+1071,31-40,male,Hardware engineering,full-time,1-5,Office-based,2,2,4,3,2,1,4,5,5,4,3,4,Mildly Stressed
+1072,31-40,male,Cyber Security,contract,16-20,hybrid,1,3,5,3,3,3,5,3,5,5,5,5,Highly Stressed
+1073,31-40,male,Other,part-time,16-20,Office-based,5,4,3,3,1,4,4,1,5,3,4,2,Burned Out
+1074,51-60,female,Hardware engineering,contract,1-5,Office-based,1,4,5,5,5,4,4,5,3,4,1,1,Healthy
+1075,under 20,female,IT Services,part-time,11-15,hybrid,5,2,4,2,3,2,1,4,5,4,5,2,Highly Stressed
+1076,51-60,male,Software development,full-time,11-15,remote,5,2,2,1,3,1,3,1,3,1,1,4,Mildly Stressed
+1077,51-60,male,Cyber Security,contract,6-10,remote,3,4,5,3,2,3,4,1,1,2,3,3,Mildly Stressed
+1078,31-40,male,Hardware engineering,part-time,less than 1 year,hybrid,4,2,5,1,3,4,3,5,2,3,3,5,Mildly Stressed
+1079,21-30,male,IT Services,full-time,11-15,hybrid,4,4,5,3,1,1,3,2,1,5,4,1,Highly Stressed
+1080,under 20,male,Hardware engineering,full-time,1-5,remote,1,2,5,2,5,3,1,1,5,1,4,1,Mildly Stressed
+1081,31-40,female,Hardware engineering,contract,11-15,Office-based,4,2,1,1,4,2,3,2,3,5,2,1,Mildly Stressed
+1082,21-30,male,Other,full-time,16-20,hybrid,1,4,5,4,5,5,4,3,2,5,2,3,Mildly Stressed
+1083,21-30,female,Other,part-time,less than 1 year,Office-based,5,5,4,2,1,4,2,3,4,4,4,4,Highly Stressed
+1084,41-50,male,Other,full-time,6-10,hybrid,3,4,4,1,2,4,4,5,2,1,3,4,Mildly Stressed
+1085,under 20,female,IT Services,full-time,less than 1 year,remote,3,1,1,3,1,3,4,3,2,1,1,2,Mildly Stressed
+1086,21-30,male,Hardware engineering,part-time,16-20,Office-based,5,2,5,3,3,5,3,5,5,3,4,2,Burned out
+1087,31-40,female,Software development,full-time,16-20,Office-based,2,3,3,2,2,1,4,5,1,2,1,4,Healthy
+1088,41-50,male,Cyber Security,full-time,16-20,hybrid,2,2,5,2,4,2,2,2,1,5,2,1,Mildly Stressed
+1089,under 20,female,Other,full-time,16-20,Office-based,4,1,4,3,4,1,3,2,4,3,1,3,Mildly Stressed
+1090,51-60,female,Other,full-time,1-5,hybrid,1,3,2,1,1,3,5,3,5,3,4,4,Highly Stressed
+1091,31-40,female,Hardware engineering,part-time,6-10,remote,3,3,2,4,3,4,4,2,2,5,3,3,Mildly Stressed
+1092,21-30,female,Hardware engineering,full-time,16-20,Office-based,4,4,3,5,4,4,4,1,1,4,4,5,Mildly Stressed
+1093,21-30,female,IT Services,part-time,16-20,hybrid,5,5,5,2,5,1,1,4,1,4,5,1,Mildly Stressed
+1094,31-40,female,IT Services,full-time,11-15,Office-based,3,4,1,3,2,2,5,1,3,5,5,5,Highly Stressed
+1095,21-30,male,Other,full-time,6-10,hybrid,1,3,5,1,5,3,5,1,2,1,5,4,Mildly Stressed
+1096,41-50,female,Hardware engineering,full-time,less than 1 year,hybrid,1,3,3,2,4,2,2,5,5,2,3,2,Healthy
+1097,under 20,male,Software development,full-time,6-10,hybrid,2,5,3,1,4,3,5,4,1,4,4,4,Mildly Stressed
+1098,41-50,male,Cyber Security,part-time,6-10,remote,4,2,3,2,1,2,1,5,5,2,5,5,Mildly Stressed
+1099,21-30,male,Hardware engineering,part-time,6-10,Office-based,5,5,2,3,1,1,2,2,2,3,4,3,Mildly Stressed
+1100,51-60,male,Hardware engineering,part-time,16-20,remote,3,4,5,1,2,5,5,2,2,3,2,4,Highly Stressed
+1101,under 20,male,IT Services,contract,16-20,hybrid,1,2,5,3,1,3,2,4,1,5,5,2,Highly Stressed
+1102,under 20,female,Cyber Security,full-time,1-5,hybrid,3,4,1,1,3,1,5,3,4,5,5,5,Mildly Stressed
+1103,31-40,female,Other,full-time,less than 1 year,remote,5,5,3,2,2,4,5,2,5,5,3,4,Highly Stressed
+1104,31-40,female,Hardware engineering,part-time,11-15,remote,3,2,3,5,3,4,5,1,5,4,4,5,Highly Stressed
+1105,51-60,male,Other,contract,6-10,Office-based,4,5,4,5,1,2,4,4,3,2,3,5,Healthy
+1106,under 20,female,Hardware engineering,full-time,less than 1 year,hybrid,2,1,4,4,2,4,5,4,2,3,3,1,Highly Stressed
+1107,51-60,female,Other,part-time,less than 1 year,remote,3,3,2,4,4,5,4,2,2,2,4,3,Mildly Stressed
+1108,31-40,female,Cyber Security,full-time,1-5,hybrid,2,2,5,3,5,3,3,2,1,4,2,1,Mildly Stressed
+1109,31-40,female,IT Services,full-time,11-15,hybrid,5,3,1,1,4,2,1,5,1,2,4,5,Healthy
+1110,under 20,female,Cyber Security,part-time,6-10,Office-based,2,1,1,4,3,3,2,5,1,2,2,2,Healthy
+1111,41-50,male,Software development,part-time,11-15,Office-based,3,2,3,2,4,3,2,1,3,5,3,2,Highly Stressed
+1112,21-30,female,IT Services,full-time,1-5,Office-based,3,3,1,5,4,1,3,4,4,2,2,1,Healthy
+1113,31-40,male,Cyber Security,full-time,16-20,remote,1,3,3,1,5,4,5,3,1,2,2,2,Healthy
+1114,31-40,male,Software development,part-time,less than 1 year,hybrid,3,2,5,5,5,3,1,3,1,2,2,5,Healthy
+1115,41-50,male,Hardware engineering,full-time,6-10,remote,2,3,1,1,4,5,3,4,1,1,5,4,Healthy
+1116,41-50,male,Hardware engineering,full-time,16-20,remote,1,3,3,4,5,5,3,1,3,3,5,5,Mildly Stressed
+1117,51-60,male,Other,part-time,1-5,Office-based,3,2,5,4,4,4,2,5,5,3,3,4,Mildly Stressed
+1118,51-60,female,IT Services,full-time,11-15,hybrid,3,3,5,3,2,4,4,5,4,2,4,2,Highly Stressed
+1119,21-30,female,Hardware engineering,full-time,less than 1 year,hybrid,5,3,3,1,4,2,4,5,5,5,2,3,Highly Stressed
+1120,21-30,female,IT Services,contract,6-10,Office-based,1,4,3,2,1,2,5,3,2,5,5,3,Highly Stressed
+1121,under 20,male,Hardware engineering,part-time,16-20,hybrid,5,4,2,4,5,2,5,3,2,5,4,5,Mildly Stressed
+1122,51-60,female,Other,contract,16-20,Office-based,5,1,5,3,5,4,3,1,1,3,2,5,Mildly Stressed
+1123,31-40,female,Cyber Security,contract,less than 1 year,remote,5,4,3,4,3,3,5,3,5,4,4,2,Highly Stressed
+1124,51-60,male,Other,contract,11-15,remote,4,4,5,5,3,1,4,2,3,2,1,3,Healthy
+1125,31-40,male,Software development,full-time,1-5,Office-based,5,1,1,4,1,2,1,3,4,3,2,3,Mildly Stressed
+1126,41-50,male,Hardware engineering,full-time,11-15,remote,2,3,4,1,5,1,2,5,5,5,4,5,Healthy
+1127,51-60,male,Software development,contract,11-15,remote,3,3,4,3,5,5,4,1,5,3,2,3,Highly Stressed
+1128,41-50,female,Software development,contract,11-15,Office-based,4,4,3,1,3,4,5,4,4,3,2,5,Mildly Stressed
+1129,21-30,male,IT Services,contract,less than 1 year,remote,5,1,3,2,3,5,2,4,5,3,1,1,Highly Stressed
+1130,21-30,male,Hardware engineering,full-time,less than 1 year,hybrid,3,3,5,2,4,2,2,1,5,5,4,3,Highly Stressed
+1131,under 20,female,Software development,contract,1-5,remote,1,5,3,4,5,3,3,2,4,4,3,4,Healthy
+1132,51-60,female,Cyber Security,contract,11-15,Office-based,1,2,5,3,5,2,5,4,3,1,5,2,Mildly Stressed
+1133,41-50,male,Software development,part-time,less than 1 year,hybrid,3,2,3,3,4,1,3,5,4,2,2,5,Healthy
+1134,31-40,female,Cyber Security,part-time,1-5,hybrid,2,2,5,3,5,2,2,4,1,2,2,3,Healthy
+1135,21-30,male,IT Services,full-time,1-5,remote,3,4,3,3,1,3,3,4,1,3,2,3,Healthy
+1136,21-30,male,Software development,part-time,11-15,hybrid,3,2,2,4,3,3,5,5,1,4,2,5,Healthy
+1137,31-40,female,Other,part-time,6-10,Office-based,4,2,5,1,3,4,4,3,1,5,5,4,Highly Stressed
+1138,41-50,female,IT Services,part-time,11-15,hybrid,1,5,2,4,3,4,1,2,2,1,3,3,Healthy
+1139,41-50,male,Cyber Security,full-time,6-10,remote,1,3,2,1,2,3,4,5,3,1,1,1,Healthy
+1140,51-60,male,IT Services,part-time,1-5,remote,5,5,2,5,1,3,2,5,2,3,3,2,Healthy
+1141,51-60,male,Software development,full-time,less than 1 year,hybrid,3,4,2,5,1,1,4,1,5,3,5,5,Mildly Stressed
+1142,under 20,female,Hardware engineering,contract,16-20,Office-based,3,2,1,1,4,2,3,2,5,5,4,3,Highly Stressed
+1143,21-30,male,Hardware engineering,part-time,1-5,Office-based,2,3,4,4,2,4,5,3,4,5,1,2,Highly Stressed
+1144,51-60,male,Cyber Security,full-time,less than 1 year,remote,1,2,1,2,5,1,4,5,1,5,1,5,Healthy
+1145,41-50,male,Cyber Security,part-time,1-5,remote,2,2,3,4,1,2,4,3,4,3,4,5,Mildly Stressed
+1146,31-40,male,Hardware engineering,contract,11-15,Office-based,4,4,3,2,2,4,5,5,5,4,2,5,Mildly Stressed
+1147,41-50,male,Cyber Security,full-time,6-10,hybrid,5,2,4,4,2,1,3,5,1,3,5,4,Mildly Stressed
+1148,21-30,female,IT Services,full-time,1-5,hybrid,2,1,4,3,1,5,1,1,3,3,4,1,Highly Stressed
+1149,41-50,male,Other,full-time,less than 1 year,hybrid,1,3,4,3,4,5,4,4,5,1,3,5,Mildly Stressed
+1150,under 20,male,Other,contract,11-15,hybrid,4,3,2,5,2,4,2,2,4,5,3,4,Mildly Stressed
+1151,21-30,male,IT Services,contract,16-20,Office-based,3,1,1,5,3,1,3,1,4,2,4,5,Healthy
+1152,31-40,male,Other,contract,11-15,remote,4,4,3,1,2,2,3,3,5,5,5,5,Highly Stressed
+1153,under 20,female,Software development,full-time,6-10,remote,2,2,1,2,5,2,4,5,2,4,1,4,Healthy
+1154,21-30,female,IT Services,contract,11-15,hybrid,1,2,1,3,1,1,5,5,3,4,1,1,Mildly Stressed
+1155,31-40,female,Cyber Security,part-time,16-20,Office-based,2,3,1,4,5,5,4,2,5,5,2,2,Mildly Stressed
+1156,under 20,male,IT Services,contract,less than 1 year,Office-based,3,4,4,1,4,1,4,1,5,5,5,3,Highly Stressed
+1157,under 20,male,Hardware engineering,full-time,1-5,hybrid,3,4,4,4,3,5,5,1,4,3,3,5,Highly Stressed
+1158,21-30,female,Cyber Security,part-time,6-10,hybrid,1,4,3,3,1,5,2,3,1,2,3,1,Mildly Stressed
+1159,51-60,female,Hardware engineering,contract,16-20,hybrid,5,2,3,3,2,2,5,1,1,3,2,3,Mildly Stressed
+1160,under 20,female,Cyber Security,part-time,6-10,remote,4,4,3,3,3,4,4,1,1,1,3,5,Mildly Stressed
+1161,under 20,male,Other,part-time,11-15,hybrid,4,1,1,3,2,3,1,4,4,1,2,3,Healthy
+1162,31-40,male,IT Services,full-time,6-10,remote,3,5,4,4,4,1,5,2,1,4,2,4,Healthy
+1163,41-50,female,Software development,part-time,16-20,Office-based,2,4,2,1,1,5,2,1,5,4,4,1,Highly Stressed
+1164,21-30,female,Cyber Security,part-time,1-5,Office-based,2,5,1,3,4,1,5,3,2,2,1,1,Healthy
+1165,21-30,female,Cyber Security,full-time,1-5,remote,5,2,5,5,4,4,5,5,2,4,5,2,Highly Stressed
+1166,51-60,male,Hardware engineering,full-time,6-10,remote,2,4,1,1,4,4,3,1,2,1,5,2,Mildly Stressed
+1167,51-60,male,Other,full-time,less than 1 year,remote,4,3,4,5,4,3,3,1,1,2,1,3,Healthy
+1168,21-30,male,Hardware engineering,part-time,6-10,remote,2,2,5,4,2,3,4,5,2,1,5,4,Mildly Stressed
+1169,51-60,female,Hardware engineering,part-time,11-15,hybrid,5,1,1,3,5,5,4,4,1,5,3,3,Mildly Stressed
+1170,31-40,female,Other,part-time,1-5,Office-based,4,1,4,1,2,3,5,2,5,5,3,5,Burned Out
+1171,21-30,male,Software development,full-time,1-5,hybrid,2,5,4,3,3,5,1,4,5,2,5,1,Mildly Stressed
+1172,51-60,female,Hardware engineering,contract,1-5,remote,4,5,2,3,4,2,4,3,4,3,4,3,Mildly Stressed
+1173,21-30,male,Hardware engineering,part-time,less than 1 year,hybrid,3,3,1,1,3,5,5,1,4,4,5,3,Highly Stressed
+1174,41-50,female,Cyber Security,contract,less than 1 year,hybrid,3,3,4,3,2,3,5,4,3,2,2,1,Mildly Stressed
+1175,under 20,female,Other,full-time,16-20,Office-based,3,1,3,3,4,1,5,2,5,4,2,1,Highly Stressed
+1176,21-30,female,IT Services,part-time,6-10,hybrid,2,4,4,2,2,3,5,3,1,1,1,2,Mildly Stressed
+1177,under 20,female,Software development,contract,6-10,Office-based,5,1,2,2,4,4,5,4,3,3,3,2,Highly Stressed
+1178,51-60,male,Software development,part-time,11-15,remote,4,1,4,1,2,3,3,1,5,4,4,1,Burned Out
+1179,under 20,female,Other,part-time,1-5,hybrid,1,3,1,1,1,2,2,2,1,5,5,3,Mildly Stressed
+1180,21-30,male,Cyber Security,part-time,less than 1 year,remote,3,5,1,3,5,5,2,1,5,5,2,5,Mildly Stressed
+1181,41-50,male,Cyber Security,contract,11-15,Office-based,3,3,5,5,5,4,5,1,5,1,3,3,Mildly Stressed
+1182,51-60,male,Other,full-time,11-15,remote,1,3,1,1,4,5,4,3,1,2,3,5,Healthy
+1183,21-30,female,Cyber Security,part-time,less than 1 year,remote,1,3,5,3,1,5,1,2,5,4,4,1,Highly Stressed
+1184,51-60,male,Software development,full-time,6-10,Office-based,2,1,3,5,3,3,5,5,5,1,4,5,Mildly Stressed
+1185,31-40,male,Software development,full-time,1-5,remote,4,4,2,2,1,1,1,1,5,5,4,2,Highly Stressed
+1186,under 20,male,IT Services,contract,6-10,remote,3,1,3,1,4,4,3,2,4,5,4,1,Burned Out
+1187,31-40,female,Other,contract,11-15,remote,5,2,5,3,1,2,2,1,2,5,2,4,Highly Stressed
+1188,21-30,female,Hardware engineering,full-time,1-5,hybrid,2,3,4,2,3,2,3,4,5,3,4,5,Mildly Stressed
+1189,41-50,male,Hardware engineering,part-time,16-20,remote,2,3,4,4,4,1,4,4,1,3,3,5,Healthy
+1190,51-60,female,IT Services,contract,11-15,Office-based,5,2,3,2,5,1,4,2,5,5,3,4,Highly Stressed
+1191,under 20,male,IT Services,part-time,6-10,hybrid,5,3,4,3,1,3,5,3,4,2,5,4,Highly Stressed
+1192,51-60,male,Cyber Security,part-time,6-10,hybrid,5,3,5,5,5,2,4,5,4,3,3,1,Mildly Stressed
+1193,21-30,female,IT Services,part-time,6-10,Office-based,1,3,2,4,5,4,4,4,5,4,3,3,Mildly Stressed
+1194,51-60,male,IT Services,full-time,less than 1 year,remote,3,2,1,4,2,1,3,3,3,3,2,4,Healthy
+1195,under 20,female,Hardware engineering,part-time,11-15,hybrid,1,1,5,4,3,1,1,5,2,4,3,5,Healthy
+1196,21-30,female,Cyber Security,full-time,1-5,hybrid,3,3,5,1,1,1,2,4,1,3,1,4,Healthy
+1197,51-60,male,IT Services,full-time,6-10,hybrid,1,4,1,3,5,4,4,5,1,5,3,1,Healthy
+1198,41-50,female,IT Services,part-time,6-10,remote,4,2,1,4,5,2,4,1,1,4,5,1,Highly Stressed
+1199,21-30,female,Cyber Security,part-time,less than 1 year,hybrid,3,5,2,2,3,4,3,2,1,2,5,5,Healthy
+1200,21-30,male,Other,part-time,1-5,Office-based,2,2,2,5,5,4,2,4,4,3,4,5,Healthy
+1201,41-50,male,Cyber Security,part-time,11-15,remote,3,1,2,3,5,3,3,4,2,3,2,5,Healthy
+1202,31-40,female,Hardware engineering,full-time,16-20,Office-based,3,2,4,2,5,1,1,1,5,5,5,3,Highly Stressed
+1203,under 20,female,Other,part-time,less than 1 year,Office-based,3,5,5,1,5,2,3,4,5,4,1,5,Healthy
+1204,31-40,male,Software development,part-time,11-15,hybrid,4,4,1,4,2,3,2,4,3,5,1,1,Mildly Stressed
+1205,51-60,female,Cyber Security,full-time,16-20,hybrid,1,5,5,2,2,3,2,4,5,4,4,1,Mildly Stressed
+1206,41-50,female,Hardware engineering,contract,6-10,hybrid,2,2,5,3,4,5,4,4,2,3,2,4,Mildly Stressed
+1207,31-40,female,Other,contract,6-10,Office-based,1,5,2,2,1,1,1,4,5,3,2,5,Healthy
+1208,21-30,female,Cyber Security,full-time,1-5,remote,1,2,2,1,3,2,5,3,4,3,3,3,Highly Stressed
+1209,51-60,female,IT Services,contract,16-20,hybrid,5,4,5,5,4,2,4,4,5,3,1,2,Mildly Stressed
+1210,51-60,female,Cyber Security,full-time,6-10,hybrid,4,4,2,4,2,2,3,1,1,1,1,4,Healthy
+1211,31-40,female,Software development,part-time,6-10,Office-based,5,1,4,3,2,1,3,4,1,3,1,3,Mildly Stressed
+1212,31-40,male,Cyber Security,part-time,1-5,remote,4,4,1,4,2,2,2,5,1,3,1,5,Healthy
+1213,41-50,male,Other,contract,11-15,Office-based,1,3,5,4,4,4,2,5,1,4,5,3,Healthy
+1214,under 20,male,Other,part-time,6-10,hybrid,1,5,1,4,2,4,2,1,4,3,2,2,Healthy
+1215,31-40,male,Cyber Security,contract,less than 1 year,Office-based,4,5,4,2,4,1,5,3,4,3,3,3,Mildly Stressed
+1216,31-40,male,Other,contract,less than 1 year,hybrid,1,2,2,2,2,2,5,1,4,4,5,2,Highly Stressed
+1217,21-30,female,IT Services,part-time,11-15,remote,1,4,3,5,5,5,4,3,5,3,2,2,Mildly Stressed
+1218,51-60,female,Cyber Security,part-time,16-20,Office-based,2,1,4,1,5,5,5,2,1,3,4,2,Highly Stressed
+1219,under 20,female,IT Services,contract,1-5,hybrid,5,1,3,3,1,5,2,5,3,5,1,3,Highly Stressed
+1220,21-30,female,IT Services,part-time,less than 1 year,hybrid,5,1,1,2,2,4,4,5,3,1,3,5,Mildly Stressed
+1221,41-50,male,Hardware engineering,full-time,less than 1 year,hybrid,5,3,5,4,1,5,4,5,1,4,2,1,Highly Stressed
+1222,41-50,female,Cyber Security,part-time,11-15,hybrid,3,4,2,1,4,2,1,3,2,5,4,1,Mildly Stressed
+1223,31-40,female,Other,part-time,16-20,Office-based,2,1,4,3,1,2,5,1,5,2,1,3,Highly Stressed
+1224,31-40,male,IT Services,full-time,16-20,hybrid,5,3,2,3,2,5,3,3,3,2,4,5,Mildly Stressed
+1225,41-50,female,Hardware engineering,part-time,11-15,Office-based,5,5,3,3,4,3,3,5,4,1,4,1,Mildly Stressed
+1226,31-40,female,Cyber Security,part-time,less than 1 year,hybrid,2,2,3,3,4,5,1,5,2,2,5,2,Mildly Stressed
+1227,under 20,male,Cyber Security,contract,1-5,Office-based,1,4,5,5,5,3,2,5,4,1,4,3,Healthy
+1228,31-40,female,Software development,part-time,less than 1 year,Office-based,5,4,3,3,4,1,1,5,2,2,5,3,Healthy
+1229,51-60,female,Software development,part-time,16-20,hybrid,1,5,5,1,4,1,2,2,2,2,5,4,Healthy
+1230,31-40,female,IT Services,full-time,less than 1 year,hybrid,5,4,4,2,1,2,5,5,5,5,4,4,Highly Stressed
+1231,21-30,female,Software development,contract,1-5,hybrid,4,4,5,1,4,4,5,3,4,2,2,4,Highly Stressed
+1232,under 20,female,IT Services,contract,6-10,hybrid,3,4,3,4,3,2,4,5,4,1,4,5,Healthy
+1233,21-30,male,Other,contract,less than 1 year,remote,5,4,1,5,5,2,4,4,3,3,4,3,Healthy
+1234,21-30,male,IT Services,part-time,11-15,hybrid,4,3,5,5,5,4,4,2,1,3,2,4,Mildly Stressed
+1235,51-60,male,Software development,contract,6-10,hybrid,2,3,2,4,4,2,4,5,1,3,1,3,Healthy
+1236,under 20,male,Other,full-time,11-15,hybrid,4,2,1,1,1,4,3,4,3,1,3,2,Mildly Stressed
+1237,under 20,male,Software development,contract,11-15,Office-based,2,4,5,1,5,2,4,3,2,1,1,4,Healthy
+1238,under 20,male,IT Services,full-time,11-15,hybrid,5,5,2,4,5,1,4,2,3,3,4,3,Mildly Stressed
+1239,under 20,female,Hardware engineering,contract,less than 1 year,Office-based,2,1,1,3,3,3,4,5,3,2,1,5,Healthy
+1240,under 20,male,Cyber Security,contract,16-20,Office-based,4,2,5,3,4,2,2,3,4,3,3,5,Mildly Stressed
+1241,51-60,male,Software development,full-time,6-10,Office-based,3,1,4,2,5,3,4,4,3,4,1,5,Mildly Stressed
+1242,31-40,female,IT Services,contract,1-5,Office-based,1,1,2,1,5,5,1,2,2,1,3,4,Healthy
+1243,21-30,female,Other,contract,16-20,remote,1,4,4,1,5,2,4,5,1,4,1,5,Healthy
+1244,under 20,male,Software development,contract,less than 1 year,hybrid,3,5,3,4,5,1,4,3,5,4,5,1,Mildly Stressed
+1245,31-40,female,Software development,part-time,11-15,Office-based,1,1,5,4,1,4,3,2,3,1,4,2,Highly Stressed
+1246,31-40,male,Cyber Security,full-time,1-5,hybrid,5,1,5,3,2,1,4,4,3,3,3,3,Mildly Stressed
+1247,21-30,female,IT Services,contract,6-10,Office-based,5,2,2,1,3,3,2,5,4,5,4,1,Highly Stressed
+1248,51-60,male,Hardware engineering,full-time,16-20,remote,4,5,5,1,1,4,5,2,4,4,5,4,Burned Out
+1249,41-50,female,Other,full-time,16-20,Office-based,4,5,3,5,3,1,4,4,3,3,1,3,Healthy
+1250,41-50,female,IT Services,full-time,1-5,hybrid,2,1,5,2,5,1,4,4,3,5,4,3,Mildly Stressed
+1251,31-40,male,Other,contract,less than 1 year,hybrid,4,5,1,2,3,1,4,3,2,4,1,5,Healthy
+1252,21-30,male,Software development,contract,6-10,remote,5,2,4,3,4,4,3,4,1,3,1,3,Mildly Stressed
+1253,41-50,male,Cyber Security,full-time,1-5,hybrid,4,2,3,1,4,1,5,4,1,4,4,3,Mildly Stressed
+1254,31-40,male,Cyber Security,part-time,11-15,hybrid,1,2,3,5,2,1,3,1,5,3,3,2,Mildly Stressed
+1255,51-60,male,Hardware engineering,full-time,6-10,Office-based,2,4,4,1,2,3,3,4,1,2,3,4,Healthy
+1256,41-50,female,Cyber Security,part-time,16-20,hybrid,2,1,4,4,3,1,3,5,5,2,4,1,Mildly Stressed
+1257,31-40,male,Software development,full-time,1-5,Office-based,5,5,3,3,1,1,2,2,4,1,3,5,Healthy
+1258,31-40,male,Hardware engineering,full-time,16-20,remote,4,2,4,2,1,5,5,5,5,5,2,2,Burned Out
+1259,under 20,female,IT Services,full-time,16-20,hybrid,1,1,2,1,5,4,2,5,5,4,1,1,Mildly Stressed
+1260,51-60,female,Cyber Security,contract,16-20,Office-based,4,1,4,3,1,5,2,3,1,4,4,1,Highly Stressed
+1261,under 20,male,Hardware engineering,part-time,less than 1 year,hybrid,3,4,1,2,2,3,5,1,3,3,5,2,Highly Stressed
+1262,21-30,female,Software development,part-time,16-20,Office-based,4,5,1,1,1,5,2,1,4,5,4,5,Highly Stressed
+1263,under 20,female,Other,full-time,11-15,remote,5,5,2,5,5,2,5,5,2,4,4,4,Healthy
+1264,under 20,male,Other,contract,11-15,Office-based,4,2,4,3,4,4,4,2,5,5,1,2,Highly Stressed
+1265,41-50,female,Software development,contract,6-10,hybrid,2,2,1,1,1,1,3,1,5,5,5,2,Highly Stressed
+1266,31-40,female,Software development,part-time,16-20,Office-based,1,1,5,2,1,5,2,1,5,2,1,2,Highly Stressed
+1267,51-60,male,Other,contract,16-20,hybrid,5,5,4,2,2,5,5,5,3,4,3,5,Highly Stressed
+1268,under 20,male,Hardware engineering,part-time,1-5,remote,3,5,2,5,3,1,1,1,2,4,4,2,Healthy
+1269,51-60,female,Other,part-time,less than 1 year,Office-based,1,2,4,3,4,1,2,3,1,1,1,2,Healthy
+1270,under 20,female,Software development,part-time,6-10,hybrid,1,3,3,3,3,3,2,5,4,5,2,3,Mildly Stressed
+1271,21-30,male,Cyber Security,contract,16-20,hybrid,2,1,3,1,5,5,5,1,3,3,4,3,Highly Stressed
+1272,under 20,female,IT Services,part-time,1-5,hybrid,2,5,1,2,5,5,1,1,2,2,3,3,Healthy
+1273,41-50,female,Cyber Security,part-time,less than 1 year,Office-based,2,4,3,2,3,2,1,1,4,1,1,3,Healthy
+1274,31-40,female,Cyber Security,full-time,6-10,Office-based,5,4,2,5,2,2,4,5,1,2,1,2,Healthy
+1275,21-30,male,Software development,part-time,6-10,Office-based,4,3,1,5,2,5,2,2,4,3,2,3,Mildly Stressed
+1276,under 20,female,Other,part-time,16-20,remote,1,2,2,3,2,2,3,4,5,1,3,1,Mildly Stressed
+1277,51-60,female,Hardware engineering,full-time,6-10,hybrid,4,2,2,2,4,5,2,1,5,2,2,4,Highly Stressed
+1278,21-30,male,Cyber Security,full-time,1-5,hybrid,4,2,3,1,5,4,3,4,3,3,4,3,Mildly Stressed
+1279,21-30,female,Other,contract,6-10,remote,2,4,3,4,5,3,3,4,4,1,5,5,Healthy
+1280,under 20,female,Hardware engineering,part-time,11-15,remote,4,2,2,1,5,2,5,1,5,3,1,4,Mildly Stressed
+1281,21-30,male,Cyber Security,contract,1-5,Office-based,1,4,3,5,4,5,2,1,3,1,2,1,Healthy
+1282,51-60,male,Hardware engineering,contract,less than 1 year,Office-based,1,3,3,1,5,2,5,4,3,4,1,4,Healthy
+1283,21-30,male,Other,full-time,less than 1 year,Office-based,3,1,3,2,3,3,4,2,3,4,1,4,Mildly Stressed
+1284,51-60,male,IT Services,contract,16-20,Office-based,5,5,4,3,1,4,3,4,1,2,2,1,Mildly Stressed
+1285,under 20,female,Other,part-time,16-20,Office-based,4,3,2,4,4,1,1,2,5,5,1,3,Mildly Stressed
+1286,31-40,female,Software development,full-time,11-15,Office-based,5,4,5,3,1,1,3,3,5,5,3,1,Burned out
+1287,21-30,male,Hardware engineering,part-time,less than 1 year,remote,5,3,2,4,3,2,4,2,2,3,3,5,Mildly Stressed
+1288,31-40,male,IT Services,part-time,less than 1 year,remote,5,5,1,4,2,5,3,5,1,1,5,1,Healthy
+1289,51-60,female,Hardware engineering,full-time,less than 1 year,remote,5,1,3,2,2,3,5,1,5,4,3,2,Burned Out
+1290,21-30,male,Hardware engineering,part-time,less than 1 year,hybrid,1,5,3,2,2,4,2,3,5,5,2,2,Mildly Stressed
+1291,41-50,female,Cyber Security,full-time,6-10,hybrid,4,4,5,5,4,4,1,4,2,4,3,4,Healthy
+1292,31-40,male,Software development,part-time,1-5,Office-based,3,5,1,5,2,4,5,2,4,3,5,3,Mildly Stressed
+1293,21-30,female,Hardware engineering,full-time,1-5,remote,5,3,4,4,4,1,2,3,4,3,4,3,Mildly Stressed
+1294,31-40,male,Other,contract,11-15,hybrid,3,2,2,5,4,3,1,5,1,1,4,2,Healthy
+1295,21-30,male,Other,part-time,6-10,hybrid,1,3,4,2,1,1,4,2,3,5,2,5,Mildly Stressed
+1296,under 20,female,Cyber Security,full-time,less than 1 year,remote,1,4,1,5,2,2,3,4,2,3,5,1,Healthy
+1297,31-40,male,Software development,part-time,less than 1 year,hybrid,2,1,5,4,5,4,1,4,2,3,3,1,Mildly Stressed
+1298,41-50,female,Software development,part-time,16-20,hybrid,5,5,1,3,2,3,4,2,5,4,5,1,Highly Stressed
+1299,41-50,female,Other,part-time,16-20,remote,2,1,5,1,2,4,2,5,5,2,1,5,Mildly Stressed
+1300,51-60,female,IT Services,full-time,11-15,hybrid,3,4,4,5,2,1,1,1,2,5,5,5,Mildly Stressed
+1301,21-30,female,Cyber Security,contract,less than 1 year,remote,4,5,4,2,5,1,4,1,3,1,3,1,Mildly Stressed
+1302,31-40,female,Cyber Security,contract,11-15,hybrid,2,3,1,3,5,1,2,4,4,1,2,1,Healthy
+1303,51-60,male,Other,contract,6-10,remote,1,3,1,2,4,4,5,5,1,4,1,5,Healthy
+1304,31-40,male,Other,full-time,1-5,hybrid,5,4,3,5,5,3,3,4,4,1,5,1,Mildly Stressed
+1305,21-30,female,IT Services,contract,less than 1 year,hybrid,3,5,5,4,4,3,4,1,1,3,4,5,Mildly Stressed
+1306,41-50,male,IT Services,full-time,6-10,remote,1,3,3,1,1,2,5,4,3,5,3,4,Mildly Stressed
+1307,under 20,female,Software development,part-time,less than 1 year,hybrid,4,4,2,1,4,4,2,2,2,1,2,2,Healthy
+1308,41-50,male,Cyber Security,part-time,16-20,remote,5,4,2,3,2,2,1,2,3,5,3,2,Mildly Stressed
+1309,51-60,male,Cyber Security,contract,11-15,remote,4,1,1,1,3,2,3,5,2,1,5,5,Healthy
+1310,under 20,male,Other,full-time,16-20,hybrid,4,3,4,4,3,2,2,1,5,2,2,1,Mildly Stressed
+1311,51-60,male,Software development,part-time,1-5,Office-based,5,5,2,2,2,2,4,5,1,2,4,2,Healthy
+1312,21-30,female,Cyber Security,full-time,16-20,hybrid,5,3,2,4,4,1,3,5,5,5,1,3,Mildly Stressed
+1313,under 20,female,Software development,full-time,less than 1 year,Office-based,4,3,3,3,2,2,5,1,2,2,5,1,Highly Stressed
+1314,51-60,male,Software development,part-time,16-20,Office-based,3,3,3,3,5,3,3,3,1,2,2,5,Healthy
+1315,21-30,male,Other,full-time,less than 1 year,hybrid,5,4,2,1,4,2,5,3,1,3,1,3,Mildly Stressed
+1316,41-50,female,Software development,part-time,1-5,Office-based,1,2,1,4,2,1,2,4,5,1,2,5,Healthy
+1317,21-30,male,IT Services,part-time,16-20,remote,2,2,3,2,5,5,1,3,1,2,5,1,Mildly Stressed
+1318,31-40,female,IT Services,part-time,11-15,remote,3,1,2,4,5,5,3,2,2,5,2,4,Mildly Stressed
+1319,21-30,female,Hardware engineering,full-time,11-15,Office-based,5,3,4,2,4,5,1,5,2,3,4,4,Mildly Stressed
+1320,21-30,female,Other,part-time,11-15,remote,5,2,3,2,1,4,1,4,5,2,2,4,Mildly Stressed
+1321,31-40,male,Hardware engineering,full-time,16-20,hybrid,3,1,2,4,1,3,3,5,3,5,5,1,Highly Stressed
+1322,51-60,female,IT Services,part-time,16-20,remote,2,4,5,5,5,1,3,1,2,1,2,1,Healthy
+1323,51-60,male,Hardware engineering,part-time,16-20,Office-based,4,3,3,4,1,5,1,3,2,2,1,3,Mildly Stressed
+1324,21-30,female,Other,contract,less than 1 year,hybrid,1,5,5,2,5,1,4,1,1,5,1,1,Mildly Stressed
+1325,31-40,male,Other,contract,1-5,remote,5,4,3,3,1,1,4,4,1,5,3,1,Mildly Stressed
+1326,31-40,male,Software development,contract,11-15,hybrid,2,1,3,3,5,4,3,2,2,4,3,3,Mildly Stressed
+1327,41-50,male,Cyber Security,full-time,less than 1 year,Office-based,1,4,5,1,5,5,1,3,5,5,4,3,Mildly Stressed
+1328,51-60,female,Software development,full-time,11-15,remote,3,5,1,3,5,2,1,1,3,4,1,5,Healthy
+1329,under 20,female,Other,part-time,less than 1 year,hybrid,5,4,2,5,5,1,2,3,1,1,3,2,Healthy
+1330,51-60,male,IT Services,part-time,16-20,hybrid,4,1,1,2,3,5,1,5,1,1,2,2,Healthy
+1331,51-60,male,IT Services,part-time,11-15,remote,3,5,1,4,1,1,4,2,3,3,4,5,Healthy
+1332,41-50,male,Software development,part-time,16-20,hybrid,5,5,2,4,5,4,2,3,1,4,5,4,Healthy
+1333,under 20,female,Other,full-time,11-15,hybrid,2,4,4,5,2,4,4,2,5,5,3,1,Highly Stressed
+1334,41-50,female,IT Services,part-time,6-10,Office-based,1,5,1,3,4,2,5,5,1,3,3,3,Healthy
+1335,under 20,female,Other,part-time,less than 1 year,Office-based,1,4,1,2,2,4,3,5,1,3,1,3,Healthy
+1336,21-30,female,IT Services,contract,6-10,Office-based,5,3,1,3,2,5,5,1,2,1,4,4,Highly Stressed
+1337,under 20,male,Other,part-time,less than 1 year,Office-based,3,5,4,1,3,4,3,4,5,5,1,3,Mildly Stressed
+1338,41-50,male,Hardware engineering,part-time,1-5,Office-based,4,4,3,3,1,2,4,1,5,4,1,4,Highly Stressed
+1339,51-60,female,Other,part-time,11-15,Office-based,2,3,5,1,3,3,4,2,2,1,4,5,Mildly Stressed
+1340,under 20,female,Other,full-time,1-5,remote,5,5,5,4,1,1,5,1,4,3,2,4,Highly Stressed
+1341,under 20,male,Software development,contract,1-5,Office-based,2,3,4,2,5,1,3,3,3,2,3,2,Healthy
+1342,31-40,female,Hardware engineering,part-time,less than 1 year,hybrid,1,5,1,1,3,5,3,1,5,3,1,4,Mildly Stressed
+1343,51-60,female,Cyber Security,part-time,6-10,remote,4,1,5,3,4,2,2,4,4,2,3,5,Mildly Stressed
+1344,21-30,female,Software development,contract,16-20,hybrid,2,1,4,3,1,2,1,4,3,1,4,4,Healthy
+1345,41-50,female,Cyber Security,part-time,less than 1 year,Office-based,5,4,2,4,3,2,2,2,5,4,2,5,Mildly Stressed
+1346,21-30,female,IT Services,full-time,16-20,Office-based,4,2,5,5,4,1,4,5,1,5,5,2,Mildly Stressed
+1347,51-60,female,Cyber Security,part-time,1-5,hybrid,3,1,2,5,2,4,5,4,5,2,2,1,Highly Stressed
+1348,under 20,male,Other,full-time,16-20,hybrid,5,2,1,3,5,1,3,2,3,5,4,5,Mildly Stressed
+1349,under 20,female,Cyber Security,full-time,6-10,hybrid,2,3,5,5,5,1,2,4,4,1,2,1,Healthy
+1350,51-60,female,Software development,part-time,less than 1 year,remote,4,3,4,2,2,1,5,4,1,1,5,5,Mildly Stressed
+1351,under 20,male,Software development,contract,6-10,Office-based,5,2,3,5,3,4,5,5,3,1,1,4,Healthy
+1352,under 20,male,Cyber Security,full-time,6-10,hybrid,4,4,5,2,2,3,1,3,3,4,2,1,Highly Stressed
+1353,under 20,male,Software development,contract,less than 1 year,Office-based,4,5,5,3,4,5,3,2,5,2,4,5,Mildly Stressed
+1354,41-50,female,Software development,part-time,6-10,hybrid,4,2,5,3,1,3,5,4,2,5,2,5,Highly Stressed
+1355,41-50,male,Cyber Security,full-time,11-15,Office-based,2,2,5,3,3,3,3,4,2,3,5,1,Highly Stressed
+1356,31-40,female,Hardware engineering,part-time,11-15,remote,5,2,4,4,1,1,2,1,1,1,4,5,Mildly Stressed
+1357,21-30,female,Hardware engineering,contract,11-15,Office-based,1,2,4,5,2,3,5,3,3,5,2,1,Highly Stressed
+1358,51-60,female,IT Services,part-time,16-20,hybrid,1,2,3,1,5,1,5,5,4,5,4,2,Mildly Stressed
+1359,51-60,male,Software development,part-time,6-10,Office-based,2,4,4,1,1,1,2,2,1,4,5,3,Mildly Stressed
+1360,51-60,male,Cyber Security,full-time,less than 1 year,remote,2,1,4,3,1,5,3,4,1,2,1,2,Mildly Stressed
+1361,31-40,male,Software development,part-time,less than 1 year,remote,4,5,1,5,5,2,3,2,5,4,5,1,Mildly Stressed
+1362,41-50,male,Other,part-time,16-20,Office-based,5,1,1,2,1,1,5,5,4,4,1,4,Mildly Stressed
+1363,31-40,male,Software development,part-time,less than 1 year,hybrid,5,2,2,1,1,3,2,3,3,5,3,4,Highly Stressed
+1364,51-60,female,Software development,full-time,11-15,remote,3,1,3,3,5,5,4,1,3,2,5,3,Highly Stressed
+1365,21-30,female,Hardware engineering,contract,6-10,remote,3,4,1,1,5,3,3,3,3,2,1,1,Healthy
+1366,under 20,female,Cyber Security,contract,less than 1 year,Office-based,1,3,3,1,2,2,4,1,1,2,3,5,Mildly Stressed
+1367,41-50,female,Software development,part-time,less than 1 year,remote,3,1,3,1,2,4,5,2,5,1,3,2,Highly Stressed
+1368,41-50,male,Hardware engineering,full-time,1-5,remote,3,5,5,3,1,2,4,3,1,2,3,2,Mildly Stressed
+1369,31-40,male,IT Services,part-time,1-5,hybrid,1,4,3,3,3,5,4,3,2,5,4,3,Mildly Stressed
+1370,41-50,female,Hardware engineering,contract,1-5,hybrid,1,3,5,4,2,2,3,3,2,1,5,3,Mildly Stressed
+1371,51-60,male,Hardware engineering,full-time,6-10,hybrid,3,4,2,4,2,2,5,5,3,3,5,3,Mildly Stressed
+1372,51-60,male,Hardware engineering,contract,11-15,Office-based,5,2,2,4,3,5,4,2,5,4,5,3,Highly Stressed
+1373,31-40,female,Software development,contract,11-15,remote,3,3,2,1,3,5,3,1,3,2,5,3,Highly Stressed
+1374,51-60,female,Software development,full-time,11-15,Office-based,4,5,5,5,5,3,4,3,3,3,4,3,Mildly Stressed
+1375,21-30,male,IT Services,full-time,6-10,remote,4,3,5,3,2,1,3,2,1,2,5,5,Mildly Stressed
+1376,31-40,male,Other,part-time,6-10,remote,4,5,2,4,4,4,5,5,3,4,1,5,Healthy
+1377,21-30,female,Other,part-time,1-5,remote,2,2,5,5,4,4,2,5,3,5,3,2,Mildly Stressed
+1378,under 20,female,Other,contract,less than 1 year,hybrid,4,5,4,4,1,4,3,2,5,5,4,2,Burned out
+1379,21-30,female,IT Services,full-time,16-20,Office-based,5,4,4,4,2,2,3,1,5,4,4,3,Highly Stressed
+1380,under 20,male,Other,full-time,16-20,Office-based,2,1,5,5,4,5,4,2,5,3,5,2,Highly Stressed
+1381,under 20,female,Other,part-time,less than 1 year,remote,2,4,5,4,2,5,5,2,3,1,3,3,Mildly Stressed
+1382,21-30,female,Hardware engineering,contract,1-5,Office-based,4,4,1,1,2,5,1,4,5,1,1,5,Healthy
+1383,31-40,male,Software development,contract,less than 1 year,hybrid,3,3,1,1,4,1,1,5,5,2,3,4,Healthy
+1384,51-60,male,Software development,part-time,less than 1 year,Office-based,1,2,3,1,2,5,2,1,4,4,2,5,Highly Stressed
+1385,51-60,male,Hardware engineering,full-time,16-20,remote,3,1,3,2,3,5,5,4,4,4,3,1,Highly Stressed
+1386,under 20,male,Hardware engineering,part-time,1-5,hybrid,3,5,3,4,1,2,3,2,2,1,1,5,Healthy
+1387,under 20,male,Hardware engineering,part-time,6-10,hybrid,2,3,2,2,5,3,1,5,1,3,1,1,Healthy
+1388,31-40,female,Software development,part-time,16-20,remote,2,2,4,3,4,4,2,4,1,4,1,2,Healthy
+1389,41-50,female,Other,part-time,6-10,Office-based,2,1,2,5,5,2,5,4,5,5,4,5,Mildly Stressed
+1390,21-30,male,Hardware engineering,full-time,1-5,remote,5,4,5,3,1,2,2,1,2,5,4,4,Highly Stressed
+1391,under 20,male,IT Services,part-time,less than 1 year,Office-based,5,2,1,2,3,2,1,2,2,4,2,5,Healthy
+1392,51-60,male,Hardware engineering,full-time,11-15,Office-based,1,2,5,1,3,4,4,1,4,3,3,5,Highly Stressed
+1393,31-40,male,Cyber Security,part-time,11-15,hybrid,2,2,5,4,3,2,4,4,2,5,5,5,Mildly Stressed
+1394,21-30,male,Hardware engineering,contract,1-5,remote,4,4,1,4,3,3,5,4,3,3,2,3,Healthy
+1395,31-40,female,Software development,full-time,11-15,hybrid,2,5,5,1,4,5,2,1,5,1,5,5,Mildly Stressed
+1396,21-30,female,Hardware engineering,contract,6-10,remote,5,3,3,4,4,3,3,4,3,2,5,5,Mildly Stressed
+1397,21-30,female,Cyber Security,part-time,11-15,remote,2,5,1,5,2,5,1,3,1,1,2,4,Healthy
+1398,under 20,female,IT Services,part-time,1-5,hybrid,5,1,5,5,2,5,4,5,4,2,3,1,Highly Stressed
+1399,31-40,male,Other,part-time,1-5,remote,2,3,3,5,1,2,4,2,3,5,5,1,Highly Stressed
+1400,31-40,female,Hardware engineering,full-time,6-10,remote,4,1,3,3,2,2,2,5,5,2,4,4,Mildly Stressed
+1401,51-60,male,Cyber Security,contract,11-15,Office-based,1,4,4,1,1,4,4,2,3,2,4,2,Highly Stressed
+1402,51-60,male,Cyber Security,full-time,11-15,remote,4,5,3,5,1,1,2,4,3,4,2,5,Healthy
+1403,under 20,male,IT Services,full-time,less than 1 year,remote,5,2,2,2,1,3,1,1,2,2,5,2,Highly Stressed
+1404,under 20,female,Software development,part-time,16-20,hybrid,3,3,1,5,3,4,2,1,4,4,2,4,Mildly Stressed
+1405,41-50,male,Hardware engineering,contract,1-5,hybrid,4,2,1,3,5,4,4,4,1,2,4,2,Mildly Stressed
+1406,51-60,female,Cyber Security,part-time,less than 1 year,remote,2,1,1,2,5,3,2,2,5,4,2,1,Mildly Stressed
+1407,21-30,female,IT Services,full-time,1-5,Office-based,1,2,5,1,4,3,4,4,5,5,5,3,Highly Stressed
+1408,31-40,male,Other,part-time,less than 1 year,Office-based,2,2,5,1,1,5,5,2,1,5,5,2,Burned Out
+1409,under 20,male,Cyber Security,contract,16-20,hybrid,2,4,2,5,3,1,4,4,5,2,4,3,Healthy
+1410,31-40,male,IT Services,part-time,less than 1 year,remote,4,4,3,2,2,2,4,4,2,3,1,2,Mildly Stressed
+1411,31-40,female,Software development,contract,1-5,remote,1,5,5,2,2,1,4,4,3,5,1,4,Healthy
+1412,41-50,male,Software development,contract,11-15,Office-based,3,1,3,5,4,1,5,1,2,1,3,3,Mildly Stressed
+1413,51-60,female,Cyber Security,part-time,1-5,Office-based,2,4,3,5,4,2,3,2,2,1,4,2,Healthy
+1414,under 20,male,Cyber Security,full-time,6-10,Office-based,1,4,5,4,1,1,4,4,2,4,3,4,Healthy
+1415,31-40,male,Hardware engineering,part-time,6-10,hybrid,3,5,5,4,1,4,3,5,1,3,4,1,Mildly Stressed
+1416,under 20,female,IT Services,full-time,6-10,remote,2,3,2,5,2,4,1,5,4,4,5,5,Healthy
+1417,21-30,female,Cyber Security,full-time,6-10,hybrid,1,5,4,3,2,2,2,1,1,2,4,4,Healthy
+1418,41-50,female,Hardware engineering,part-time,16-20,remote,4,2,1,4,2,2,3,3,1,5,2,4,Mildly Stressed
+1419,21-30,female,Hardware engineering,full-time,11-15,hybrid,2,2,5,5,2,3,1,1,2,3,3,1,Mildly Stressed
+1420,under 20,female,Cyber Security,full-time,11-15,remote,2,4,5,2,5,3,2,3,4,4,4,3,Mildly Stressed
+1421,under 20,female,Software development,part-time,1-5,Office-based,1,4,3,4,1,1,4,1,1,4,3,2,Mildly Stressed
+1422,51-60,male,IT Services,part-time,less than 1 year,Office-based,2,5,4,3,1,1,4,5,4,1,4,3,Healthy
+1423,31-40,male,IT Services,part-time,1-5,Office-based,3,5,5,1,2,2,4,4,2,2,1,4,Healthy
+1424,31-40,female,Software development,full-time,1-5,hybrid,2,1,4,2,3,1,5,2,1,4,3,2,Highly Stressed
+1425,21-30,male,Cyber Security,contract,1-5,Office-based,5,2,1,3,2,5,5,4,4,1,5,5,Highly Stressed
+1426,41-50,female,IT Services,full-time,1-5,remote,3,5,3,3,4,4,5,5,5,3,5,5,Mildly Stressed
+1427,31-40,male,Cyber Security,contract,11-15,hybrid,1,3,2,3,3,1,5,2,1,4,4,2,Mildly Stressed
+1428,51-60,male,Cyber Security,part-time,less than 1 year,remote,3,1,1,2,4,1,1,3,1,1,5,4,Healthy
+1429,21-30,female,Hardware engineering,contract,1-5,hybrid,5,5,4,3,3,3,1,3,1,2,5,1,Mildly Stressed
+1430,21-30,female,Software development,part-time,11-15,remote,5,4,4,1,4,5,4,5,4,5,3,3,Highly Stressed
+1431,51-60,female,Cyber Security,part-time,1-5,remote,2,5,1,4,2,1,2,2,3,3,4,3,Healthy
+1432,41-50,male,Other,contract,6-10,hybrid,2,4,4,2,2,4,5,4,1,4,3,1,Highly Stressed
+1433,51-60,female,Software development,part-time,1-5,hybrid,4,4,2,3,3,1,2,5,5,1,4,1,Mildly Stressed
+1434,41-50,male,IT Services,contract,1-5,Office-based,3,2,2,5,4,2,1,3,5,4,5,5,Healthy
+1435,51-60,female,Hardware engineering,part-time,16-20,Office-based,4,2,4,4,5,5,5,5,2,5,4,1,Highly Stressed
+1436,51-60,male,IT Services,full-time,6-10,remote,5,5,4,2,3,1,1,4,3,4,4,2,Mildly Stressed
+1437,under 20,male,IT Services,full-time,less than 1 year,remote,2,5,2,5,3,5,1,1,3,4,2,5,Healthy
+1438,21-30,female,Software development,part-time,1-5,remote,2,3,4,5,1,1,3,1,4,1,4,4,Mildly Stressed
+1439,51-60,male,IT Services,part-time,less than 1 year,hybrid,2,1,5,3,3,4,1,4,2,5,2,5,Mildly Stressed
+1440,51-60,male,Cyber Security,contract,6-10,hybrid,1,1,3,2,5,4,4,2,4,3,3,5,Mildly Stressed
+1441,31-40,female,IT Services,full-time,1-5,Office-based,5,5,5,3,2,5,1,5,2,1,2,3,Healthy
+1442,21-30,male,Hardware engineering,contract,16-20,remote,2,2,4,1,4,3,5,4,3,5,3,1,Highly Stressed
+1443,31-40,female,Hardware engineering,part-time,11-15,Office-based,5,3,4,5,1,3,4,1,4,5,4,2,Burned Out
+1444,21-30,female,Other,part-time,16-20,hybrid,2,1,3,1,4,2,1,3,2,4,3,1,Mildly Stressed
+1445,31-40,female,Hardware engineering,contract,16-20,hybrid,3,5,4,3,2,3,4,4,3,2,5,3,Mildly Stressed
+1446,51-60,female,IT Services,part-time,11-15,hybrid,5,2,3,4,3,5,1,4,3,2,4,1,Mildly Stressed
+1447,51-60,male,Hardware engineering,full-time,11-15,Office-based,4,2,2,5,5,3,4,4,1,3,2,2,Healthy
+1448,under 20,male,Software development,contract,11-15,hybrid,1,2,3,4,1,2,2,1,4,4,1,1,Mildly Stressed
+1449,31-40,male,Hardware engineering,full-time,1-5,remote,4,4,3,2,5,1,3,1,1,2,4,3,Healthy
+1450,41-50,female,Cyber Security,full-time,less than 1 year,Office-based,5,2,5,5,5,3,4,4,3,1,5,2,Highly Stressed
+1451,under 20,male,Software development,full-time,less than 1 year,hybrid,2,5,4,1,5,5,5,4,4,3,3,1,Highly Stressed
+1452,31-40,male,Other,contract,11-15,Office-based,5,3,2,4,5,5,3,2,4,4,2,3,Highly Stressed
+1453,31-40,female,Cyber Security,part-time,16-20,Office-based,1,5,1,2,2,2,3,3,5,1,2,3,Healthy
+1454,under 20,female,IT Services,full-time,6-10,hybrid,5,2,3,5,5,2,1,5,2,2,5,5,Healthy
+1455,51-60,male,IT Services,full-time,11-15,hybrid,2,3,1,2,5,4,4,5,5,2,5,2,Mildly Stressed
+1456,31-40,female,IT Services,full-time,16-20,Office-based,4,1,4,1,2,4,3,5,5,2,4,2,Highly Stressed
+1457,51-60,female,Cyber Security,part-time,16-20,Office-based,3,1,3,5,4,4,5,1,3,2,1,1,Mildly Stressed
+1458,under 20,female,Cyber Security,part-time,1-5,hybrid,4,5,1,2,2,1,5,1,2,5,1,5,Mildly Stressed
+1459,51-60,female,Cyber Security,contract,1-5,remote,2,3,5,3,3,5,5,2,5,3,3,2,Highly Stressed
+1460,21-30,male,Software development,part-time,less than 1 year,Office-based,2,5,1,5,2,4,1,1,5,3,2,3,Healthy
+1461,41-50,female,Software development,contract,less than 1 year,Office-based,1,3,5,5,4,5,2,4,4,2,4,2,Mildly Stressed
+1462,31-40,female,IT Services,contract,6-10,remote,5,3,2,5,3,2,4,3,3,3,2,5,Healthy
+1463,41-50,female,Hardware engineering,contract,6-10,hybrid,5,5,4,5,3,1,3,3,5,1,4,4,Healthy
+1464,51-60,female,IT Services,contract,6-10,hybrid,4,3,1,3,1,2,4,3,2,1,5,3,Mildly Stressed
+1465,31-40,female,Other,contract,6-10,remote,3,2,3,1,5,5,3,3,1,3,3,2,Highly Stressed
+1466,51-60,female,Software development,full-time,16-20,hybrid,3,3,4,3,3,4,1,5,1,2,5,3,Healthy
+1467,21-30,female,Cyber Security,part-time,16-20,hybrid,1,3,1,3,3,2,4,5,3,4,2,1,Healthy
+1468,under 20,female,Software development,full-time,less than 1 year,Office-based,2,5,3,2,4,3,1,4,1,2,3,3,Healthy
+1469,31-40,male,Cyber Security,contract,1-5,Office-based,1,1,3,4,3,1,1,2,4,5,4,2,Mildly Stressed
+1470,21-30,female,Other,part-time,1-5,Office-based,5,4,3,4,4,5,4,1,4,4,4,1,Highly Stressed
+1471,21-30,male,Other,full-time,11-15,remote,2,3,3,2,5,4,4,1,2,5,3,1,Highly Stressed
+1472,31-40,female,Software development,full-time,16-20,hybrid,1,4,1,3,1,2,3,5,3,3,5,1,Mildly Stressed
+1473,51-60,female,Cyber Security,contract,6-10,hybrid,4,3,2,2,1,1,5,3,3,5,3,4,Highly Stressed
+1474,21-30,female,Other,full-time,6-10,Office-based,5,5,5,5,5,4,1,4,1,3,5,4,Healthy
+1475,41-50,female,IT Services,full-time,11-15,Office-based,3,5,5,2,5,2,2,2,5,5,3,1,Highly Stressed
+1476,21-30,male,IT Services,full-time,1-5,remote,1,3,5,2,2,5,3,5,5,4,5,2,Highly Stressed
+1477,51-60,female,Cyber Security,full-time,6-10,hybrid,5,5,2,5,3,3,3,4,5,5,1,1,Mildly Stressed
+1478,51-60,female,Software development,full-time,1-5,remote,5,5,3,4,3,3,5,4,2,2,3,1,Mildly Stressed
+1479,41-50,male,Other,contract,11-15,hybrid,3,3,3,5,3,5,5,5,3,3,5,3,Mildly Stressed
+1480,21-30,male,Software development,contract,1-5,remote,3,1,4,1,4,1,1,4,1,1,2,3,Healthy
+1481,51-60,female,IT Services,full-time,1-5,Office-based,3,3,5,2,2,5,3,3,2,5,2,3,Highly Stressed
+1482,31-40,male,Other,contract,1-5,remote,1,1,5,2,3,2,3,4,4,3,3,5,Mildly Stressed
+1483,under 20,male,Software development,contract,6-10,remote,3,5,3,4,4,1,2,2,4,1,3,3,Healthy
+1484,under 20,male,Hardware engineering,part-time,less than 1 year,Office-based,4,1,5,3,4,3,1,4,4,3,4,3,Mildly Stressed
+1485,under 20,female,Cyber Security,full-time,16-20,hybrid,5,5,3,5,1,2,1,1,3,3,5,2,Mildly Stressed
+1486,21-30,female,Cyber Security,contract,1-5,hybrid,3,1,3,3,4,4,5,4,4,1,3,4,Mildly Stressed
+1487,41-50,female,Hardware engineering,contract,1-5,Office-based,5,1,3,1,5,4,1,5,5,1,2,4,Mildly Stressed
+1488,51-60,male,IT Services,full-time,1-5,remote,2,3,1,5,4,4,2,1,4,4,2,4,Healthy
+1489,31-40,female,Other,part-time,less than 1 year,remote,2,1,1,1,5,3,1,5,2,5,2,5,Healthy
+1490,31-40,male,Cyber Security,full-time,11-15,remote,3,5,1,1,5,5,4,2,4,5,5,1,Highly Stressed
+1491,21-30,female,Hardware engineering,part-time,6-10,hybrid,5,3,1,1,1,1,4,3,5,3,1,3,Mildly Stressed
+1492,under 20,female,Hardware engineering,full-time,less than 1 year,remote,2,1,2,5,1,3,2,2,4,2,3,2,Mildly Stressed
+1493,21-30,male,IT Services,full-time,1-5,hybrid,3,3,4,5,4,2,5,1,1,2,1,5,Healthy
+1494,41-50,female,IT Services,full-time,less than 1 year,remote,5,4,4,4,1,2,3,3,5,3,5,4,Highly Stressed
+1495,41-50,male,Software development,full-time,less than 1 year,Office-based,3,3,3,2,1,4,1,4,3,4,3,5,Mildly Stressed
+1496,51-60,male,Cyber Security,part-time,less than 1 year,Office-based,5,4,5,3,3,1,5,1,4,1,4,2,Highly Stressed
+1497,51-60,female,Software development,part-time,11-15,hybrid,2,4,1,3,4,4,5,3,2,3,3,5,Healthy
+1498,41-50,male,Hardware engineering,contract,16-20,hybrid,3,3,4,1,4,2,1,5,4,5,3,4,Mildly Stressed
+1499,41-50,female,Other,full-time,6-10,Office-based,2,5,4,5,4,2,3,3,2,2,3,1,Healthy
+1500,41-50,female,Other,part-time,11-15,Office-based,3,5,1,5,1,5,1,5,1,2,3,4,Healthy
+1501,21-30,male,IT Services,part-time,11-15,remote,1,5,2,1,1,5,3,5,3,2,3,4,Healthy
+1502,41-50,female,Other,part-time,16-20,Office-based,2,2,2,2,5,5,2,3,5,4,5,4,Mildly Stressed
+1503,31-40,male,Other,full-time,11-15,hybrid,2,4,4,3,2,4,3,2,5,5,3,5,Mildly Stressed
+1504,under 20,female,Other,contract,less than 1 year,Office-based,4,3,2,4,2,1,5,2,3,4,5,2,Mildly Stressed
+1505,41-50,female,Hardware engineering,part-time,less than 1 year,hybrid,2,5,1,2,2,5,2,5,1,1,3,4,Healthy
+1506,under 20,female,Other,full-time,1-5,hybrid,5,5,4,5,3,3,4,1,1,3,3,5,Mildly Stressed
+1507,21-30,female,Other,part-time,11-15,remote,3,3,1,1,1,5,2,3,4,3,5,2,Highly Stressed
+1508,under 20,female,Other,part-time,1-5,remote,1,4,2,3,5,4,3,1,1,2,3,1,Healthy
+1509,21-30,male,Software development,contract,6-10,remote,5,3,1,1,5,1,2,2,4,2,2,4,Healthy
+1510,31-40,male,Hardware engineering,part-time,less than 1 year,remote,5,2,2,5,2,5,2,1,2,1,3,3,Mildly Stressed
+1511,21-30,male,IT Services,part-time,6-10,Office-based,5,2,2,1,3,1,4,4,3,4,4,5,Mildly Stressed
+1512,21-30,male,Software development,full-time,16-20,remote,5,3,1,3,3,3,3,4,2,5,5,1,Mildly Stressed
+1513,51-60,male,Cyber Security,full-time,less than 1 year,Office-based,1,4,2,1,2,2,5,2,2,1,3,1,Mildly Stressed
+1514,41-50,male,Hardware engineering,contract,6-10,remote,4,5,3,3,2,1,2,1,2,3,3,1,Mildly Stressed
+1515,41-50,female,Hardware engineering,full-time,16-20,remote,2,2,1,1,1,5,1,3,2,3,5,5,Mildly Stressed
+1516,31-40,female,Cyber Security,full-time,6-10,hybrid,5,2,3,1,3,4,5,2,5,4,1,2,Burned Out
+1517,31-40,male,Cyber Security,contract,16-20,Office-based,2,4,1,3,5,4,2,4,1,1,2,3,Healthy
+1518,41-50,male,Cyber Security,part-time,16-20,hybrid,2,2,2,1,2,4,5,2,3,5,2,2,Highly Stressed
+1519,51-60,female,IT Services,contract,less than 1 year,remote,5,2,2,2,1,4,1,1,3,1,3,4,Mildly Stressed
+1520,41-50,female,Other,full-time,1-5,Office-based,4,4,4,4,5,1,5,1,2,1,5,3,Mildly Stressed
+1521,51-60,female,Hardware engineering,contract,16-20,remote,2,3,4,2,3,4,5,1,3,4,4,2,Highly Stressed
+1522,31-40,male,Other,part-time,16-20,hybrid,3,5,3,4,2,2,1,5,4,5,3,4,Healthy
+1523,under 20,male,Other,contract,less than 1 year,Office-based,2,5,2,2,2,3,1,1,3,3,2,3,Healthy
+1524,31-40,male,Cyber Security,full-time,1-5,hybrid,5,2,4,4,1,1,1,4,2,2,3,5,Healthy
+1525,31-40,female,IT Services,full-time,11-15,remote,1,5,2,1,1,1,4,4,3,5,5,4,Mildly Stressed
+1526,21-30,female,Software development,contract,11-15,remote,2,3,1,3,3,4,1,5,1,3,4,2,Healthy
+1527,21-30,male,IT Services,part-time,1-5,remote,4,2,4,3,2,4,5,4,2,4,1,3,Mildly Stressed
+1528,21-30,male,Other,contract,6-10,Office-based,3,5,3,5,1,1,1,4,5,5,4,4,Healthy
+1529,21-30,female,IT Services,part-time,less than 1 year,hybrid,3,1,4,4,2,4,2,2,1,5,3,4,Mildly Stressed
+1530,51-60,female,Cyber Security,part-time,1-5,hybrid,1,1,2,5,3,4,1,1,3,3,2,5,Healthy
+1531,41-50,female,Software development,contract,11-15,remote,1,1,5,5,2,4,1,2,5,3,5,4,Highly Stressed
+1532,under 20,female,Cyber Security,part-time,16-20,hybrid,2,1,5,4,5,4,3,2,1,1,3,3,Mildly Stressed
+1533,31-40,male,Software development,full-time,11-15,Office-based,5,1,2,3,2,4,5,4,4,1,1,1,Mildly Stressed
+1534,51-60,female,Other,contract,16-20,remote,4,2,1,4,4,5,5,3,1,5,5,3,Highly Stressed
+1535,under 20,female,Software development,part-time,less than 1 year,remote,3,4,4,1,4,5,2,1,5,2,5,3,Highly Stressed
+1536,51-60,female,Software development,full-time,16-20,remote,1,4,5,5,3,5,4,3,4,4,5,5,Mildly Stressed
+1537,51-60,male,Software development,contract,1-5,Office-based,4,2,1,5,3,1,3,4,3,3,3,5,Healthy
+1538,31-40,male,IT Services,full-time,16-20,remote,5,2,2,4,3,3,2,5,2,1,1,4,Healthy
+1539,41-50,female,IT Services,full-time,6-10,remote,3,3,1,5,5,1,2,2,3,4,3,5,Healthy
+1540,21-30,female,Other,full-time,1-5,remote,3,4,2,3,5,5,5,4,2,5,5,4,Mildly Stressed
+1541,41-50,female,Software development,part-time,less than 1 year,remote,5,1,4,5,2,1,3,4,2,3,5,1,Highly Stressed
+1542,31-40,male,Hardware engineering,contract,1-5,hybrid,3,2,1,4,1,3,5,3,5,3,2,2,Highly Stressed
+1543,31-40,male,Other,contract,6-10,remote,5,1,4,3,4,4,4,5,4,1,4,5,Mildly Stressed
+1544,31-40,male,Software development,part-time,less than 1 year,Office-based,3,4,1,3,4,2,5,2,4,2,3,5,Healthy
+1545,under 20,female,Software development,contract,11-15,remote,2,5,2,5,4,5,1,5,1,3,1,1,Healthy
+1546,41-50,male,IT Services,full-time,6-10,remote,5,5,2,4,2,5,5,5,3,2,5,5,Mildly Stressed
+1547,41-50,female,Other,contract,less than 1 year,hybrid,4,2,1,5,2,3,1,5,5,4,3,1,Mildly Stressed
+1548,51-60,female,Software development,part-time,16-20,remote,2,3,2,1,3,4,2,1,3,3,4,4,Mildly Stressed
+1549,51-60,female,Software development,full-time,1-5,hybrid,4,1,3,1,1,4,4,5,1,3,3,5,Mildly Stressed
+1550,51-60,male,Other,part-time,less than 1 year,Office-based,3,2,3,3,3,2,1,4,1,2,4,5,Healthy
+1551,31-40,female,Hardware engineering,full-time,1-5,hybrid,4,3,4,5,2,4,4,1,5,1,3,4,Mildly Stressed
+1552,41-50,male,Other,full-time,16-20,remote,2,1,3,1,5,3,5,1,1,5,2,5,Mildly Stressed
+1553,31-40,male,Other,contract,less than 1 year,Office-based,5,4,3,2,3,4,5,5,5,4,3,3,Highly Stressed
+1554,under 20,female,Hardware engineering,full-time,11-15,remote,1,5,5,1,2,3,2,4,1,3,2,1,Mildly Stressed
+1555,51-60,female,Other,part-time,6-10,hybrid,4,3,5,5,2,5,5,2,4,1,4,2,Highly Stressed
+1556,31-40,male,Software development,contract,less than 1 year,Office-based,1,1,5,5,5,5,1,5,5,3,5,3,Mildly Stressed
+1557,31-40,female,Other,part-time,16-20,Office-based,4,2,5,1,5,5,2,1,4,4,5,2,Burned Out
+1558,under 20,male,Hardware engineering,full-time,less than 1 year,hybrid,4,1,2,5,5,1,4,2,4,5,3,3,Mildly Stressed
+1559,21-30,female,Cyber Security,part-time,1-5,hybrid,5,2,4,5,1,5,2,2,5,3,1,3,Highly Stressed
+1560,41-50,male,Other,part-time,less than 1 year,Office-based,3,5,4,2,2,3,4,1,3,2,3,3,Mildly Stressed
+1561,21-30,male,IT Services,full-time,11-15,Office-based,2,5,3,3,5,2,3,2,2,1,2,1,Healthy
+1562,51-60,male,Software development,contract,less than 1 year,hybrid,2,1,4,5,1,4,1,4,1,5,2,2,Mildly Stressed
+1563,31-40,male,Software development,part-time,6-10,remote,2,1,3,4,4,5,1,4,1,3,4,4,Healthy
+1564,under 20,female,IT Services,full-time,less than 1 year,Office-based,3,2,4,3,4,1,4,5,3,5,3,4,Mildly Stressed
+1565,under 20,female,IT Services,contract,1-5,hybrid,1,2,1,3,4,1,5,5,2,2,4,5,Healthy
+1566,41-50,male,Other,contract,less than 1 year,remote,2,3,1,4,2,3,5,2,3,3,1,1,Mildly Stressed
+1567,21-30,male,IT Services,contract,11-15,Office-based,1,3,4,1,1,2,3,1,2,5,5,1,Highly Stressed
+1568,41-50,female,Cyber Security,part-time,16-20,Office-based,3,3,2,2,1,5,4,4,5,3,5,1,Highly Stressed
+1569,31-40,female,Hardware engineering,part-time,less than 1 year,hybrid,3,1,3,5,4,5,3,3,5,3,3,3,Mildly Stressed
+1570,41-50,female,IT Services,part-time,less than 1 year,remote,5,3,4,1,3,1,4,5,4,5,4,1,Highly Stressed
+1571,under 20,female,IT Services,contract,6-10,Office-based,2,1,3,4,4,3,3,4,4,3,4,4,Mildly Stressed
+1572,under 20,female,Cyber Security,part-time,11-15,remote,5,5,5,2,2,1,4,2,5,2,1,1,Highly Stressed
+1573,51-60,female,Software development,full-time,16-20,remote,2,4,4,2,4,1,1,4,4,5,4,3,Healthy
+1574,51-60,male,Software development,part-time,1-5,Office-based,3,5,2,2,4,2,3,4,5,5,2,2,Mildly Stressed
+1575,31-40,female,Other,part-time,less than 1 year,remote,3,1,5,4,1,3,3,2,3,2,2,1,Highly Stressed
+1576,21-30,female,Cyber Security,contract,16-20,Office-based,4,1,4,1,4,2,4,5,1,2,2,2,Mildly Stressed
+1577,41-50,male,Hardware engineering,part-time,1-5,remote,4,4,1,5,5,3,2,5,5,2,3,5,Healthy
+1578,31-40,female,Hardware engineering,full-time,11-15,Office-based,3,2,4,2,5,5,2,3,5,3,2,3,Mildly Stressed
+1579,51-60,female,Cyber Security,contract,11-15,hybrid,3,2,1,2,3,4,1,3,5,3,2,1,Mildly Stressed
+1580,41-50,female,Hardware engineering,full-time,16-20,Office-based,1,2,1,1,2,4,5,5,4,4,5,5,Highly Stressed
+1581,51-60,female,Software development,contract,1-5,Office-based,1,3,4,2,2,3,5,5,4,3,3,5,Mildly Stressed
+1582,41-50,female,Hardware engineering,contract,11-15,Office-based,5,2,4,2,1,4,1,5,4,2,2,2,Mildly Stressed
+1583,21-30,male,Hardware engineering,part-time,16-20,remote,4,3,1,4,2,1,5,5,4,4,1,4,Healthy
+1584,31-40,female,Cyber Security,full-time,11-15,hybrid,4,3,3,3,3,5,4,4,3,2,2,4,Mildly Stressed
+1585,41-50,male,Cyber Security,contract,11-15,remote,3,2,5,1,5,5,2,3,5,1,3,4,Mildly Stressed
+1586,under 20,male,Hardware engineering,part-time,11-15,remote,3,2,2,1,1,4,1,2,3,5,4,4,Highly Stressed
+1587,under 20,female,IT Services,contract,6-10,Office-based,5,4,4,1,5,3,4,1,4,1,5,3,Highly Stressed
+1588,41-50,male,Cyber Security,contract,1-5,remote,4,4,5,4,3,1,1,2,3,2,5,1,Mildly Stressed
+1589,41-50,female,Other,contract,16-20,Office-based,1,3,5,4,1,3,2,1,5,3,3,1,Highly Stressed
+1590,41-50,male,Other,contract,16-20,hybrid,2,4,3,5,4,4,5,4,5,5,2,3,Mildly Stressed
+1591,under 20,male,Software development,contract,1-5,remote,5,3,5,4,2,5,4,3,4,3,1,2,Highly Stressed
+1592,under 20,female,Hardware engineering,contract,1-5,remote,2,1,4,1,3,5,2,1,5,3,2,1,Burned out
+1593,41-50,female,IT Services,part-time,1-5,remote,1,3,5,5,1,3,1,5,3,5,2,5,Healthy
+1594,51-60,female,Software development,contract,1-5,Office-based,1,3,4,3,5,2,3,4,2,5,1,1,Healthy
+1595,51-60,female,Hardware engineering,full-time,less than 1 year,Office-based,2,4,4,2,1,3,4,1,5,1,5,3,Highly Stressed
+1596,21-30,female,Cyber Security,part-time,16-20,remote,5,1,1,2,4,2,1,5,3,2,2,2,Healthy
+1597,31-40,male,Other,full-time,less than 1 year,remote,2,5,3,5,3,3,1,4,3,3,4,1,Healthy
+1598,51-60,male,IT Services,contract,11-15,hybrid,5,5,2,3,1,2,2,1,3,2,4,3,Mildly Stressed
+1599,under 20,male,Other,full-time,11-15,hybrid,5,5,1,2,3,2,1,5,5,2,3,5,Healthy
+1600,51-60,male,Cyber Security,contract,16-20,hybrid,3,1,2,5,3,2,4,3,2,4,3,4,Healthy
+1601,21-30,male,Hardware engineering,contract,11-15,hybrid,4,2,4,4,5,2,4,4,4,1,1,5,Healthy
+1602,21-30,male,Cyber Security,part-time,1-5,hybrid,4,1,1,1,2,1,1,1,4,3,1,5,Mildly Stressed
+1603,31-40,male,Cyber Security,part-time,less than 1 year,Office-based,1,4,5,3,4,2,2,5,5,5,3,2,Mildly Stressed
+1604,51-60,female,Other,contract,1-5,hybrid,3,3,5,2,1,2,4,3,5,5,2,1,Highly Stressed
+1605,under 20,female,IT Services,part-time,11-15,hybrid,4,3,2,1,2,5,3,5,1,2,5,4,Mildly Stressed
+1606,under 20,male,Cyber Security,full-time,less than 1 year,remote,5,4,4,5,5,1,5,3,2,1,4,3,Healthy
+1607,41-50,male,Other,part-time,1-5,Office-based,5,4,2,2,2,2,2,1,3,1,1,4,Healthy
+1608,under 20,female,IT Services,part-time,16-20,hybrid,2,3,3,1,3,4,2,5,3,3,3,1,Mildly Stressed
+1609,31-40,female,Hardware engineering,full-time,1-5,hybrid,2,2,5,4,3,1,5,5,4,3,4,2,Mildly Stressed
+1610,31-40,female,Hardware engineering,part-time,11-15,hybrid,5,2,1,3,4,5,5,2,5,2,1,1,Highly Stressed
+1611,under 20,female,Software development,contract,less than 1 year,remote,5,2,1,5,1,3,4,4,2,2,1,3,Healthy
+1612,under 20,male,Other,full-time,16-20,remote,2,4,1,2,1,5,1,5,4,2,2,4,Healthy
+1613,41-50,female,IT Services,contract,less than 1 year,remote,4,3,5,4,5,5,1,3,2,4,1,5,Healthy
+1614,under 20,male,Cyber Security,full-time,16-20,hybrid,1,3,4,3,4,1,3,4,5,1,5,1,Mildly Stressed
+1615,41-50,male,Hardware engineering,contract,less than 1 year,remote,2,3,5,3,1,1,1,1,3,2,1,2,Mildly Stressed
+1616,41-50,male,IT Services,contract,11-15,hybrid,4,1,5,4,3,4,3,4,1,1,5,2,Mildly Stressed
+1617,under 20,female,Other,part-time,16-20,Office-based,4,1,1,2,4,4,3,2,2,5,2,4,Mildly Stressed
+1618,21-30,female,Software development,contract,6-10,hybrid,4,5,5,3,2,1,2,1,3,5,5,5,Highly Stressed
+1619,21-30,male,Hardware engineering,part-time,less than 1 year,remote,3,1,1,5,4,1,2,5,2,1,4,3,Healthy
+1620,41-50,male,IT Services,full-time,less than 1 year,Office-based,3,2,4,1,4,1,4,1,2,5,1,5,Mildly Stressed
+1621,under 20,male,IT Services,contract,1-5,hybrid,4,2,3,5,1,3,5,1,2,5,3,4,Highly Stressed
+1622,21-30,female,IT Services,contract,16-20,Office-based,5,2,1,3,5,5,5,2,5,5,3,5,Highly Stressed
+1623,under 20,male,Other,full-time,6-10,Office-based,3,2,2,1,5,4,3,3,4,3,5,4,Mildly Stressed
+1624,under 20,female,Other,full-time,11-15,Office-based,2,5,3,4,1,4,5,1,2,3,2,5,Mildly Stressed
+1625,under 20,male,Other,contract,1-5,hybrid,3,2,4,1,1,2,3,3,5,1,5,1,Highly Stressed
+1626,51-60,male,Cyber Security,full-time,6-10,remote,5,4,3,1,1,3,5,4,1,1,5,2,Highly Stressed
+1627,under 20,male,IT Services,part-time,16-20,hybrid,1,4,1,1,5,1,4,2,4,4,5,4,Mildly Stressed
+1628,51-60,female,Hardware engineering,full-time,6-10,remote,3,4,4,3,1,1,2,5,5,3,4,4,Mildly Stressed
+1629,41-50,female,Other,full-time,less than 1 year,hybrid,4,1,2,2,2,3,2,1,1,1,4,2,Mildly Stressed
+1630,21-30,male,Other,contract,less than 1 year,hybrid,4,3,1,3,2,4,3,3,4,3,5,3,Mildly Stressed
+1631,21-30,female,IT Services,part-time,1-5,hybrid,4,5,1,2,3,1,5,1,5,4,2,4,Mildly Stressed
+1632,21-30,male,Other,full-time,16-20,remote,1,4,4,4,2,2,1,2,1,1,1,1,Healthy
+1633,21-30,female,Cyber Security,part-time,16-20,hybrid,5,4,4,4,4,4,4,5,5,1,3,5,Mildly Stressed
+1634,21-30,female,Cyber Security,part-time,6-10,Office-based,2,2,3,4,3,5,5,4,1,1,4,1,Mildly Stressed
+1635,21-30,female,Other,part-time,1-5,hybrid,5,4,2,4,2,3,1,4,2,1,1,4,Healthy
+1636,21-30,male,IT Services,contract,16-20,Office-based,1,2,3,4,4,4,4,3,2,2,4,3,Mildly Stressed
+1637,41-50,female,IT Services,full-time,less than 1 year,remote,4,2,3,5,2,5,4,4,4,3,4,4,Highly Stressed
+1638,under 20,female,IT Services,contract,6-10,remote,5,3,1,3,4,2,2,3,1,3,4,3,Healthy
+1639,31-40,male,Software development,full-time,11-15,hybrid,2,1,4,2,1,3,3,5,2,3,5,2,Highly Stressed
+1640,51-60,male,Other,full-time,less than 1 year,hybrid,4,2,1,4,4,1,5,1,4,4,5,5,Mildly Stressed
+1641,31-40,male,IT Services,contract,1-5,hybrid,2,2,2,5,1,1,4,2,3,2,4,1,Mildly Stressed
+1642,31-40,male,Cyber Security,part-time,16-20,Office-based,3,3,3,5,4,5,5,5,2,3,4,3,Mildly Stressed
+1643,under 20,female,Hardware engineering,part-time,less than 1 year,remote,2,2,2,5,4,4,4,5,2,3,3,1,Healthy
+1644,under 20,female,Hardware engineering,full-time,11-15,Office-based,4,5,4,3,2,2,2,4,5,1,1,2,Healthy
+1645,under 20,female,IT Services,contract,11-15,Office-based,3,1,4,4,4,5,3,4,3,1,1,4,Healthy
+1646,21-30,female,Hardware engineering,part-time,1-5,hybrid,4,5,5,5,2,2,1,2,1,1,2,3,Healthy
+1647,41-50,female,Hardware engineering,part-time,less than 1 year,hybrid,4,4,2,5,4,2,1,1,4,3,2,5,Healthy
+1648,21-30,male,Software development,full-time,6-10,Office-based,3,1,1,4,5,2,2,5,3,1,2,3,Healthy
+1649,41-50,female,Cyber Security,full-time,less than 1 year,Office-based,2,4,2,3,3,3,4,4,1,3,5,4,Healthy
+1650,41-50,female,Cyber Security,contract,11-15,hybrid,1,2,3,5,2,5,2,5,2,4,5,4,Mildly Stressed
+1651,31-40,female,Software development,full-time,1-5,hybrid,1,3,4,2,2,3,3,1,4,4,3,5,Mildly Stressed
+1652,31-40,male,Software development,part-time,1-5,Office-based,1,5,4,1,1,4,1,3,4,5,5,5,Mildly Stressed
+1653,41-50,male,Hardware engineering,part-time,6-10,hybrid,1,4,2,1,5,4,5,1,3,2,2,2,Mildly Stressed
+1654,41-50,female,Other,part-time,1-5,hybrid,5,2,2,1,1,1,1,5,5,1,4,1,Highly Stressed
+1655,21-30,male,Hardware engineering,part-time,1-5,Office-based,1,5,2,3,5,1,3,5,1,1,2,3,Healthy
+1656,21-30,male,Software development,contract,1-5,Office-based,3,5,3,5,5,1,4,2,3,2,3,2,Healthy
+1657,31-40,male,Cyber Security,contract,1-5,remote,1,4,3,1,4,4,2,5,5,2,4,1,Mildly Stressed
+1658,under 20,male,Hardware engineering,full-time,1-5,Office-based,4,2,1,1,1,2,1,4,5,5,5,2,Highly Stressed
+1659,41-50,male,Other,full-time,11-15,hybrid,1,3,2,4,3,2,1,2,5,2,4,5,Healthy
+1660,21-30,male,Hardware engineering,full-time,less than 1 year,Office-based,2,4,1,5,5,5,5,5,4,3,3,5,Healthy
+1661,31-40,male,IT Services,contract,16-20,Office-based,3,5,5,5,5,4,2,1,1,1,5,4,Healthy
+1662,21-30,female,Hardware engineering,part-time,1-5,Office-based,3,5,3,4,2,1,5,5,1,2,1,3,Healthy
+1663,41-50,female,Software development,full-time,16-20,remote,5,1,4,5,4,4,5,1,3,3,2,3,Highly Stressed
+1664,41-50,male,Cyber Security,part-time,16-20,remote,4,2,5,2,3,2,4,1,2,2,2,3,Highly Stressed
+1665,51-60,female,Cyber Security,full-time,11-15,hybrid,3,1,4,3,5,2,1,5,3,3,3,2,Healthy
+1666,under 20,female,Software development,full-time,1-5,remote,2,3,5,4,2,3,2,1,1,4,3,2,Mildly Stressed
+1667,51-60,male,IT Services,full-time,16-20,Office-based,1,4,1,1,1,3,4,3,4,3,2,3,Mildly Stressed
+1668,31-40,female,Software development,full-time,1-5,remote,3,5,1,5,5,5,4,2,3,5,4,4,Healthy
+1669,21-30,male,Hardware engineering,full-time,6-10,Office-based,2,2,3,2,2,4,4,5,2,3,1,1,Mildly Stressed
+1670,31-40,male,Software development,part-time,6-10,remote,1,5,4,2,1,3,3,3,3,2,1,2,Mildly Stressed
+1671,41-50,male,Software development,full-time,6-10,remote,5,1,5,3,4,3,3,1,5,4,3,3,Burned out
+1672,51-60,female,IT Services,part-time,16-20,remote,3,1,2,2,1,4,4,1,2,4,3,5,Highly Stressed
+1673,51-60,female,Hardware engineering,contract,6-10,Office-based,3,4,2,5,5,2,3,2,5,3,4,2,Healthy
+1674,51-60,female,Other,full-time,11-15,remote,2,2,3,5,3,5,2,3,4,2,3,1,Mildly Stressed
+1675,31-40,female,Other,part-time,11-15,Office-based,4,2,4,2,1,5,1,3,1,4,1,2,Highly Stressed
+1676,41-50,male,Cyber Security,contract,16-20,Office-based,5,4,2,5,3,5,2,5,3,3,2,1,Healthy
+1677,21-30,male,Software development,contract,1-5,hybrid,4,1,3,5,3,3,1,1,3,3,1,1,Mildly Stressed
+1678,21-30,female,Cyber Security,contract,less than 1 year,remote,3,1,3,1,1,2,3,4,5,3,4,2,Highly Stressed
+1679,31-40,male,IT Services,part-time,1-5,hybrid,4,1,4,4,4,5,2,5,5,4,2,1,Highly Stressed
+1680,51-60,male,Other,full-time,1-5,hybrid,1,5,2,5,1,4,5,5,1,1,2,2,Healthy
+1681,under 20,female,Software development,full-time,1-5,Office-based,5,3,2,5,2,5,4,5,3,2,1,2,Mildly Stressed
+1682,31-40,male,IT Services,part-time,1-5,remote,4,1,2,3,3,1,1,2,1,5,2,4,Mildly Stressed
+1683,31-40,female,IT Services,full-time,less than 1 year,Office-based,1,3,1,4,5,2,1,2,5,5,2,5,Healthy
+1684,41-50,male,Software development,part-time,6-10,Office-based,2,3,2,4,3,1,5,5,5,2,3,1,Mildly Stressed
+1685,21-30,female,IT Services,full-time,1-5,remote,4,2,5,4,5,2,5,4,2,1,2,2,Mildly Stressed
+1686,31-40,male,Software development,contract,11-15,Office-based,5,4,1,2,2,4,4,3,5,2,4,1,Highly Stressed
+1687,31-40,male,Software development,full-time,16-20,remote,1,5,1,1,2,3,3,3,5,3,2,2,Mildly Stressed
+1688,51-60,female,Hardware engineering,part-time,16-20,remote,4,3,1,1,2,3,2,1,1,2,3,2,Mildly Stressed
+1689,51-60,female,Cyber Security,part-time,11-15,Office-based,2,5,1,3,1,2,2,3,2,2,5,2,Healthy
+1690,under 20,female,IT Services,contract,1-5,Office-based,4,2,3,4,3,5,2,3,2,4,5,5,Mildly Stressed
+1691,41-50,female,IT Services,part-time,less than 1 year,hybrid,1,1,5,4,5,1,3,4,3,5,4,1,Mildly Stressed
+1692,under 20,male,Hardware engineering,full-time,6-10,Office-based,4,3,4,5,2,4,4,3,4,5,4,5,Highly Stressed
+1693,51-60,male,Hardware engineering,full-time,16-20,remote,5,4,2,2,2,5,2,4,3,3,2,5,Mildly Stressed
+1694,21-30,female,Hardware engineering,contract,6-10,hybrid,3,2,1,2,5,3,1,2,3,3,2,5,Healthy
+1695,51-60,male,Other,part-time,less than 1 year,remote,1,5,4,3,3,5,1,4,3,4,5,5,Healthy
+1696,41-50,female,Other,contract,16-20,hybrid,1,1,3,1,3,1,1,2,2,3,5,4,Mildly Stressed
+1697,51-60,female,Other,full-time,6-10,Office-based,1,5,4,4,5,3,5,4,1,1,1,1,Healthy
+1698,41-50,male,Software development,contract,less than 1 year,Office-based,1,4,1,3,4,2,5,5,5,4,5,1,Mildly Stressed
+1699,41-50,male,IT Services,part-time,6-10,Office-based,4,3,5,2,3,4,3,2,2,4,5,2,Highly Stressed
+1700,41-50,female,Cyber Security,contract,1-5,remote,5,4,4,2,5,4,2,2,5,2,4,1,Highly Stressed
+1701,41-50,female,Software development,part-time,less than 1 year,hybrid,2,5,1,2,5,3,5,3,5,2,1,5,Healthy
+1702,41-50,female,IT Services,part-time,6-10,remote,5,5,1,4,2,2,1,2,4,1,1,3,Healthy
+1703,21-30,male,IT Services,full-time,1-5,hybrid,1,4,2,4,5,1,5,4,3,4,2,1,Healthy
+1704,under 20,male,Hardware engineering,full-time,1-5,Office-based,4,4,2,4,1,4,1,5,4,4,2,3,Mildly Stressed
+1705,31-40,male,Hardware engineering,full-time,less than 1 year,remote,4,4,5,5,2,3,2,5,3,2,1,4,Healthy
+1706,under 20,male,Software development,part-time,11-15,Office-based,1,1,2,1,2,4,3,3,2,5,1,2,Highly Stressed
+1707,41-50,female,Hardware engineering,contract,16-20,remote,4,5,5,2,3,2,4,4,5,5,2,2,Highly Stressed
+1708,21-30,female,IT Services,part-time,less than 1 year,Office-based,1,2,3,2,4,1,4,4,4,2,4,2,Mildly Stressed
+1709,51-60,female,Hardware engineering,full-time,1-5,remote,5,1,3,5,3,2,1,1,2,3,4,4,Mildly Stressed
+1710,21-30,female,Other,full-time,1-5,remote,3,1,2,2,1,5,5,2,2,4,4,5,Highly Stressed
+1711,41-50,female,Hardware engineering,contract,less than 1 year,hybrid,4,1,3,2,2,2,5,3,3,1,4,3,Highly Stressed
+1712,21-30,female,IT Services,full-time,11-15,Office-based,1,2,4,4,2,2,1,5,5,5,2,1,Mildly Stressed
+1713,21-30,male,Software development,full-time,16-20,hybrid,1,4,4,4,5,4,2,1,3,3,3,5,Healthy
+1714,41-50,male,Cyber Security,full-time,6-10,hybrid,4,5,4,1,4,2,1,4,3,4,5,2,Mildly Stressed
+1715,21-30,female,Hardware engineering,contract,less than 1 year,Office-based,2,3,3,2,4,3,2,2,2,3,5,2,Mildly Stressed
+1716,31-40,female,IT Services,part-time,16-20,remote,1,3,4,3,5,4,3,5,3,4,5,5,Healthy
+1717,31-40,male,Cyber Security,full-time,16-20,hybrid,4,5,5,2,1,4,3,1,1,4,5,3,Highly Stressed
+1718,21-30,male,Cyber Security,contract,1-5,Office-based,1,2,1,2,4,5,1,4,5,2,2,5,Healthy
+1719,51-60,male,Other,full-time,6-10,remote,2,3,2,1,2,3,3,5,3,2,3,4,Healthy
+1720,41-50,male,Cyber Security,contract,less than 1 year,hybrid,3,1,5,3,1,2,5,5,3,1,2,2,Mildly Stressed
+1721,31-40,female,IT Services,full-time,1-5,hybrid,2,3,4,2,3,5,2,4,4,1,3,3,Mildly Stressed
+1722,51-60,female,IT Services,contract,1-5,hybrid,5,5,1,3,3,3,4,4,5,3,2,1,Mildly Stressed
+1723,21-30,female,Hardware engineering,full-time,11-15,remote,4,1,2,4,1,5,4,3,5,2,1,2,Highly Stressed
+1724,51-60,female,Hardware engineering,part-time,16-20,hybrid,2,3,5,4,2,1,3,5,3,4,3,5,Healthy
+1725,under 20,female,Hardware engineering,full-time,less than 1 year,remote,3,5,2,3,3,2,2,4,1,2,5,3,Healthy
+1726,31-40,male,Cyber Security,contract,less than 1 year,hybrid,1,2,3,2,2,5,5,1,4,4,3,2,Highly Stressed
+1727,21-30,female,Cyber Security,full-time,less than 1 year,Office-based,4,5,4,3,5,1,4,2,1,2,4,1,Mildly Stressed
+1728,41-50,male,Other,part-time,1-5,hybrid,2,2,5,3,4,2,5,3,3,4,3,1,Mildly Stressed
+1729,21-30,female,Hardware engineering,full-time,11-15,Office-based,3,1,5,4,1,5,5,4,5,3,4,5,Highly Stressed
+1730,41-50,female,Software development,contract,6-10,Office-based,2,5,1,3,4,5,4,2,5,2,4,4,Mildly Stressed
+1731,21-30,female,Other,contract,1-5,Office-based,5,4,1,5,5,5,4,3,1,5,1,5,Healthy
+1732,51-60,female,Software development,part-time,6-10,remote,4,4,1,5,3,5,3,5,2,5,3,3,Healthy
+1733,51-60,female,Cyber Security,contract,11-15,Office-based,1,4,2,4,2,4,2,2,3,4,1,5,Healthy
+1734,51-60,male,Other,full-time,16-20,hybrid,3,4,4,2,2,5,1,3,5,3,5,3,Highly Stressed
+1735,under 20,male,Other,full-time,less than 1 year,remote,2,4,2,2,5,4,2,4,2,4,3,4,Healthy
+1736,41-50,male,IT Services,full-time,6-10,Office-based,4,2,4,4,1,4,1,4,5,3,2,5,Mildly Stressed
+1737,51-60,female,Cyber Security,contract,1-5,remote,2,5,5,2,4,1,4,3,5,1,2,1,Mildly Stressed
+1738,under 20,female,Cyber Security,full-time,6-10,remote,4,1,2,1,3,2,5,5,2,2,2,3,Mildly Stressed
+1739,41-50,male,Other,full-time,16-20,remote,5,4,2,5,1,4,2,3,1,3,4,3,Mildly Stressed
+1740,21-30,female,Cyber Security,full-time,less than 1 year,hybrid,2,4,2,1,5,3,5,1,3,4,2,1,Mildly Stressed
+1741,under 20,female,Other,part-time,6-10,Office-based,5,1,3,1,5,4,2,3,2,1,5,5,Mildly Stressed
+1742,31-40,male,IT Services,contract,16-20,remote,3,1,4,1,2,3,2,3,2,4,3,4,Highly Stressed
+1743,under 20,female,Other,contract,1-5,remote,5,4,4,4,3,1,5,4,5,5,3,2,Highly Stressed
+1744,under 20,male,Cyber Security,contract,11-15,remote,4,2,2,1,1,3,3,5,2,5,4,5,Mildly Stressed
+1745,41-50,female,Cyber Security,part-time,1-5,Office-based,3,1,3,3,2,1,4,3,3,2,4,5,Mildly Stressed
+1746,21-30,male,Other,contract,less than 1 year,remote,2,5,2,2,3,1,3,2,1,2,4,3,Healthy
+1747,31-40,female,Other,part-time,1-5,remote,2,5,4,4,4,1,3,4,1,1,5,3,Healthy
+1748,51-60,female,Other,part-time,1-5,hybrid,4,2,5,3,4,3,2,4,1,5,3,4,Mildly Stressed
+1749,51-60,male,Hardware engineering,contract,1-5,Office-based,1,3,3,3,2,3,4,3,3,3,1,4,Healthy
+1750,under 20,female,Cyber Security,full-time,1-5,hybrid,1,2,3,5,1,1,2,2,5,5,4,4,Mildly Stressed
+1751,41-50,female,Cyber Security,full-time,less than 1 year,Office-based,2,4,2,5,3,1,1,3,3,2,2,1,Healthy
+1752,41-50,male,Hardware engineering,contract,16-20,Office-based,4,3,5,3,4,2,2,2,2,4,1,2,Mildly Stressed
+1753,51-60,female,Other,contract,6-10,Office-based,1,4,4,5,4,1,5,4,4,1,1,2,Healthy
+1754,31-40,male,IT Services,part-time,11-15,hybrid,5,5,1,2,1,5,2,2,4,5,4,4,Highly Stressed
+1755,21-30,female,Other,contract,6-10,hybrid,2,1,4,2,2,2,1,3,4,3,2,3,Mildly Stressed
+1756,31-40,female,Other,part-time,6-10,hybrid,5,4,4,5,5,2,2,1,1,3,4,2,Healthy
+1757,21-30,female,Hardware engineering,contract,11-15,hybrid,4,5,5,1,3,2,1,1,3,3,4,5,Mildly Stressed
+1758,51-60,female,Cyber Security,full-time,less than 1 year,remote,5,2,3,3,4,5,4,2,3,1,2,1,Highly Stressed
+1759,21-30,male,Other,full-time,11-15,remote,1,4,4,2,5,2,2,3,1,3,1,3,Healthy
+1760,41-50,female,Cyber Security,contract,less than 1 year,remote,1,5,3,5,1,2,1,5,2,3,1,1,Healthy
+1761,under 20,male,Software development,part-time,6-10,Office-based,3,1,5,5,2,3,4,1,4,5,2,5,Highly Stressed
+1762,under 20,female,Cyber Security,full-time,less than 1 year,remote,2,4,5,2,3,3,5,4,4,1,1,2,Mildly Stressed
+1763,51-60,female,IT Services,part-time,16-20,Office-based,4,5,2,2,1,1,3,3,1,4,5,1,Mildly Stressed
+1764,41-50,female,IT Services,contract,11-15,hybrid,2,4,1,1,2,1,1,3,4,4,4,1,Mildly Stressed
+1765,31-40,female,Other,contract,16-20,Office-based,5,1,5,5,1,4,5,1,5,3,5,1,Burned Out
+1766,41-50,male,Cyber Security,full-time,6-10,Office-based,4,4,5,5,4,5,4,5,3,2,5,5,Mildly Stressed
+1767,under 20,male,Other,contract,11-15,remote,4,4,3,4,4,3,5,4,4,1,5,3,Mildly Stressed
+1768,under 20,male,Hardware engineering,full-time,6-10,hybrid,1,5,5,1,5,1,2,5,4,2,3,3,Healthy
+1769,41-50,male,IT Services,part-time,16-20,hybrid,5,3,4,2,1,5,3,4,5,1,3,5,Mildly Stressed
+1770,41-50,female,Other,full-time,6-10,remote,1,4,2,2,4,2,1,1,2,1,5,1,Healthy
+1771,under 20,male,Hardware engineering,full-time,11-15,hybrid,1,3,2,3,2,5,4,3,2,5,4,1,Highly Stressed
+1772,31-40,male,Other,part-time,11-15,hybrid,3,2,4,2,5,3,3,4,5,3,5,4,Mildly Stressed
+1773,51-60,female,Cyber Security,full-time,6-10,hybrid,1,4,5,5,3,4,4,3,2,5,5,2,Mildly Stressed
+1774,51-60,female,Cyber Security,full-time,11-15,remote,2,3,1,2,1,3,5,2,1,2,3,2,Mildly Stressed
+1775,41-50,female,Cyber Security,contract,11-15,hybrid,4,2,5,5,4,1,4,2,5,2,5,3,Highly Stressed
+1776,51-60,female,Cyber Security,part-time,6-10,Office-based,1,5,2,5,2,1,4,1,3,4,4,5,Healthy
+1777,under 20,male,Software development,full-time,16-20,Office-based,2,4,1,1,1,5,5,1,3,5,4,1,Burned Out
+1778,under 20,male,Hardware engineering,part-time,11-15,hybrid,5,5,3,2,2,3,5,1,3,5,5,2,Burned Out
+1779,41-50,female,Hardware engineering,part-time,11-15,remote,4,2,3,1,5,1,3,2,4,5,4,5,Mildly Stressed
+1780,41-50,female,Cyber Security,full-time,11-15,remote,5,5,5,5,4,2,1,4,5,4,5,5,Mildly Stressed
+1781,41-50,female,Software development,contract,11-15,remote,2,5,5,2,4,2,5,5,5,5,3,1,Highly Stressed
+1782,31-40,male,Cyber Security,part-time,6-10,hybrid,5,1,1,2,5,4,3,1,2,5,5,5,Highly Stressed
+1783,51-60,male,Software development,full-time,16-20,hybrid,5,2,1,1,2,5,4,5,5,5,1,2,Highly Stressed
+1784,41-50,female,Cyber Security,part-time,16-20,Office-based,5,5,5,1,1,1,4,5,5,5,3,4,Highly Stressed
+1785,21-30,female,IT Services,contract,less than 1 year,remote,1,3,2,5,2,4,2,2,2,2,4,2,Healthy
+1786,21-30,male,IT Services,contract,11-15,Office-based,1,2,3,5,1,2,5,4,5,3,4,4,Mildly Stressed
+1787,under 20,female,Other,contract,11-15,Office-based,1,1,1,2,5,4,3,2,5,2,3,5,Mildly Stressed
+1788,51-60,female,Cyber Security,full-time,less than 1 year,remote,4,4,2,2,3,4,3,1,1,5,1,2,Highly Stressed
+1789,41-50,male,Hardware engineering,full-time,16-20,hybrid,2,5,5,4,1,1,1,2,2,1,3,1,Healthy
+1790,21-30,female,Other,contract,1-5,hybrid,1,3,4,4,4,1,3,2,1,1,2,5,Healthy
+1791,51-60,male,IT Services,full-time,1-5,Office-based,5,1,1,3,4,1,5,2,4,4,1,1,Highly Stressed
+1792,under 20,female,Cyber Security,contract,16-20,Office-based,5,2,4,5,4,5,3,1,2,2,3,4,Mildly Stressed
+1793,31-40,female,Other,full-time,11-15,Office-based,5,5,2,3,2,4,2,1,5,4,2,3,Highly Stressed
+1794,51-60,male,Cyber Security,contract,1-5,Office-based,5,1,3,3,2,4,4,2,5,4,5,3,Burned Out
+1795,51-60,male,IT Services,part-time,6-10,remote,3,1,2,1,2,5,4,2,1,1,1,4,Mildly Stressed
+1796,31-40,female,Other,contract,6-10,Office-based,4,3,3,1,4,2,3,5,1,2,5,3,Mildly Stressed
+1797,51-60,male,IT Services,contract,less than 1 year,Office-based,2,4,2,4,1,3,3,4,4,3,2,5,Healthy
+1798,under 20,female,Software development,full-time,16-20,hybrid,2,4,1,3,4,2,3,5,4,2,4,5,Healthy
+1799,under 20,female,IT Services,full-time,16-20,hybrid,1,4,1,4,1,5,3,4,5,4,4,2,Mildly Stressed
+1800,31-40,male,Cyber Security,full-time,1-5,hybrid,3,2,4,5,2,4,2,4,3,5,4,5,Mildly Stressed
+1801,41-50,female,Hardware engineering,full-time,11-15,remote,2,1,2,2,3,4,5,2,4,4,5,3,Burned out
+1802,21-30,female,IT Services,full-time,16-20,remote,4,2,2,1,2,1,2,5,5,2,1,1,Mildly Stressed
+1803,41-50,male,Hardware engineering,full-time,1-5,hybrid,5,1,4,5,5,1,2,4,4,1,5,2,Mildly Stressed
+1804,51-60,male,Software development,part-time,1-5,hybrid,1,3,5,5,1,4,2,4,2,2,5,1,Mildly Stressed
+1805,21-30,female,Other,contract,16-20,Office-based,4,3,2,1,3,4,4,1,1,3,4,3,Highly Stressed
+1806,31-40,male,Other,contract,1-5,Office-based,2,2,2,1,2,1,2,4,5,5,5,1,Highly Stressed
+1807,31-40,male,Hardware engineering,contract,less than 1 year,remote,3,2,2,3,3,1,3,2,4,5,2,3,Mildly Stressed
+1808,21-30,male,Other,part-time,less than 1 year,remote,1,3,5,4,4,2,2,3,1,4,3,5,Healthy
+1809,under 20,male,IT Services,contract,16-20,Office-based,2,5,1,5,1,4,3,1,3,2,3,2,Mildly Stressed
+1810,21-30,female,Hardware engineering,part-time,11-15,hybrid,1,4,4,3,5,4,5,3,4,1,3,4,Healthy
+1811,51-60,female,Cyber Security,part-time,less than 1 year,Office-based,2,4,5,3,4,5,4,2,5,3,4,3,Highly Stressed
+1812,under 20,female,IT Services,part-time,less than 1 year,remote,5,3,3,5,3,2,5,3,2,4,4,5,Mildly Stressed
+1813,31-40,male,IT Services,contract,16-20,remote,3,4,3,5,2,3,5,4,1,2,3,1,Mildly Stressed
+1814,21-30,male,IT Services,part-time,6-10,Office-based,5,5,5,2,1,3,4,3,1,1,1,5,Mildly Stressed
+1815,41-50,male,Cyber Security,contract,1-5,Office-based,2,5,5,4,5,3,3,5,2,2,3,1,Healthy
+1816,41-50,male,Software development,contract,less than 1 year,Office-based,4,1,1,5,2,1,3,2,5,1,5,1,Mildly Stressed
+1817,51-60,male,Other,full-time,6-10,remote,5,2,3,1,5,3,3,5,3,2,3,1,Highly Stressed
+1818,41-50,male,Hardware engineering,full-time,11-15,hybrid,4,4,4,2,1,5,4,3,2,2,3,1,Highly Stressed
+1819,21-30,male,Software development,part-time,6-10,Office-based,2,5,2,4,3,1,2,5,3,4,1,2,Healthy
+1820,21-30,female,Hardware engineering,part-time,16-20,remote,3,2,2,1,5,1,1,1,5,2,4,1,Mildly Stressed
+1821,41-50,female,Other,contract,11-15,remote,4,2,1,1,1,3,2,3,4,2,4,2,Highly Stressed
+1822,21-30,male,Cyber Security,part-time,11-15,remote,2,1,1,4,5,1,2,5,4,4,5,4,Healthy
+1823,51-60,male,IT Services,part-time,6-10,Office-based,4,2,3,2,2,2,5,4,5,4,3,2,Highly Stressed
+1824,under 20,male,IT Services,contract,16-20,Office-based,5,2,4,1,5,2,1,3,3,5,2,1,Highly Stressed
+1825,51-60,female,Cyber Security,part-time,less than 1 year,hybrid,2,3,4,3,2,3,3,1,2,5,5,4,Highly Stressed
+1826,51-60,female,Software development,part-time,6-10,remote,5,1,5,4,2,5,2,4,5,4,4,5,Highly Stressed
+1827,21-30,male,Software development,contract,less than 1 year,Office-based,1,1,1,4,1,1,4,3,5,3,1,2,Mildly Stressed
+1828,under 20,male,Hardware engineering,contract,6-10,remote,2,4,2,5,4,4,2,4,4,1,4,5,Healthy
+1829,21-30,female,Cyber Security,full-time,less than 1 year,remote,4,2,2,2,5,3,3,3,2,4,4,4,Mildly Stressed
+1830,31-40,female,Software development,contract,6-10,hybrid,1,4,3,3,3,1,2,3,4,5,1,2,Healthy
+1831,21-30,female,Cyber Security,full-time,11-15,Office-based,5,5,2,3,2,3,5,2,3,2,3,1,Highly Stressed
+1832,21-30,female,Other,part-time,1-5,Office-based,5,2,4,5,4,3,5,5,3,4,3,2,Highly Stressed
+1833,21-30,male,IT Services,contract,11-15,remote,4,5,4,1,2,5,2,3,1,4,4,1,Highly Stressed
+1834,under 20,female,IT Services,contract,less than 1 year,remote,1,3,1,1,4,4,5,1,5,5,5,3,Highly Stressed
+1835,21-30,female,IT Services,contract,16-20,hybrid,3,2,3,3,4,1,4,5,2,5,2,2,Mildly Stressed
+1836,under 20,male,Cyber Security,part-time,11-15,hybrid,4,4,2,2,3,3,1,2,2,3,5,2,Mildly Stressed
+1837,41-50,female,Cyber Security,full-time,1-5,hybrid,5,4,1,1,4,3,2,5,4,5,5,5,Mildly Stressed
+1838,31-40,female,Hardware engineering,part-time,less than 1 year,hybrid,2,2,5,4,3,1,4,5,4,5,4,5,Mildly Stressed
+1839,under 20,female,IT Services,part-time,11-15,hybrid,1,4,5,5,1,3,4,3,2,5,4,4,Mildly Stressed
+1840,41-50,male,Hardware engineering,contract,6-10,hybrid,3,2,2,2,2,3,4,1,4,2,2,1,Highly Stressed
+1841,under 20,female,IT Services,full-time,16-20,remote,2,1,2,1,3,3,3,3,1,4,2,5,Mildly Stressed
+1842,under 20,male,Hardware engineering,part-time,less than 1 year,hybrid,1,4,2,3,2,2,2,1,5,4,2,4,Healthy
+1843,31-40,male,Hardware engineering,contract,11-15,remote,4,2,4,5,5,2,2,1,1,5,4,1,Mildly Stressed
+1844,51-60,female,Other,part-time,less than 1 year,remote,4,2,2,1,1,4,2,4,3,3,4,1,Highly Stressed
+1845,51-60,female,Hardware engineering,part-time,6-10,Office-based,1,4,5,3,5,5,1,3,2,5,5,1,Mildly Stressed
+1846,under 20,female,Cyber Security,contract,1-5,remote,3,1,2,1,5,1,4,2,1,3,4,3,Mildly Stressed
+1847,21-30,female,Hardware engineering,contract,11-15,remote,1,4,3,5,4,5,2,5,1,4,3,1,Healthy
+1848,41-50,male,IT Services,full-time,less than 1 year,hybrid,2,2,5,4,4,5,5,4,4,3,3,4,Mildly Stressed
+1849,21-30,female,Hardware engineering,part-time,less than 1 year,remote,2,1,3,4,5,2,3,2,4,3,2,1,Mildly Stressed
+1850,21-30,female,Software development,contract,less than 1 year,hybrid,4,5,5,3,4,4,1,3,4,1,4,1,Mildly Stressed
+1851,under 20,female,IT Services,contract,1-5,hybrid,1,3,1,4,2,5,3,1,3,3,3,4,Mildly Stressed
+1852,under 20,male,Software development,full-time,less than 1 year,hybrid,4,4,5,5,4,5,4,3,1,3,5,2,Mildly Stressed
+1853,under 20,female,IT Services,full-time,16-20,Office-based,3,2,5,3,5,3,5,3,5,2,1,1,Mildly Stressed
+1854,under 20,female,Cyber Security,contract,16-20,hybrid,2,1,3,1,4,1,4,4,4,4,5,4,Mildly Stressed
+1855,51-60,male,Cyber Security,full-time,less than 1 year,remote,5,1,3,2,4,4,2,2,3,5,1,5,Highly Stressed
+1856,under 20,male,Cyber Security,contract,16-20,hybrid,5,5,5,1,3,1,3,4,3,1,5,4,Mildly Stressed
+1857,51-60,female,Software development,part-time,11-15,hybrid,1,4,5,5,3,2,5,2,4,3,3,3,Mildly Stressed
+1858,51-60,female,Other,full-time,16-20,hybrid,1,1,4,3,5,5,3,4,2,2,4,5,Healthy
+1859,under 20,female,IT Services,part-time,less than 1 year,Office-based,5,5,1,1,2,5,1,5,1,2,1,2,Healthy
+1860,31-40,female,Cyber Security,part-time,6-10,remote,1,2,1,3,1,1,5,1,4,5,4,2,Highly Stressed
+1861,41-50,female,IT Services,part-time,11-15,Office-based,2,5,2,4,1,2,1,1,5,5,4,4,Mildly Stressed
+1862,21-30,male,Software development,contract,1-5,remote,3,4,5,2,5,3,5,1,1,4,3,4,Mildly Stressed
+1863,51-60,male,Other,part-time,less than 1 year,Office-based,3,5,5,5,2,3,2,5,3,3,2,1,Healthy
+1864,41-50,female,Software development,part-time,1-5,remote,4,1,5,1,2,5,3,5,5,2,2,1,Highly Stressed
+1865,31-40,female,IT Services,part-time,6-10,Office-based,2,1,5,2,2,5,3,1,1,1,1,3,Mildly Stressed
+1866,21-30,male,Other,contract,1-5,hybrid,1,3,1,5,3,4,4,1,5,4,3,1,Highly Stressed
+1867,21-30,female,Other,part-time,less than 1 year,Office-based,1,5,3,5,5,1,5,2,3,3,4,4,Healthy
+1868,51-60,female,Software development,part-time,less than 1 year,Office-based,4,2,4,4,1,5,5,2,4,5,5,4,Burned Out
+1869,under 20,female,Cyber Security,full-time,6-10,hybrid,4,4,3,3,2,2,1,3,5,3,5,1,Highly Stressed
+1870,31-40,female,IT Services,contract,less than 1 year,hybrid,1,3,3,3,5,1,5,4,4,5,1,3,Healthy
+1871,51-60,female,Hardware engineering,part-time,6-10,remote,1,5,1,2,1,4,3,2,3,3,1,4,Healthy
+1872,31-40,male,Hardware engineering,full-time,6-10,remote,2,2,4,4,3,3,5,2,3,1,1,3,Mildly Stressed
+1873,under 20,female,Software development,contract,less than 1 year,remote,4,3,5,5,4,4,4,2,5,4,3,4,Highly Stressed
+1874,under 20,female,IT Services,contract,16-20,Office-based,2,1,1,4,1,1,4,2,5,5,5,3,Highly Stressed
+1875,51-60,female,IT Services,contract,6-10,remote,1,4,1,4,1,3,3,5,3,1,3,3,Healthy
+1876,under 20,male,Software development,contract,less than 1 year,Office-based,5,5,4,2,1,2,3,3,5,2,3,3,Mildly Stressed
+1877,41-50,male,IT Services,contract,16-20,Office-based,5,2,2,3,4,3,3,2,5,1,4,1,Highly Stressed
+1878,21-30,male,Cyber Security,contract,6-10,remote,1,1,1,4,2,3,5,4,5,1,3,2,Mildly Stressed
+1879,51-60,male,Software development,part-time,16-20,remote,4,3,3,4,4,2,5,2,5,1,3,3,Mildly Stressed
+1880,31-40,female,Cyber Security,part-time,11-15,Office-based,5,4,3,4,1,5,2,5,1,5,4,3,Mildly Stressed
+1881,41-50,male,IT Services,part-time,11-15,hybrid,4,3,5,1,3,5,1,1,3,2,2,4,Highly Stressed
+1882,51-60,female,Software development,part-time,16-20,hybrid,5,3,1,4,1,3,5,1,3,4,4,2,Highly Stressed
+1883,under 20,female,IT Services,full-time,6-10,Office-based,4,2,5,4,3,3,2,3,2,1,1,4,Healthy
+1884,under 20,male,Software development,part-time,less than 1 year,remote,5,1,1,5,5,4,2,1,4,5,2,4,Mildly Stressed
+1885,under 20,male,IT Services,contract,1-5,Office-based,4,5,4,1,3,5,4,2,2,5,5,3,Highly Stressed
+1886,under 20,male,Cyber Security,part-time,less than 1 year,Office-based,2,2,1,4,1,2,5,5,5,4,3,5,Mildly Stressed
+1887,31-40,male,Cyber Security,part-time,1-5,remote,4,4,2,4,4,3,2,3,5,3,2,2,Mildly Stressed
+1888,41-50,male,IT Services,contract,1-5,hybrid,2,3,3,2,1,3,4,2,1,2,5,4,Highly Stressed
+1889,21-30,female,Software development,part-time,6-10,Office-based,2,4,4,2,1,4,1,1,1,2,4,5,Mildly Stressed
+1890,31-40,male,Hardware engineering,part-time,16-20,hybrid,1,2,3,1,5,4,4,4,1,1,4,5,Healthy
+1891,31-40,male,Cyber Security,part-time,less than 1 year,hybrid,2,2,5,5,2,4,1,2,1,3,1,4,Healthy
+1892,21-30,male,Cyber Security,full-time,16-20,remote,3,5,4,1,1,1,3,4,1,2,1,3,Healthy
+1893,21-30,female,Hardware engineering,part-time,11-15,Office-based,2,3,2,1,5,2,3,4,1,1,2,1,Healthy
+1894,under 20,male,IT Services,contract,6-10,Office-based,4,2,3,2,4,1,4,3,1,3,3,4,Healthy
+1895,31-40,female,Software development,contract,6-10,hybrid,2,4,1,2,5,3,3,5,1,5,4,3,Healthy
+1896,51-60,male,IT Services,part-time,11-15,hybrid,4,5,1,5,5,4,5,1,1,1,2,2,Healthy
+1897,21-30,male,Other,part-time,less than 1 year,remote,4,4,1,4,3,4,4,1,3,3,2,3,Mildly Stressed
+1898,21-30,female,Cyber Security,part-time,11-15,hybrid,3,3,4,5,2,4,2,2,1,4,2,5,Healthy
+1899,41-50,male,Other,contract,less than 1 year,remote,2,5,2,4,2,5,5,1,4,2,1,2,Mildly Stressed
+1900,51-60,female,Cyber Security,contract,1-5,Office-based,2,5,2,3,4,2,4,3,1,1,4,2,Healthy
+1901,51-60,female,Cyber Security,full-time,6-10,remote,5,5,2,2,5,1,1,1,5,5,1,1,Mildly Stressed
+1902,21-30,female,Other,full-time,less than 1 year,hybrid,5,1,3,3,4,2,3,2,5,1,1,1,Mildly Stressed
+1903,under 20,male,Other,full-time,16-20,Office-based,1,5,4,3,4,4,3,1,1,2,2,4,Healthy
+1904,41-50,male,IT Services,contract,16-20,remote,4,4,1,2,2,3,3,5,1,2,5,3,Healthy
+1905,51-60,male,Other,full-time,6-10,Office-based,3,4,3,3,2,5,4,4,5,3,5,4,Highly Stressed
+1906,21-30,female,IT Services,part-time,11-15,remote,5,3,2,1,2,2,5,4,4,5,5,1,Burned Out
+1907,51-60,male,IT Services,part-time,11-15,hybrid,2,2,1,4,1,3,1,4,2,3,2,5,Healthy
+1908,41-50,female,IT Services,contract,less than 1 year,hybrid,1,2,4,5,5,4,3,5,3,5,3,1,Mildly Stressed
+1909,41-50,male,Cyber Security,full-time,11-15,Office-based,3,1,5,2,4,4,5,3,5,1,4,3,Highly Stressed
+1910,31-40,female,Cyber Security,part-time,6-10,Office-based,2,5,2,1,5,4,2,2,1,1,2,5,Healthy
+1911,21-30,female,Other,contract,less than 1 year,Office-based,2,1,2,5,4,4,2,5,3,3,2,4,Healthy
+1912,41-50,female,Cyber Security,full-time,1-5,remote,4,3,2,5,4,5,1,2,1,4,1,4,Healthy
+1913,31-40,male,Other,part-time,11-15,hybrid,4,3,2,5,4,5,3,3,2,2,5,1,Mildly Stressed
+1914,31-40,female,Cyber Security,full-time,11-15,Office-based,5,2,1,3,4,2,2,5,2,3,2,1,Healthy
+1915,51-60,female,Software development,contract,less than 1 year,Office-based,5,3,4,3,3,4,5,1,5,3,3,4,Burned out
+1916,51-60,female,Software development,full-time,16-20,Office-based,2,5,3,3,3,5,5,3,3,1,4,4,Mildly Stressed
+1917,31-40,female,Other,contract,11-15,remote,2,4,1,3,1,3,2,4,3,2,3,2,Healthy
+1918,51-60,female,Cyber Security,full-time,6-10,Office-based,5,3,4,1,2,5,3,5,2,3,2,3,Mildly Stressed
+1919,41-50,female,Cyber Security,part-time,11-15,Office-based,5,1,3,3,4,5,1,3,1,1,2,2,Mildly Stressed
+1920,under 20,male,IT Services,contract,1-5,remote,2,5,2,2,5,2,3,3,5,1,1,2,Healthy
+1921,41-50,male,Hardware engineering,contract,11-15,remote,3,3,4,5,3,5,4,5,4,3,3,4,Mildly Stressed
+1922,31-40,female,Other,contract,16-20,Office-based,2,3,2,1,2,3,2,4,2,3,1,3,Healthy
+1923,31-40,male,Hardware engineering,full-time,11-15,Office-based,3,5,4,3,1,4,4,4,2,1,3,4,Mildly Stressed
+1924,41-50,male,Hardware engineering,full-time,less than 1 year,remote,3,3,5,5,2,1,2,3,5,3,5,2,Highly Stressed
+1925,51-60,female,Other,part-time,11-15,hybrid,2,4,2,1,4,2,1,2,1,2,5,2,Healthy
+1926,51-60,female,Cyber Security,contract,16-20,remote,1,2,2,5,2,3,3,3,3,1,3,4,Healthy
+1927,31-40,female,Other,contract,less than 1 year,hybrid,5,5,2,1,4,2,3,5,2,1,1,1,Healthy
+1928,21-30,male,Hardware engineering,full-time,6-10,Office-based,4,1,1,4,3,4,2,5,5,3,5,1,Highly Stressed
+1929,51-60,female,Cyber Security,full-time,less than 1 year,Office-based,2,3,3,1,3,5,5,5,5,3,2,4,Highly Stressed
+1930,41-50,male,Software development,part-time,1-5,hybrid,3,2,2,3,4,5,4,4,5,3,4,5,Mildly Stressed
+1931,51-60,female,Other,part-time,less than 1 year,remote,2,1,2,5,5,3,3,1,3,2,1,5,Healthy
+1932,41-50,male,Other,full-time,6-10,Office-based,5,1,1,5,3,4,3,5,2,1,3,1,Healthy
+1933,31-40,female,Cyber Security,contract,11-15,hybrid,3,4,1,5,5,1,2,5,5,4,4,3,Healthy
+1934,51-60,female,Software development,part-time,less than 1 year,remote,4,2,5,2,4,1,5,2,3,2,4,2,Highly Stressed
+1935,41-50,male,Software development,full-time,less than 1 year,hybrid,4,5,4,2,4,5,4,2,1,2,2,3,Mildly Stressed
+1936,31-40,male,Cyber Security,full-time,less than 1 year,remote,4,2,2,3,3,4,5,3,4,1,1,1,Mildly Stressed
+1937,21-30,male,IT Services,contract,less than 1 year,remote,1,2,4,4,5,4,5,3,2,4,4,4,Mildly Stressed
+1938,41-50,male,Other,full-time,6-10,remote,3,1,1,2,4,3,2,3,3,1,1,5,Healthy
+1939,21-30,male,Other,full-time,16-20,remote,3,4,1,1,3,1,5,5,4,2,2,1,Mildly Stressed
+1940,21-30,male,Hardware engineering,part-time,16-20,hybrid,1,4,5,3,4,3,4,2,4,3,3,3,Mildly Stressed
+1941,under 20,female,Cyber Security,full-time,less than 1 year,hybrid,3,2,3,4,2,2,1,3,3,1,4,3,Healthy
+1942,51-60,male,Hardware engineering,full-time,6-10,hybrid,1,2,1,1,2,4,1,2,3,1,4,1,Mildly Stressed
+1943,41-50,female,Hardware engineering,part-time,6-10,hybrid,2,3,2,5,3,1,4,5,3,3,4,2,Healthy
+1944,21-30,female,Software development,contract,less than 1 year,hybrid,5,1,5,2,4,3,2,5,5,4,1,3,Highly Stressed
+1945,under 20,male,Other,contract,1-5,remote,4,5,3,1,3,5,3,3,1,4,4,2,Highly Stressed
+1946,31-40,female,Hardware engineering,part-time,less than 1 year,Office-based,1,5,5,4,1,2,2,5,5,1,1,2,Healthy
+1947,41-50,male,Software development,part-time,1-5,Office-based,1,4,1,3,3,3,4,5,4,3,5,4,Healthy
+1948,21-30,male,Cyber Security,contract,less than 1 year,hybrid,1,1,3,1,3,5,5,2,4,1,5,1,Highly Stressed
+1949,51-60,female,Hardware engineering,contract,1-5,hybrid,2,4,4,3,2,1,1,1,4,3,1,1,Mildly Stressed
+1950,under 20,female,Other,contract,1-5,Office-based,1,5,3,5,2,1,5,4,3,2,5,2,Healthy
+1951,21-30,male,Hardware engineering,contract,less than 1 year,remote,5,2,2,4,4,2,2,3,2,3,2,4,Healthy
+1952,51-60,male,Cyber Security,contract,1-5,hybrid,5,1,4,4,3,5,4,1,5,1,2,3,Highly Stressed
+1953,21-30,female,Hardware engineering,part-time,11-15,remote,4,1,4,2,3,4,1,3,2,5,5,3,Highly Stressed
+1954,41-50,female,Other,full-time,16-20,Office-based,2,3,2,4,4,1,4,1,1,4,3,1,Mildly Stressed
+1955,41-50,female,Software development,contract,6-10,Office-based,5,2,4,1,5,4,1,5,1,1,1,2,Healthy
+1956,41-50,female,Other,contract,1-5,hybrid,3,2,1,1,4,4,1,3,5,3,5,4,Mildly Stressed
+1957,under 20,male,Software development,full-time,1-5,remote,3,4,3,1,2,3,1,1,4,3,1,4,Mildly Stressed
+1958,41-50,male,IT Services,full-time,6-10,hybrid,3,1,3,5,2,3,2,4,1,4,5,3,Mildly Stressed
+1959,51-60,male,Other,full-time,1-5,Office-based,1,4,2,4,3,1,4,5,2,1,2,3,Healthy
+1960,21-30,male,Other,full-time,6-10,remote,1,2,1,4,2,4,3,3,2,5,3,5,Healthy
+1961,31-40,female,Cyber Security,full-time,less than 1 year,hybrid,3,3,4,1,4,3,3,3,3,2,1,5,Mildly Stressed
+1962,51-60,female,Hardware engineering,full-time,11-15,hybrid,4,1,3,2,3,5,3,1,4,5,3,2,Burned Out
+1963,51-60,male,Software development,part-time,11-15,hybrid,4,2,3,2,4,5,4,3,3,2,2,5,Mildly Stressed
+1964,41-50,male,Software development,full-time,16-20,Office-based,1,3,3,4,4,5,5,5,5,2,4,4,Mildly Stressed
+1965,under 20,male,Cyber Security,full-time,1-5,hybrid,3,5,3,4,3,5,4,2,1,1,4,5,Healthy
+1966,21-30,male,Cyber Security,part-time,16-20,remote,4,2,5,3,5,4,1,1,3,2,1,1,Mildly Stressed
+1967,under 20,male,Hardware engineering,full-time,less than 1 year,hybrid,1,5,2,4,2,5,5,4,3,3,2,1,Mildly Stressed
+1968,21-30,male,Hardware engineering,contract,11-15,Office-based,3,4,4,1,1,4,1,3,5,2,1,3,Mildly Stressed
+1969,21-30,male,Other,contract,less than 1 year,hybrid,2,5,4,5,1,1,1,5,2,2,1,3,Healthy
+1970,under 20,male,IT Services,full-time,less than 1 year,Office-based,3,2,2,4,1,1,4,3,2,4,1,2,Mildly Stressed
+1971,51-60,male,Hardware engineering,part-time,1-5,Office-based,3,5,1,4,2,5,3,4,5,4,3,1,Highly Stressed
+1972,21-30,female,Cyber Security,contract,less than 1 year,remote,5,1,2,1,5,5,5,5,2,1,5,2,Highly Stressed
+1973,under 20,male,Hardware engineering,part-time,11-15,remote,5,2,3,3,4,5,2,4,5,1,2,2,Mildly Stressed
+1974,21-30,female,Software development,contract,16-20,hybrid,2,3,3,4,3,1,3,5,2,3,3,5,Healthy
+1975,31-40,female,IT Services,full-time,11-15,Office-based,2,5,2,2,5,3,2,2,5,4,5,3,Mildly Stressed
+1976,51-60,male,Other,part-time,1-5,Office-based,3,1,2,2,1,1,4,5,2,5,1,2,Mildly Stressed
+1977,41-50,male,Software development,part-time,11-15,remote,4,4,4,2,2,5,5,4,3,1,4,2,Highly Stressed
+1978,21-30,female,Software development,part-time,6-10,remote,2,4,4,5,2,3,4,1,3,1,3,3,Mildly Stressed
+1979,31-40,female,IT Services,contract,16-20,hybrid,3,5,5,5,3,3,2,2,2,4,2,3,Healthy
+1980,41-50,male,Other,contract,6-10,Office-based,1,4,5,4,4,2,1,3,5,4,2,1,Mildly Stressed
+1981,41-50,female,Cyber Security,contract,6-10,remote,5,3,3,4,5,4,4,2,3,3,5,3,Highly Stressed
+1982,21-30,male,Other,full-time,1-5,hybrid,4,2,5,4,5,5,5,2,1,4,3,5,Mildly Stressed
+1983,under 20,male,Hardware engineering,contract,less than 1 year,Office-based,3,1,5,5,5,4,4,3,2,2,1,1,Mildly Stressed
+1984,21-30,male,Software development,full-time,6-10,Office-based,1,5,1,4,4,2,3,5,1,5,5,2,Healthy
+1985,31-40,female,Hardware engineering,part-time,11-15,remote,5,4,2,1,4,4,4,2,1,2,2,5,Mildly Stressed
+1986,41-50,female,Cyber Security,part-time,less than 1 year,hybrid,1,2,4,3,4,5,2,2,4,2,3,5,Mildly Stressed
+1987,21-30,male,Hardware engineering,full-time,11-15,remote,3,3,5,2,3,2,4,1,1,2,4,1,Highly Stressed
+1988,under 20,female,Other,contract,11-15,hybrid,2,4,4,2,2,4,5,1,1,1,1,2,Mildly Stressed
+1989,21-30,female,Hardware engineering,full-time,less than 1 year,Office-based,5,4,5,1,1,1,4,4,4,2,2,1,Highly Stressed
+1990,51-60,female,Cyber Security,part-time,less than 1 year,hybrid,1,1,5,4,4,3,4,3,4,1,3,4,Mildly Stressed
+1991,under 20,female,Cyber Security,part-time,11-15,hybrid,2,3,3,5,2,2,5,5,4,4,4,4,Mildly Stressed
+1992,31-40,female,Cyber Security,full-time,1-5,hybrid,4,3,1,4,4,1,4,5,5,5,2,1,Mildly Stressed
+1993,41-50,female,Other,contract,16-20,hybrid,3,5,2,4,1,5,5,4,4,5,4,2,Highly Stressed
+1994,21-30,female,Cyber Security,contract,16-20,hybrid,3,1,2,2,4,3,2,5,5,2,2,2,Mildly Stressed
+1995,under 20,male,Software development,full-time,1-5,remote,5,5,3,2,2,2,5,5,2,5,5,3,Mildly Stressed
+1996,51-60,female,Cyber Security,full-time,less than 1 year,hybrid,1,1,3,5,3,3,2,1,5,1,5,5,Mildly Stressed
+1997,under 20,female,Hardware engineering,contract,11-15,hybrid,4,3,2,2,1,2,2,5,2,4,5,1,Mildly Stressed
+1998,51-60,female,Hardware engineering,part-time,16-20,Office-based,5,1,2,4,2,2,5,5,4,2,3,5,Mildly Stressed
+1999,31-40,female,Hardware engineering,full-time,11-15,hybrid,5,1,1,1,5,4,4,4,4,3,5,5,Highly Stressed
