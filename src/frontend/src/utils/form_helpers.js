@@ -81,6 +81,7 @@ const disableAndEnableFieldsetItems = ({ formElement, state }) => {
     case "enable":
     case "e":
     case "en":
+      fieldset.disabled = false;
       break;
     case "disable":
     case "dis":
