@@ -6,7 +6,7 @@ import {
   disableAndEnableFieldsetItems,
   formInputSerializer,
 } from "../utils/form_helpers";
-import { CSRFINPUTNAME } from "../utils/constants";
+import { CSRFINPUTNAME, PRELINECSSLOADERHTML } from "../utils/constants";
 import { showToastNotification } from "../utils/toasts";
 import { sendRequest } from "../utils/api";
 import { sweetAlertMainConfig } from "../utils/tw_sweetalert";
@@ -98,84 +98,86 @@ document.addEventListener("DOMContentLoaded", (readyEvent) => {
         };
         console.log(requestOptions);
         // Swal.fire(sweetAlertMainConfig({ title: "Done", icon: "success" }));
-        const request = sendRequest(requestOptions);
-        request
-          .then((data) => {
-            console.warn(data);
-            const surveyResultModal = document.querySelector("#survey-result-modal");
-            const surveyTitle = document.querySelector("#survey-result-modal-title");
-            const surveyResultModalImg = document.querySelector(
-              "img#survey-result-modal-img",
-            );
-            const surveyResultModalDescription = document.querySelector(
-              "p#survey-result-modal-description",
-            );
-            const surveyShortAdvice = document.querySelector("em#survey-short-advice");
-            const surveyConclusionAdvice = document.querySelector(
-              "p#survey-conclusion-advice",
-            );
-            const surveyRecommendationsList = document.querySelector(
-              "ol#survey-recommendations-list",
-            );
-            // console.log(bwI18Helper.t("jobs"));
-            // showToastNotification(bwI18Helper.t("key"), "success");
-            showToastNotification("TXT", "success");
-            surveyResultModalImg.src = data["result"]["image"];
-            surveyTitle.textContent = data["result"]["label"];
-            surveyShortAdvice.textContent = data["result"]["short_advice"];
-            surveyResultModalDescription.textContent = data["result"]["description"];
-            surveyConclusionAdvice.textContent = data["result"]["conclusion_advice"];
-            data["result"]["recommendations"].forEach((recItem) => {
-              const li = document.createElement("li");
-              li.classList.add(...["text-sm", "text-grey-500"]);
-              li.textContent = recItem["content"];
-              surveyRecommendationsList.appendChild(li);
-            });
-            let timerInterval;
-            Swal.fire({
-              title: "Please wait!",
-              html: "Classifying your survey <b></b> milliseconds.",
-              timer: 2000,
-              timerProgressBar: true,
-              didOpen: () => {
-                Swal.showLoading();
-                const timer = Swal.getPopup().querySelector("b");
-                timerInterval = setInterval(() => {
-                  timer.textContent = `${Swal.getTimerLeft()}`;
-                }, 100);
-              },
-              willClose: () => {
-                clearInterval(timerInterval);
-              },
-            }).then((result) => {
-              /* Read more about handling dismissals below */
-              if (result.dismiss === Swal.DismissReason.timer) {
-                console.log("I was closed by the timer");
+        let timerInterval;
+        const progressElement = Swal.mixin({
+          html: "Please wait to classifying your survey...",
+          title: "Classifying...",
+          // timer: 2000,
+          timerProgressBar: true,
+          didOpen: () => {
+            Swal.showLoading();
+            const timer = Swal.getPopup().querySelector("b");
+            const request = sendRequest(requestOptions);
+            request
+              .then((data) => {
+                console.warn(data);
+                const predictionData = data["results"]["data"];
+                progressElement.close();
                 const { element } = HSOverlay.getInstance("#survey-result-modal", true);
                 element.open();
-              }
-            });
+                const surveyResultModal = document.querySelector("#survey-result-modal");
+                const surveyTitle = document.querySelector("#survey-result-modal-title");
+                const surveyResultModalImg = document.querySelector(
+                  "#survey-result-modal-img",
+                );
+                const surveyResultModalDescription = document.querySelector(
+                  "p#survey-result-modal-description",
+                );
+                const surveyShortAdvice = document.querySelector(
+                  "em#survey-short-advice",
+                );
+                const surveyConclusionAdvice = document.querySelector(
+                  "p#survey-conclusion-advice",
+                );
+                const surveyRecommendationsList = document.querySelector(
+                  "ol#survey-recommendations-list",
+                );
+                showToastNotification("TXT", "success");
+                surveyResultModalImg.src = predictionData["image"];
+                surveyTitle.textContent = predictionData["label"];
+                surveyShortAdvice.textContent = predictionData["short_advice"];
+                surveyResultModalDescription.textContent = predictionData["description"];
+                surveyConclusionAdvice.textContent = predictionData["conclusion_advice"];
+                predictionData["recommendations"].forEach((recItem) => {
+                  const li = document.createElement("li");
+                  li.classList.add(...["text-sm", "text-grey-500"]);
+                  li.textContent = recItem["content"];
+                  surveyRecommendationsList.appendChild(li);
+                });
 
-            // setTimeout(() => {
-            //   Swal.fire(
-            //     sweetAlertMainConfig({
-            //       title: "Done",
-            //       icon: "success",
-            //       text: data["result"],
-            //     }),
-            //   );
-            // }, 2000);
-          })
-          .catch((error) => {
-            console.error(error);
-            showToastNotification(`Error in survey!!`, "error");
-            console.error(error);
-          })
-          .finally(() => {
-            formsArray.forEach((form) => {
-              disableAndEnableFieldsetItems({ formElement: form, state: "en" });
-            });
-          });
+                // setTimeout(() => {
+                //   Swal.fire(
+                //     sweetAlertMainConfig({
+                //       title: "Done",
+                //       icon: "success",
+                //       text: data["result"],
+                //     }),
+                //   );
+                // }, 2000);
+              })
+              .catch((error) => {
+                console.error(error);
+                showToastNotification(`Error in survey!!`, "error");
+                console.error(error);
+              })
+              .finally(() => {
+                formsArray.forEach((form) => {
+                  disableAndEnableFieldsetItems({ formElement: form, state: "en" });
+                });
+              });
+          },
+          willClose: () => {
+            clearInterval(timerInterval);
+          },
+        });
+        progressElement.fire().then((result) => {
+          /* Read more about handling dismissals below */
+          console.warn("sldfjs");
+          // if (result.dismiss === Swal.DismissReason.timer) {
+          //   console.log("I was closed by the timer");
+          // }
+        });
+
         setTimeout(() => {
           console.warn(fullStepsData);
         }, 2000);
