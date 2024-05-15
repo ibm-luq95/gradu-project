@@ -4,6 +4,8 @@
 
 {% load i18n %}
 
+{% load widget_tweaks %}
+
 {% block home_content %}
     <!-- Contact Us -->
     <div class="max-w-[85rem] relative px-4 py-5 sm:px-6 lg:px-8 mx-auto">
@@ -48,7 +50,7 @@
                                 <button type="button"
                                         class="inline-flex bg-teal-50 rounded-lg p-1.5 text-teal-500 hover:bg-teal-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-teal-50 focus:ring-teal-600 dark:bg-transparent dark:hover:bg-teal-800/50 dark:text-teal-600"
                                         data-hs-remove-element="#dismiss-alert">
-                                    <span class="sr-only">Dismiss</span>
+                                    <span class="sr-only">{% translate "Dismiss" %}</span>
                                     <svg class="flex-shrink-0 size-4"
                                          xmlns="http://www.w3.org/2000/svg"
                                          width="24"
@@ -76,30 +78,40 @@
                     <!-- Card -->
                     <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 dark:border-gray-700">
  
-                        <form id="contactForm" method="post" action="{% url 'home:contact_api' %}">
+                        <form id="contactForm"
+                              method="post"
+                              action="{% url 'home:contact_api' %}"
+                              autocomplete="off"
+                              novalidate>
                             <fieldset form="contactForm">
                                 {% csrf_token %}
                                 <div class="grid gap-4">
+                                    {% with WIDGET_ERROR_CLASS=TW_ERROR_INPUT WIDGET_REQUIRED_CLASS="my_required" %}
+                                        {% render_field form.field1 %}
+                                        {% render_field form.field2 %}
+                                        {% render_field form.field3 %}
+                                    {% endwith %}
                                     <!-- Grid -->
                                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div>
-                                            <label for="hs-firstname-contacts-1" class="sr-only">
+                                            <label for="first_name" class="sr-only">
                                                 {% translate "First Name" %}
                                             </label>
                                             <input type="text"
                                                    name="first_name"
-                                                   id="hs-firstname-contacts-1"
+                                                   id="first_name"
                                                    class="contact-inputs py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
                                                    placeholder="First Name" />
+ 
                                         </div>
  
                                         <div>
-                                            <label for="hs-lastname-contacts-1" class="sr-only">
+                                            <label for="last_name" class="sr-only">
                                                 {% translate "Last Name" %}
                                             </label>
-                                            <input type="text" required
+                                            <input type="text"
                                                    name="last_name"
-                                                   id="hs-lastname-contacts-1"
+                                                   id="last_name"
                                                    class="contact-inputs py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
                                                    placeholder="Last Name" />
                                         </div>
@@ -107,37 +119,37 @@
                                     <!-- End Grid -->
  
                                     <div>
-                                        <label for="hs-email-contacts-1" class="sr-only">
+                                        <label for="email" class="sr-only">
                                             {% translate "Email" %}
                                         </label>
                                         <input type="email"
-                                               name="email" required
-                                               id="hs-email-contacts-1"
+                                               name="email"
+                                               id="email"
                                                autocomplete="email"
                                                class="contact-inputs py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                                               placeholder="Email" />
+                                               placeholder='{% translate "Email Address" %}' />
                                     </div>
  
                                     <div>
-                                        <label for="hs-phone-number-1" class="sr-only">
+                                        <label for="phone" class="sr-only">
                                             {% translate "Phone Number" %}
                                         </label>
                                         <input type="text"
-                                               name="phone" required
-                                               id="hs-phone-number-1"
+                                               name="phone"
+                                               id="phone"
                                                class="contact-inputs py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                                               placeholder="Phone Number" />
+                                               placeholder='{% translate "Phone Number" %}' />
                                     </div>
  
                                     <div>
-                                        <label for="hs-about-contacts-1" class="sr-only">
+                                        <label for="message" class="sr-only">
                                             {% translate "Message" %}
                                         </label>
-                                        <textarea id="hs-about-contacts-1"
-                                                  name="message" required
+                                        <textarea id="message"
+                                                  name="message"
                                                   rows="4"
                                                   class="contact-inputs py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600"
-                                                  placeholder="Details"></textarea>
+                                                  placeholder='{% translate "Message content" %}'></textarea>
                                     </div>
                                 </div>
                                 <!-- End Grid -->
