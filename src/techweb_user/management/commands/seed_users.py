@@ -32,7 +32,6 @@ class Command(BaseCommandMixin):
                         "last_name": faker.last_name(),
                         "email": faker.email(),
                         "employee_id": secrets.randbelow(1000000000),
-                        "token": secrets.token_urlsafe(10),
                         "user_type": random.choice(TechWebUserTypeChoices.choices)[0],
                     }
                     # DebuggingPrint.pprint(data)
