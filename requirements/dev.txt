@@ -27,6 +27,7 @@ pydot
 docutils
 PyPika
 remote-pdb
+tabulate
 rich
 termcolor
 Werkzeug

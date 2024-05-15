@@ -1,1 +1,5 @@
-pingouin
+pandas
+scikit-learn
+xgboost
+catboost
+lightgbm
