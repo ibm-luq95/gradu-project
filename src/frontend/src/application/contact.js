@@ -1,5 +1,5 @@
 "use strict";
-
+import JustValidate from "just-validate";
 import { sendRequest } from "../utils/api";
 import { CSRFINPUTNAME } from "../utils/constants";
 import {
@@ -15,8 +15,21 @@ document.addEventListener("DOMContentLoaded", (readyEvent) => {
   const contactSuccessSection = document.querySelector("section#contactSuccessSection");
   const contactForm = document.querySelector("form#contactForm");
   if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
+    const validate = new JustValidate("#contactForm");
+    validate
+      .addField("#first_name", [{ rule: "required" }])
+      .addField("#last_name", [{ rule: "required" }])
+      .addField("#email", [{ rule: "required" }, { rule: "email" }])
+      .addField("#phone", [
+        { rule: "required" },
+        {
+          rule: "customRegexp",
+          value: /\+966-5[0-9]{8}/,
+        },
+      ])
+      .addField("#message", [{ rule: "required" }]);
+    validate.onSuccess((event) => {
+      // event.currentTarget.submit();
       const inputs = formInputSerializer({
         formElement: contactForm,
         onlyRadioInputs: false,
@@ -57,7 +70,7 @@ document.addEventListener("DOMContentLoaded", (readyEvent) => {
           console.error(error);
         })
         .finally(() => {
-          disableAndEnableFieldsetItems({ formElement: contactForm, state: "en" });
+          disableAndEnableFieldsetItems({ formElement: contactForm, state: "e" });
         });
     });
   }
