@@ -308,7 +308,7 @@
                                                             class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
                                                             disabled>
                                                         <option disabled selected value>
-                                                            Open this select menu
+                                                            {% translate "Open this select menu" %}
                                                         </option>
  
                                                         {% for department in departments_choices %}
@@ -334,17 +334,14 @@
                                                         class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
                                                         disabled>
                                                     <option disabled selected value>
-                                                        Open this select menu
+                                                        {% translate "Open this select menu" %}
                                                     </option>
-                                                    <option>
-                                                        Status 1
-                                                    </option>
-                                                    <option>
-                                                        Status 2
-                                                    </option>
-                                                    <option>
-                                                        Status 3
-                                                    </option>
+                                                    {% for status_option in employee_status %}
+                                                        <option value="{{ status_option.0 }}">
+                                                            {{ status_option.1 }}
+                                                        </option>
+                                                    {% endfor %}
+ 
                                                 </select>
                                                 <p class="text-sm text-gray-500 mt-2">
                                                     {% translate "We'll never share your details." %}
@@ -360,15 +357,15 @@
                                                         class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
                                                         disabled>
                                                     <option disabled selected value>
-                                                        Open this select menu
+                                                        {% translate "Open this select menu" %}
                                                     </option>
-                                                    <option>
+                                                    <option value="+2">
                                                         +2
                                                     </option>
-                                                    <option>
+                                                    <option value="+5">
                                                         +5
                                                     </option>
-                                                    <option>
+                                                    <option value="+10">
                                                         +10
                                                     </option>
                                                 </select>
@@ -385,17 +382,13 @@
                                                         class="step-1-input py-2 px-4 pe-9 block w-full border-gray-200 rounded-full text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600 {{ TW_INPUTS_CLASS }} cursor-progress"
                                                         disabled>
                                                     <option disabled selected value>
-                                                        Open this select menu
+                                                        {% translate "Open this select menu" %}
                                                     </option>
-                                                    <option>
-                                                        Remotely
-                                                    </option>
-                                                    <option>
-                                                        Office
-                                                    </option>
-                                                    <option>
-                                                        Hybrid
-                                                    </option>
+                                                    {% for wenv in work_environments %}
+                                                        <option value="{{ wenv.0 }}">
+                                                            {{ wenv.1 }}
+                                                        </option>
+                                                    {% endfor %}
                                                 </select>
                                                 <p class="text-sm text-gray-500 mt-2">
                                                     {% translate "We'll never share your details." %}
@@ -652,37 +645,14 @@
                         <div data-hs-stepper-content-item='{ "isFinal": true }'
                              style="display: none">
                             <div class="p-4 w-full h-48 border border-dashed border-gray-200 rounded-xl">
-                                <div class="bg-teal-50 mt-11 border-t-2 border-teal-500 rounded-lg p-4 dark:bg-teal-800/30"
-                                     role="alert">
-                                    <div class="flex">
-                                        <div class="flex-shrink-0">
-                                            <!-- Icon -->
-                                            <span class="inline-flex justify-center items-center size-8 rounded-full border-4 border-teal-100 bg-teal-200 text-teal-800 dark:border-teal-900 dark:bg-teal-800 dark:text-teal-400">
-                                                <svg class="flex-shrink-0 size-4"
-                                                     xmlns="http://www.w3.org/2000/svg"
-                                                     width="24"
-                                                     height="24"
-                                                     viewBox="0 0 24 24"
-                                                     fill="none"
-                                                     stroke="currentColor"
-                                                     stroke-width="2"
-                                                     stroke-linecap="round"
-                                                     stroke-linejoin="round">
-                                                    <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z">
-                                                    </path>
-                                                    <path d="m9 12 2 2 4-4">
-                                                    </path>
-                                                </svg>
-                                            </span>
-                                            <!-- End Icon -->
-                                        </div>
-                                        <div class="ms-3">
-                                            <h3 class="text-gray-800 font-semibold dark:text-white">
-                                                Successfully updated.
-                                            </h3>
-                                            <p class="text-sm text-gray-700 dark:text-neutral-400">
-                                                You have successfully updated your email preferences.
-                                            </p>
+                                <div class="h-full flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-800 dark:border-neutral-700 dark:shadow-neutral-700/70">
+                                    <div class="flex flex-auto flex-col justify-center items-center p-4 md:p-5">
+                                        <div class="flex justify-center">
+                                            <div class="animate-spin inline-block size-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500"
+                                                 role="status"
+                                                 aria-label="loading">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
