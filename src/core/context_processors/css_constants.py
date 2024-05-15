@@ -3,6 +3,7 @@ from core.constants.css_classes import (
     TW_INPUTS_CLASS,
     TW_LOGIN_CHECKBOX_INPUT,
     TW_LOGIN_TEXT_INPUT,
+    TW_ERROR_INPUT,
 )
 
 
@@ -11,4 +12,5 @@ def css_constants(request) -> dict:
         "TW_INPUTS_CLASS": TW_INPUTS_CLASS,
         "TW_LOGIN_TEXT_INPUT": TW_LOGIN_TEXT_INPUT,
         "TW_LOGIN_CHECKBOX_INPUT": TW_LOGIN_CHECKBOX_INPUT,
+        "TW_ERROR_INPUT": TW_ERROR_INPUT,
     }
