@@ -19,16 +19,13 @@ class SurveyAPIView(APIView):
         response = {}
         try:
             full_steps_form: dict = request.data.copy()
-            step_1_form_data: list[dict[str, str]] = full_steps_form.get("step1")
-            step_2_form_data: list[dict[str, str, str]] = full_steps_form.get("step2")
-            step_3_form_data: list[dict[str, str, str]] = full_steps_form.get("step3")
-            step_4_form_data: list[dict[str, str, str]] = full_steps_form.get("step4")
-            step_5_form_data: list[dict[str, str, str]] = full_steps_form.get("step5")
-            # DebuggingPrint.pprint(request.data)
-            backend_model = TechWellModel(self.request.user, request.data.copy(), [1])
-            response["result"] = backend_model.classify_responses()
-            DebuggingPrint.log(response["result"])
-            DebuggingPrint.rule()
+            backend_model = TechWellModel(
+                user=self.request.user,
+                survey_questions=full_steps_form,
+                excluded_steps=[1],
+            )
+            # response["result"] = backend_model.classify_responses()
+            response["results"] = backend_model.run_classifier()
             return Response(data=response, status=status.HTTP_200_OK)
         except Exception as ex:
             print(traceback.format_exc())
