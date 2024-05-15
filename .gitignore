@@ -573,3 +573,5 @@ _base_app_packages
 src/cert.pem
 src/key.pem
 /.env_dotenv
+/requirements/xgboost-2.0.3-py3-none-manylinux2014_x86_64.whl
+/src/catboost_info/
