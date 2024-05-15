@@ -17,7 +17,7 @@ class ClassificationSerializer(serializers.ModelSerializer):
             "created_at",
             "recommendations",
             "description",
-            "min_value",
+            "classification_number",
             "is_enabled",
             "short_advice",
             "conclusion_advice",

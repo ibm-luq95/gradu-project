@@ -32,7 +32,9 @@ class Command(BaseCommandMixin):
 
                         data = {
                             "label": classification.get("label"),
-                            "min_value": int(classification.get("min_value")),
+                            "classification_number": int(
+                                classification.get("classification_number")
+                            ),
                             "short_advice": classification.get("short_advice"),
                             "conclusion_advice": classification.get("conclusion_advice"),
                             "description": classification.get("description"),
