@@ -12,6 +12,8 @@ class SurveyAdmin(BaseAdminModelMixin):
         "department",
         "classification",
         "total_score",
+        "employment_status",
         "created_at",
     ]
     readonly_fields = ["questions_answers", "user", "total_score"]
+    search_fields = ["user", "department", "classification", "employment_status"]

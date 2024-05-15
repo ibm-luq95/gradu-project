@@ -10,15 +10,15 @@ class ClassificationAdmin(BaseAdminModelMixin):
     list_display = [
         "label",
         "slug",
-        "min_value",
+        "classification_number",
         "image",
         "get_total_survey",
         "total_recommendations",
         "is_enabled",
         "created_at",
     ]
-    list_filter = ["label", "slug", "min_value", "is_enabled", "created_at"]
-    search_fields = ["label", "slug", "min_value"]
+    list_filter = ["label", "slug", "classification_number", "is_enabled", "created_at"]
+    search_fields = ["label", "slug", "classification_number"]
 
     def get_total_survey(self, obj: Classification) -> int:
         if hasattr(obj, "surveys"):
