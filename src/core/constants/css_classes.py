@@ -13,3 +13,8 @@ TW_LOGIN_CHECKBOX_INPUT = (
     f"dark:border-gray-700 dark:checked:bg-blue-500 "
     f"dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
 )
+
+TW_ERROR_INPUT = (
+    "border-red-500 focus:border-red-500 focus:ring-red-500 dark:bg-neutral-800 "
+    "dark:border-neutral-700 dark:text-neutral-400"
+)

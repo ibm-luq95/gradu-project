@@ -14,6 +14,9 @@ from core.constants.survey import (
     CLSF_IT_SERVICES,
     CLSF_CYBER_SECURITY,
     CLSF_OTHER,
+    EMP_STATUS_FULL_TIME,
+    EMP_STATUS_PART_TIME,
+    EMP_STATUS_CONTRACT,
 )
 
 
@@ -38,3 +41,9 @@ class SurveyDepartmentsTypeChoices(TextChoices):
     CYBER_SECURITY = CLSF_CYBER_SECURITY, _(stringcase.sentencecase(CLSF_CYBER_SECURITY))
     IT_SERVICES = CLSF_IT_SERVICES, _(stringcase.sentencecase(CLSF_IT_SERVICES))
     OTHER = CLSF_OTHER, _(stringcase.sentencecase(CLSF_OTHER))
+
+
+class SurveyEmploymentStatusChoices(TextChoices):
+    FULL_TIME = EMP_STATUS_FULL_TIME, _(stringcase.sentencecase(EMP_STATUS_FULL_TIME))
+    PART_TIME = EMP_STATUS_PART_TIME, _(stringcase.sentencecase(EMP_STATUS_PART_TIME))
+    CONTRACT = EMP_STATUS_CONTRACT, _(stringcase.sentencecase(EMP_STATUS_CONTRACT))
