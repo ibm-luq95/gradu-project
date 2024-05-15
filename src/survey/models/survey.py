@@ -6,6 +6,7 @@ from core.choices.survey import (
     SurveyWorkEnvironmentTypesEnum,
     SurveyGenderTypesEnum,
     SurveyDepartmentsTypeChoices,
+    SurveyEmploymentStatusChoices,
 )
 from core.models.mixins.base_model import BaseModelMixin
 from techweb_user.models import TechWebUser
@@ -29,7 +30,11 @@ class Survey(BaseModelMixin):
     department = models.CharField(
         _("Department"), max_length=50, choices=SurveyDepartmentsTypeChoices.choices
     )
-    employment_status = models.CharField(_("Employment Status"), max_length=100)
+    employment_status = models.CharField(
+        _("Employment Status"),
+        max_length=100,
+        choices=SurveyEmploymentStatusChoices.choices,
+    )
     years_of_experience = models.CharField(_("years of experience"), max_length=20)
     work_environment = models.CharField(
         _("work environment"),
@@ -42,6 +47,7 @@ class Survey(BaseModelMixin):
         verbose_name_plural = _("Surveys")
         indexes = [
             models.Index(name="department_idx", fields=["department"]),
+            models.Index(name="employment_status_idx", fields=["employment_status"]),
         ]
 
     def __str__(self):
