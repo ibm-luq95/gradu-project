@@ -84,45 +84,59 @@ document.addEventListener("DOMContentLoaded", (readyEvent) => {
               const datasetLabels = data["classification_chart_data"].map(
                 (item) => item["label"],
               );
-              const chartDatasets = new Array();
 
+              const monthsA = [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+              ];
+              const chartDatasets = new Array();
+              const cdata = {
+                labels: monthsA,
+                datasets: [
+                  {
+                    label: "My First Dataset",
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    fill: false,
+                    borderColor: "rgb(75, 192, 192)",
+                    tension: 0.1,
+                  },
+                  {
+                    label: "My sec Dataset",
+                    data: [100, 62, 22, 77, 56, 55, 40],
+                    fill: false,
+                    borderColor: "rgb(23, 111, 192)",
+                    tension: 0.1,
+                  },
+                ],
+              };
               console.warn(chartMonthsLabels);
               console.warn(datasetLabels);
               new Chart(quarterlyProgressElement, {
                 type: "line",
-                data: {
-                  labels: chartMonthsLabels,
-                  datasets: [
-                    {
-                      data: [86, 114, 106, 106, 107, 111, 133, 221, 783, 2478],
-                      label: "Healthy",
-                      borderColor: "#4ade80",
-                      fill: false,
-                    },
-                    {
-                      data: [282, 350, 411, 502, 635, 809, 947, 1402, 3700, 5267],
-                      label: "Mildly Stressed",
-                      borderColor: "#c084fc",
-                      fill: false,
-                    },
-                    {
-                      data: [168, 170, 178, 190, 203, 276, 408, 547, 675, 734],
-                      label: "Highly Stressed",
-                      borderColor: "#facc15",
-                      fill: false,
-                    },
-                    {
-                      data: [40, 20, 10, 16, 24, 38, 74, 167, 508, 784],
-                      label: "Burned Out'",
-                      borderColor: "#f87171",
-                      fill: false,
-                    },
-                  ],
-                },
+                data: cdata,
                 options: {
-                  title: {
-                    display: true,
-                    text: "World population per region (in millions)",
+                  plugins: {
+                    legend: {
+                      display: true,
+                      labels: {
+                        color: "rgb(255, 99, 132)",
+                      },
+                    },
+                  },
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                    },
                   },
                 },
               });

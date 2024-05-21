@@ -9,6 +9,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from classification.data.classification import MAIN_CLASSIFICATIONS_LBL_ONLY
 from classification.models import Classification
 from core.choices.survey import SurveyDepartmentsTypeChoices
 from core.utils.developments.debugging_print_object import DebuggingPrint
@@ -47,26 +48,27 @@ class DashboardAPIView(APIView):
                 all_departments.append(dep[1])
             response["all_departments"] = all_departments
             months_idx = list(range(1, 13, 1))
-            DebuggingPrint.pprint(months_idx)
+            # DebuggingPrint.pprint(months_idx)
             all_surveys = Survey.objects.all()
+            DebuggingPrint.pprint(MAIN_CLASSIFICATIONS_LBL_ONLY)
+            for cls in all_classifications:
+                cls_surveys = cls.surveys.all()
+                # DebuggingPrint.pprint(cls_surveys)
+                for midx in months_idx:
+                    DebuggingPrint.pprint(cls.label)
+                    DebuggingPrint.log(midx)
+                    DebuggingPrint.pprint(cls_surveys.filter(created_at__month=midx))
+                    DebuggingPrint.rule(
+                        f"{str(cls_surveys.filter(created_at__month=midx).count())} -"
+                        f" Month: {str(midx)}"
+                    )
+                DebuggingPrint.rule()
             # for a in all_surveys:
             # DebuggingPrint.pprint(a.created_at)
             # DebuggingPrint.pprint(a.created_at.month)
             department_data = []
             for midx in months_idx:
                 DebuggingPrint.log(midx)
-                alls = Survey.objects.filter(created_at__month=midx)
-                DebuggingPrint.print(alls)
-                DebuggingPrint.print(alls.count())
-                for department in SurveyDepartmentsTypeChoices.choices:
-                    department_code = department[0]
-                    DebuggingPrint.pprint(department_code)
-                    department_qs = alls.filter(department=department_code)
-                    DebuggingPrint.pprint(department_qs)
-                department_data.append(
-                    {"month_idx": midx, "month_abbr": calendar.month_abbr[midx]}
-                )
-                DebuggingPrint.rule()
             # for department in SurveyDepartmentsTypeChoices.choices:
             #     DebuggingPrint.pprint(department)
             #     for midx in months_idx:

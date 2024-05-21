@@ -52,7 +52,7 @@ class TechWellModel(DebuggingLoggingMixin, QuestionsOrganizer):
         self.positive_points: list[int] = []
         self.negative_points: list[int] = []
         self.step_1_form: dict = {}
-        DebuggingPrint.pprint(self.survey_questions)
+        # DebuggingPrint.pprint(self.survey_questions)
         self.load_dataset()
         self.init_dataset()
         self.preprocess_dataset()

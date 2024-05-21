@@ -49,6 +49,11 @@ class Survey(BaseModelMixin):
             models.Index(name="department_idx", fields=["department"]),
             models.Index(name="employment_status_idx", fields=["employment_status"]),
         ]
+        ordering = ["-created_at"]
 
     def __str__(self):
         return _(f"Survey for {self.user} - {self.classification} - {self.total_score}")
+
+    @property
+    def name(self) -> str:
+        return _(f"Survey at {self.created_at.date()}")

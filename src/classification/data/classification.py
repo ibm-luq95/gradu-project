@@ -109,3 +109,7 @@ MAIN_CLASSIFICATIONS: List[dict[str, Union[str, int, Tuple[str], List[str]]]] = 
         "conclusion_advice": _("Remember, your well-being is paramount."),
     },
 ]
+
+MAIN_CLASSIFICATIONS_LBL_ONLY = tuple([
+    classification["label"] for classification in MAIN_CLASSIFICATIONS
+])
