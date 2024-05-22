@@ -26,7 +26,6 @@ class Command(BaseCommandMixin):
                         # DebuggingPrint.log(questions)
                         for q in questions:
                             data = {
-                                "question_type": q_type,
                                 "question": q.get("question").strip(),
                                 "max_value": q.get("max_value"),
                                 "min_value": q.get("min_value"),
