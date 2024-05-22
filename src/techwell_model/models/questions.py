@@ -8,9 +8,6 @@ from core.models.mixins.base_model import BaseModelMixin
 
 
 class ModelQuestion(BaseModelMixin):
-    question_type = models.CharField(
-        _("Type"), max_length=20, choices=QuestionTypesEnum.choices
-    )
     question = models.CharField(_("Question"), max_length=250)
     slug = models.SlugField(_("Slug"), editable=False, max_length=250)
     max_value = models.PositiveSmallIntegerField(_("Max value"), default=5)

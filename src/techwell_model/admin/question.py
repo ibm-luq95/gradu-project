@@ -11,7 +11,6 @@ class ModelQuestionAdmin(BaseAdminModelMixin):
         "question",
         "slug",
         "step",
-        "question_type",
         "max_value",
         "min_value",
         "created_at",

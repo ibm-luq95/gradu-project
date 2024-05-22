@@ -16,3 +16,4 @@ class TechWellUserAdmin(BaseAdminModelMixin):
         "created_at",
     ]
     readonly_fields = ["deleted_at", "created_at", "updated_at"]
+    list_filter = ["user_type", "status"]
