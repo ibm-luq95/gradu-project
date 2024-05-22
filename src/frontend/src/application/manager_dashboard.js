@@ -78,8 +78,8 @@ document.addEventListener("DOMContentLoaded", (readyEvent) => {
                 .classList.remove("hidden");
             }
             if (quarterlyProgressElement) {
-              console.log(data);
               const chartData = data["quarter_chart_data"];
+              const quarterChart = data["quarter_chart"];
               const chartMonthsLabels = chartData["months"];
               const datasetLabels = data["classification_chart_data"].map(
                 (item) => item["label"],
@@ -99,40 +99,46 @@ document.addEventListener("DOMContentLoaded", (readyEvent) => {
                 "Nov",
                 "Dec",
               ];
-              const chartDatasets = new Array();
+              const quarterChartDatasets = new Array();
+              for (const key in quarterChart) {
+                if (Object.hasOwnProperty.call(quarterChart, key)) {
+                  const element = quarterChart[key];
+                  const monthsTArray = element.map((element) => element["count"]);
+                  let bgColor;
+                  switch (key) {
+                    case "Burned Out":
+                      bgColor = "#f87171";
+                      break;
+                    case "Highly Stressed":
+                      bgColor = "#facc15";
+                      break;
+                    case "Mildly Stressed":
+                      bgColor = "#c084fc";
+                      break;
+                    case "Healthy":
+                      bgColor = "#4ade80";
+                      break;
+                    default:
+                      // Handle the default case if needed
+                      break;
+                  }
+                  quarterChartDatasets.push({
+                    label: key,
+                    data: monthsTArray,
+                    tension: 0.1,
+                    fill: false,
+                    borderColor: bgColor,
+                  });
+                }
+              }
               const cdata = {
                 labels: monthsA,
-                datasets: [
-                  {
-                    label: "My First Dataset",
-                    data: [65, 59, 80, 81, 56, 55, 40],
-                    fill: false,
-                    borderColor: "rgb(75, 192, 192)",
-                    tension: 0.1,
-                  },
-                  {
-                    label: "My sec Dataset",
-                    data: [100, 62, 22, 77, 56, 55, 40],
-                    fill: false,
-                    borderColor: "rgb(23, 111, 192)",
-                    tension: 0.1,
-                  },
-                ],
+                datasets: quarterChartDatasets,
               };
-              console.warn(chartMonthsLabels);
-              console.warn(datasetLabels);
               new Chart(quarterlyProgressElement, {
                 type: "line",
                 data: cdata,
                 options: {
-                  plugins: {
-                    legend: {
-                      display: true,
-                      labels: {
-                        color: "rgb(255, 99, 132)",
-                      },
-                    },
-                  },
                   scales: {
                     y: {
                       beginAtZero: true,

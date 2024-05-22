@@ -5,7 +5,7 @@ from django.utils.translation import gettext as _
 
 from core.constants.survey import (
     CST_REMOTE,
-    CST_HYPERD,
+    CST_HYBRID,
     CST_OFFICE,
     CST_MALE,
     CST_FEMALE,
@@ -22,7 +22,7 @@ from core.constants.survey import (
 
 class SurveyWorkEnvironmentTypesEnum(TextChoices):
     REMOTE = CST_REMOTE, _(stringcase.sentencecase(CST_REMOTE))
-    HYPERD = CST_HYPERD, _(stringcase.sentencecase(CST_HYPERD))
+    HYBRID = CST_HYBRID, _(stringcase.sentencecase(CST_HYBRID))
     OFFICE = CST_OFFICE, _(stringcase.sentencecase(CST_OFFICE))
 
 

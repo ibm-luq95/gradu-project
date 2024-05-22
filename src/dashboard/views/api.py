@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-#
 import traceback
 import calendar
+from collections import defaultdict
 
 from django.http import HttpRequest
 from rest_framework import status
@@ -48,37 +49,21 @@ class DashboardAPIView(APIView):
                 all_departments.append(dep[1])
             response["all_departments"] = all_departments
             months_idx = list(range(1, 13, 1))
-            # DebuggingPrint.pprint(months_idx)
             all_surveys = Survey.objects.all()
             DebuggingPrint.pprint(MAIN_CLASSIFICATIONS_LBL_ONLY)
+            tmpCCC = defaultdict(list)
+
             for cls in all_classifications:
                 cls_surveys = cls.surveys.all()
-                # DebuggingPrint.pprint(cls_surveys)
                 for midx in months_idx:
-                    DebuggingPrint.pprint(cls.label)
-                    DebuggingPrint.log(midx)
-                    DebuggingPrint.pprint(cls_surveys.filter(created_at__month=midx))
-                    DebuggingPrint.rule(
-                        f"{str(cls_surveys.filter(created_at__month=midx).count())} -"
-                        f" Month: {str(midx)}"
-                    )
-                DebuggingPrint.rule()
-            # for a in all_surveys:
-            # DebuggingPrint.pprint(a.created_at)
-            # DebuggingPrint.pprint(a.created_at.month)
-            department_data = []
-            for midx in months_idx:
-                DebuggingPrint.log(midx)
-            # for department in SurveyDepartmentsTypeChoices.choices:
-            #     DebuggingPrint.pprint(department)
-            #     for midx in months_idx:
-            #         # DebuggingPrint.pprint(midx)
-            #         q = Survey.objects.filter(
-            #             department=department[0]
-            #         )
-            #         DebuggingPrint.pprint(q.first().created_at.month)
-            #     # DebuggingPrint.pprint(q)
-            #     DebuggingPrint.rule()
+                    tmpCCC[cls.label].append({
+                        "count": cls_surveys.filter(created_at__month=midx).count(),
+                        "month_idx": midx,
+                        "label": cls.label,
+                        "slug": cls.slug,
+                        "month": calendar.month_abbr[midx],
+                    })
+            response["quarter_chart"] = tmpCCC
             return Response(data=response, status=status.HTTP_200_OK)
         except Exception as ex:
             print(traceback.format_exc())

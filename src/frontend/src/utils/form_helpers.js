@@ -63,7 +63,33 @@ const formInputSerializer = ({
   }
   return serializedObject;
 };
+const validateStepsForm = (form) => {
+  const inputs = Array.from(
+    form.querySelectorAll('input[type="text"], input[type="radio"]'),
+  );
+  let isValid = true;
 
+  inputs.forEach((input) => {
+    if (input.type === "text" && input.value.trim() === "") {
+      isValid = false;
+      // You can customize the error handling here, such as displaying an error message or adding a CSS class to indicate the error.
+      // console.log("Text input is empty:", input.name);
+      return false;
+    }
+
+    if (
+      input.type === "radio" &&
+      !form.querySelector(`input[name="${input.name}"]:checked`)
+    ) {
+      isValid = false;
+      // You can customize the error handling here, such as displaying an error message or adding a CSS class to indicate the error.
+      // console.log("Radio input is not selected:", input.name);
+      return false;
+    }
+  });
+
+  return isValid;
+};
 /**
  * Enable or disable form fieldset items with form's submit button
  * @typedef param
@@ -96,4 +122,4 @@ const disableAndEnableFieldsetItems = ({ formElement, state }) => {
   }
 };
 
-export { formInputSerializer, disableAndEnableFieldsetItems };
+export { formInputSerializer, disableAndEnableFieldsetItems, validateStepsForm };

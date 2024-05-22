@@ -58,7 +58,6 @@ INSTALLED_APPS = [
     "core.apps.CoreConfig",
     "home.apps.HomeConfig",
     "techweb_user.apps.TechwebUserConfig",
-    "employee.apps.EmployeeConfig",
     "survey.apps.SurveyConfig",
     "classification.apps.ClassificationConfig",
     "techwell_model.apps.TechwellModelConfig",
