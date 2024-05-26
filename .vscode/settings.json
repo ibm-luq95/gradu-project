@@ -16,4 +16,5 @@
     "editor.defaultFormatter": "monosans.djlint"
   },
     "tailwind-fold.autoFold": false,
+    "eslint.onIgnoredFiles": "warn",
 }

@@ -1,4 +1,5 @@
 "use strict";
+/* eslint no-unused-vars: 0 */ 
 import Swal from "sweetalert2";
 import "sweetalert2/dist/sweetalert2.css";
 import { HSOverlay, HSStepper } from "preline/dist/preline";

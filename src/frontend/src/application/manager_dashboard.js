@@ -1,4 +1,5 @@
 "use strict";
+/* eslint no-unused-vars: 0 */ 
 import Chart from "chart.js/auto";
 import { FETCHURLNAMEURL } from "../utils/constants";
 import { fetchUrlPathByName, sendRequest } from "../utils/api";

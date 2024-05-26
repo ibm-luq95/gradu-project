@@ -1,4 +1,5 @@
 "use strict";
+
 import JustValidate from "just-validate";
 import { sendRequest } from "../utils/api";
 import { CSRFINPUTNAME } from "../utils/constants";
@@ -7,13 +8,16 @@ import {
   formInputSerializer,
 } from "../utils/form_helpers";
 import { showToastNotification } from "../utils/toasts";
-
-document.addEventListener("DOMContentLoaded", (readyEvent) => {
+// eslint-disable-next-line no-unused-vars
+document.addEventListener("DOMContentLoaded", (_readyEvent) => {
   const contactFormSection = document.querySelector("section#contactFormSection");
   const contactAlertMessage = document.querySelector("div#contactAlertMessage");
   const contactMessageContent = document.querySelector("div#contactMessageContent");
   const contactSuccessSection = document.querySelector("section#contactSuccessSection");
   const contactForm = document.querySelector("form#contactForm");
+  // const prelineErrorCssClasses =
+  //   "py-3 px-4 block w-full border-red-500 rounded-lg text-sm focus:border-red-500 focus:ring-red-500 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400";
+  // const errorsArrayCssClasses = prelineErrorCssClasses.split(" ");
   if (contactForm) {
     const validate = new JustValidate("#contactForm");
     validate
@@ -24,11 +28,12 @@ document.addEventListener("DOMContentLoaded", (readyEvent) => {
         { rule: "required" },
         {
           rule: "customRegexp",
-          value: /\+966-5[0-9]{8}/,
+          value: /^(?:966|0)(?:\d{9})$/,
         },
       ])
       .addField("#message", [{ rule: "required" }]);
-    validate.onSuccess((event) => {
+    // eslint-disable-next-line no-unused-vars
+    validate.onSuccess((_event) => {
       // event.currentTarget.submit();
       const inputs = formInputSerializer({
         formElement: contactForm,

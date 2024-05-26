@@ -18,7 +18,7 @@ class TechWellUserAdmin(UserAdmin):
         "user_type",
         "created_at",
     ]
-    readonly_fields = ["deleted_at", "created_at", "updated_at"]
+    readonly_fields = ["deleted_at", "created_at", "updated_at", "last_login"]
     list_filter = ["user_type", "status"]
     fieldsets = (
         (None, {"fields": ("employee_id", "password")}),
@@ -35,7 +35,16 @@ class TechWellUserAdmin(UserAdmin):
                 ),
             },
         ),
-        (_("Important dates"), {"fields": ("created_at",)}),
+        (
+            _("Important dates"),
+            {
+                "fields": (
+                    "last_login",
+                    "created_at",
+                    "updated_at",
+                )
+            },
+        ),
     )
     add_fieldsets = (
         (

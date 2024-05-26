@@ -1,5 +1,6 @@
 "use strict";
-
+/* eslint no-unused-vars: 0 */ 
+/* eslint no-undef: 0 */ 
 import { FETCHURLNAMEURL } from "./constants";
 import { getCookie } from "./cookie";
 

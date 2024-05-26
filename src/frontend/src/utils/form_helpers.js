@@ -1,4 +1,5 @@
 "use strict";
+/* eslint no-unused-vars: 0 */
 /**
  * This will serialize form inputs
  * @typedef param

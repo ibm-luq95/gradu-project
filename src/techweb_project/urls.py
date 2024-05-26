@@ -4,6 +4,8 @@ from django.conf.urls.static import static
 from django.urls import path, include
 from django.conf.urls import handler500
 
+from core.views.errors import CustomErrorPage
+
 handler500 = "core.views.errors.custom_500"
 
 static_and_media_path_urls = static(
@@ -15,7 +17,8 @@ urlpatterns = [
     path("survey/", include("survey.urls"), name="survey"),
     path("dashboard/", include("dashboard.urls"), name="dashboard"),
     path("core/", include("core.urls"), name="core"),
-    path("auth/", include("techweb_user.urls"), name="auth"),
+    path("users/", include("techweb_user.urls"), name="users"),
+    path("error/", CustomErrorPage.as_view(), name="custom_error"),
 ]
 urlpatterns += static_and_media_path_urls
 if settings.DEBUG:

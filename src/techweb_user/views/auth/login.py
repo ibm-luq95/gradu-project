@@ -1,47 +1,43 @@
 # -*- coding: utf-8 -*-#
 import traceback
 
-from django.utils.translation import gettext as _
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import redirect
-from django.contrib.auth.views import LoginView
+from django.core.exceptions import ValidationError
 from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
 from django.views.generic.edit import FormView
-from django.views.generic import TemplateView
 
 from core.utils.developments.debugging_print_object import DebuggingPrint
-from techweb_user.forms.login import TWLoginForm
+from techweb_user.forms.login import TWManagerLoginForm
 from techweb_user.models import TechWebUser
 
 
-class HomeView(SuccessMessageMixin, FormView):
-    template_name = "home/home.html"
-    form_class = TWLoginForm
+class TWManagerLoginView(SuccessMessageMixin, FormView):
+    template_name = "techweb_user/auth/login.html"
+    form_class = TWManagerLoginForm
     success_message: str = _("Login successfully")
-    success_url = reverse_lazy("home:home")
+    success_url = reverse_lazy("dashboard:home")
 
     def form_valid(self, form):
         try:
             user_type = form.cleaned_data.get("user_type")
-            employee_id = form.cleaned_data.get("employee_id")
+            manager_id = form.cleaned_data.get("manager_id")
             password = form.cleaned_data.get("password")
-            if form.cleaned_data.get("agree_terms") is False:
-                form.add_error(
-                    "agree_terms", _("You must agree with the terms and conditions!")
-                )
-                return super().form_invalid(form)
-            fetch_user = TechWebUser.objects.filter(employee_id=employee_id).first()
+            fetch_user = TechWebUser.objects.filter(employee_id=manager_id).first()
             if not fetch_user:
+                messages.error(self.request, _(f"Manager not found with ID {manager_id}!"))
+                return super().form_invalid(form)
+            if fetch_user.user_type == "employee":
                 messages.error(
-                    self.request, _(f"Employee not found with ID {employee_id}!")
+                    self.request,
+                    _(f"User {manager_id} has problem contact administrator!"),
                 )
                 return super().form_invalid(form)
             user = authenticate(
                 self.request,
-                username=form.cleaned_data["employee_id"],
+                username=form.cleaned_data["manager_id"],
                 password=form.cleaned_data["password"],
             )
             if user is not None:
@@ -59,6 +55,6 @@ class HomeView(SuccessMessageMixin, FormView):
     def get_context_data(self, **kwargs):
         # Call the base implementation first to get a context
         context = super().get_context_data(**kwargs)
-        context.setdefault("title", _("TechWell"))
+        context.setdefault("title", _("Management login"))
 
         return context
